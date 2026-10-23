@@ -135,8 +135,9 @@ dependencies {
     runtimeOnly "curse.maven:functional-storage-${functionalstorage_id}:${functionalstorage_version_id}"
     runtimeOnly "curse.maven:generator-galore-${generatorgalore_id}:${generatorgalore_version_id}"
     runtimeOnly "curse.maven:lithostitched-${lithostitched_id}:${lithostitched_version_id}"
-    if (file(thaumaturge_jar).exists()) {
-        runtimeOnly files(thaumaturge_jar)
+    def thaumaturgeJar = new File(thaumaturge_jar)
+    if (thaumaturgeJar.isFile()) {
+        runtimeOnly files(thaumaturgeJar)
     }
 }
 

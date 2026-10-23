@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1 - 2026-10-22
+
+- Fixed the build on GitHub Actions: the optional local Thaumaturge jar used for development is now read as a plain file path, so Linux builds no longer fail.
+
+## 1.0.1 (Español)
+
+- Corregido el build en GitHub Actions: el jar local opcional de Thaumaturge que se usa en desarrollo ahora se lee como una ruta de archivo normal, así que los builds en Linux ya no fallan.
+
 ## 1.0.0 - 2026-10-22
 
 First release.
