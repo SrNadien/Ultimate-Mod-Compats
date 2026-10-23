@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthecompressed"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "megacells"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "sky_steel_ingot"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:sky_steel_ingot_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 2,
+    "id": "megacells:sky_steel_ingot"
+  }
+}

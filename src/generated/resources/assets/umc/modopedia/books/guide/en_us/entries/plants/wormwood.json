@@ -1,0 +1,31 @@
+{
+  "assigned_items": [
+    "umc:wormwood_sprig",
+    "umc:wormwood_seeds"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:wormwood_sprig"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Wormwood",
+          "template": "modopedia:page/headered_text",
+          "text": "A silvery, bitter herb sown on farmland.\n\nMature plants give sprigs, which are the base of wormwood tincture. Wormwood also feeds nearby altars."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "block": "umc:wormwood[age=3]",
+          "template": "modopedia:page/block",
+          "text": "$(b)Procurement:$(/b)\nSeeds drop from grass"
+        }
+      ]
+    }
+  ],
+  "title": "Wormwood"
+}

@@ -1,0 +1,30 @@
+{
+  "assigned_items": [
+    "umc:mugwort"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:mugwort"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Mugwort",
+          "template": "modopedia:page/headered_text",
+          "text": "A grey-green herb that witches burn and brew to open the mind.\n\nIt grows wild on plains and in swamps and is distilled together with moonbloom."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "block": "umc:mugwort",
+          "template": "modopedia:page/block",
+          "text": "$(b)Found in:$(/b)\nPlains and swamps"
+        }
+      ]
+    }
+  ],
+  "title": "Mugwort"
+}

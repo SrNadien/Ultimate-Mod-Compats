@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:ectoplasm"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:ectoplasm"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Ghost",
+          "template": "modopedia:page/headered_text",
+          "text": "Summon a ghost. It takes little harm from blows and its touch can blind."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:summon_ghost",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Ghost"
+}

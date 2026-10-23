@@ -1,0 +1,6 @@
+{
+  "type": "umc:config_features",
+  "biomes": "#c:is_plains",
+  "features": "umc:mugwort_patch",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,27 @@
+{
+  "factory": {
+    "type": "enchanted:cure_curse"
+  },
+  "items": [
+    {
+      "count": 1,
+      "id": "umc:silver_ingot"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:garlic"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:wolfsbane_flower"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:odour_of_purity"
+    }
+  ],
+  "power": 2000,
+  "shapes": {
+    "enchanted:small_circle": "enchanted:ritual_chalk"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "umc:toad_spawn_egg"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Familiars",
+          "template": "modopedia:page/headered_text",
+          "text": "Tame the animal first, then place it inside a medium chalk circle and cast its binding rite. While it is bound, the familiar grants its owner a bonus.\n\nOnly one familiar can be bound to a witch at a time."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "header": "Care",
+          "template": "modopedia:page/headered_text",
+          "text": "Crouch and use your familiar to dismiss it. The $(b)summon familiar$(/b) rite calls it back.\n\nFamiliars shrug off fire, falls and drowning, and a fallen familiar is only dismissed, never lost."
+        }
+      ]
+    }
+  ],
+  "title": "Binding Familiars"
+}

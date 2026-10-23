@@ -1,0 +1,28 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "umc:grave_dust"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Ritos",
+          "template": "modopedia:page/headered_text",
+          "text": "Dibuja el círculo que indica el rito, coloca las ofrendas sobre él y asegúrate de que un altar cercano tenga poder suficiente.\n\nCada página de rito muestra sus ofrendas, su círculo y el poder que cuesta."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "header": "Ritos de familiares",
+          "template": "modopedia:page/headered_text",
+          "text": "Los ritos que ligan familiares se describen en el capítulo de Familiares."
+        }
+      ]
+    }
+  ],
+  "title": "Realizar ritos"
+}

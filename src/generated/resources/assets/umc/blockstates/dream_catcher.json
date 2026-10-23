@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "umc:block/dream_catcher",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "umc:block/dream_catcher"
+    },
+    "facing=south": {
+      "model": "umc:block/dream_catcher",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "umc:block/dream_catcher",
+      "y": 270
+    }
+  }
+}

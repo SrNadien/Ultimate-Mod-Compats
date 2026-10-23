@@ -1,0 +1,19 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:soul_lantern"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Más allá del velo",
+          "template": "modopedia:page/headered_text",
+          "text": "Los espíritus de los muertos no siempre descansan. Las brujas dicen que un segundo mundo se esconde tras este, callado y frío.\n\nPisa con cuidado si alguna vez encuentras la entrada."
+        }
+      ]
+    }
+  ],
+  "title": "Más allá del velo"
+}

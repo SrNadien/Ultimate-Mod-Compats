@@ -1,0 +1,1 @@
+nadiendev.umc.compat.kubejs.UmcKubeJSPlugin umc

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "enchanted:demonic_blood"
+    },
+    "H": {
+      "item": "umc:imp_horn"
+    },
+    "K": {
+      "item": "minecraft:book"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    " D ",
+    "HKH",
+    " O "
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:demonomicon"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "assigned_items": [
+    "umc:witch_cloth",
+    "umc:moonthread"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_cloth"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "The Full Set",
+          "template": "modopedia:page/headered_text",
+          "text": "Wear a hat, a robe or cloak, and boots together to awaken the full set bonus.\n\nEach piece also makes altars within reach recharge faster, and curse shaking grows with the pieces worn."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "header": "Materials",
+          "template": "modopedia:page/headered_text",
+          "text": "Moonthread is spun at a spinning wheel and then crafted into witch cloth."
+        },
+        {
+          "recipe": "umc:witch_cloth",
+          "template": "modopedia:recipe/crafting",
+          "y": 65
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "recipe": "umc:spinning/moonthread",
+              "template": "enchanted:page/spinning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Set Bonuses"
+}

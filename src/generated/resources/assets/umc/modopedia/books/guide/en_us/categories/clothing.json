@@ -1,0 +1,16 @@
+{
+  "entries": [
+    "clothing/hat",
+    "clothing/robe",
+    "clothing/cloak",
+    "clothing/boots",
+    "clothing/set"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_hat"
+  },
+  "landing_text": "A witch is known by her garb.\n\nThe hat, robe, cloak and boots described here are woven from moonthread and bring more than good looks.",
+  "sort_num": 7,
+  "title": "Witch Clothing"
+}

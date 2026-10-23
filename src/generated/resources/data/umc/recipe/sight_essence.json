@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "umc:spirit_dust"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "pattern": [
+    " E ",
+    "GDG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:sight_essence"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:vervain_tonic"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:vervain_tonic"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Vervain Tonic",
+          "template": "modopedia:page/headered_text",
+          "text": "A violet tonic brewed in the kettle.\n\nIt is used in the rites that bind raven and hound familiars."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "recipe": "umc:kettle/vervain_tonic",
+          "template": "enchanted:recipe/kettle"
+        }
+      ]
+    }
+  ],
+  "title": "Vervain Tonic"
+}

@@ -1,0 +1,25 @@
+{
+  "factory": {
+    "type": "enchanted:summon_minions",
+    "count": 1,
+    "entity": "umc:ent"
+  },
+  "items": [
+    {
+      "count": 1,
+      "id": "enchanted:ent_twig"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:oak_sapling"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:bone_meal"
+    }
+  ],
+  "power": 4000,
+  "shapes": {
+    "enchanted:medium_circle": "enchanted:ritual_chalk"
+  }
+}

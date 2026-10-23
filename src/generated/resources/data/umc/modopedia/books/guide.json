@@ -1,0 +1,10 @@
+{
+  "type": {
+    "id": "enchanted:classic"
+  },
+  "creative_tab": "umc:main",
+  "landing_text": "book.landing_text.umc.guide",
+  "subtitle": "book.subtitle.umc.guide",
+  "texture": "enchanted:art_of_witchcraft",
+  "title": "book.title.umc.guide"
+}

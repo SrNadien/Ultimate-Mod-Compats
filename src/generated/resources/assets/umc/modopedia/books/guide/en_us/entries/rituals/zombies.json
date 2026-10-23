@@ -1,0 +1,27 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:rotten_flesh"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Zombie Servants",
+          "template": "modopedia:page/headered_text",
+          "text": "Raise a few zombies that obey you and fight at your side until they fade away."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:summon_zombie_servants",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Zombie Servants"
+}

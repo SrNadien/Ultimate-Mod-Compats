@@ -1,0 +1,190 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            3.0
+          ]
+        },
+        "north": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            3.0
+          ]
+        },
+        "south": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            3.0
+          ]
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "west": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            3.0
+          ]
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        3,
+        16
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "texture": "#side",
+          "uv": [
+            3.0,
+            3.0,
+            13.0,
+            10.0
+          ]
+        },
+        "east": {
+          "texture": "#side",
+          "uv": [
+            3.0,
+            3.0,
+            13.0,
+            10.0
+          ]
+        },
+        "north": {
+          "texture": "#side",
+          "uv": [
+            3.0,
+            3.0,
+            13.0,
+            10.0
+          ]
+        },
+        "south": {
+          "texture": "#side",
+          "uv": [
+            3.0,
+            3.0,
+            13.0,
+            10.0
+          ]
+        },
+        "up": {
+          "texture": "#side",
+          "uv": [
+            3.0,
+            3.0,
+            13.0,
+            10.0
+          ]
+        },
+        "west": {
+          "texture": "#side",
+          "uv": [
+            3.0,
+            3.0,
+            13.0,
+            10.0
+          ]
+        }
+      },
+      "from": [
+        3,
+        3,
+        3
+      ],
+      "to": [
+        13,
+        10,
+        13
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            3.0
+          ]
+        },
+        "north": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            3.0
+          ]
+        },
+        "south": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            3.0
+          ]
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "west": {
+          "texture": "#side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            3.0
+          ]
+        }
+      },
+      "from": [
+        0,
+        10,
+        0
+      ],
+      "to": [
+        16,
+        13,
+        16
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "umc:block/coven_altar_side",
+    "side": "umc:block/coven_altar_side",
+    "top": "umc:block/coven_altar_top"
+  }
+}

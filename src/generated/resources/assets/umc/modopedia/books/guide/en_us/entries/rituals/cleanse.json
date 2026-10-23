@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:purifying_tonic"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:purifying_tonic"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Cleansing",
+          "template": "modopedia:page/headered_text",
+          "text": "Lifts the curse of lycanthropy or vampirism from the one who casts it."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:cleanse_curse",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Cleansing"
+}

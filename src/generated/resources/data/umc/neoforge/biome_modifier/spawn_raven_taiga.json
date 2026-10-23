@@ -1,0 +1,6 @@
+{
+  "type": "umc:config_spawns",
+  "biomes": "#minecraft:is_taiga",
+  "entity_type": "umc:raven",
+  "species": "raven"
+}

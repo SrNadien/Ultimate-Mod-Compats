@@ -1,0 +1,244 @@
+{
+  "entity.ent.ambient": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.ravager.ambient",
+        "pitch": 0.45,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.ent.ambient"
+  },
+  "entity.ent.death": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.iron_golem.death",
+        "pitch": 0.45,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.ent.death"
+  },
+  "entity.ent.hurt": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.iron_golem.hurt",
+        "pitch": 0.45,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.ent.hurt"
+  },
+  "entity.ent.step": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:block.wood.step",
+        "pitch": 0.6,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.ent.step"
+  },
+  "entity.ghost.ambient": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.vex.ambient",
+        "pitch": 0.5,
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.ghost.ambient"
+  },
+  "entity.ghost.death": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.vex.death",
+        "pitch": 0.6,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.ghost.death"
+  },
+  "entity.ghost.hurt": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.vex.hurt",
+        "pitch": 0.6,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.ghost.hurt"
+  },
+  "entity.imp.ambient": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.blaze.ambient",
+        "pitch": 1.7,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.imp.ambient"
+  },
+  "entity.imp.death": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.blaze.death",
+        "pitch": 1.6,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.imp.death"
+  },
+  "entity.imp.fireball": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.blaze.shoot",
+        "pitch": 1.4,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.imp.fireball"
+  },
+  "entity.imp.hurt": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.blaze.hurt",
+        "pitch": 1.6,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.imp.hurt"
+  },
+  "entity.vampire.ambient": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.evoker.ambient",
+        "pitch": 0.8,
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.vampire.ambient"
+  },
+  "entity.vampire.bite": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.phantom.bite",
+        "pitch": 0.9,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.vampire.bite"
+  },
+  "entity.vampire.death": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.evoker.death",
+        "pitch": 0.8,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.vampire.death"
+  },
+  "entity.vampire.hurt": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.evoker.hurt",
+        "pitch": 0.9,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.vampire.hurt"
+  },
+  "entity.vampire.transform": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.bat.takeoff",
+        "pitch": 0.6,
+        "volume": 1.2
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.vampire.transform"
+  },
+  "entity.werewolf.ambient": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.wolf.growl",
+        "pitch": 0.6,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.werewolf.ambient"
+  },
+  "entity.werewolf.death": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.wolf.death",
+        "pitch": 0.5,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.werewolf.death"
+  },
+  "entity.werewolf.howl": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.wolf.howl",
+        "pitch": 0.6,
+        "volume": 1.4
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.werewolf.howl"
+  },
+  "entity.werewolf.hurt": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.wolf.hurt",
+        "pitch": 0.6,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.entity.werewolf.hurt"
+  },
+  "item.banish": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.evoker.cast_spell",
+        "pitch": 0.7,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.item.banish"
+  },
+  "item.summon": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:entity.evoker.prepare_summon",
+        "pitch": 0.8,
+        "volume": 1.0
+      }
+    ],
+    "subtitle": "subtitles.umc.item.summon"
+  }
+}

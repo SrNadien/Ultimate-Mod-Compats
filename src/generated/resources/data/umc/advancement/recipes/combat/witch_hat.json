@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "umc:witch_hat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_witch_cloth": {
+      "conditions": {
+        "items": [
+          {
+            "items": "umc:witch_cloth"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_witch_cloth"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "umc:witch_hat"
+    ]
+  }
+}

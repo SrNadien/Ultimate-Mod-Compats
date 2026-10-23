@@ -1,0 +1,6 @@
+{
+  "type": "umc:config_spawns",
+  "biomes": "#c:is_plains",
+  "entity_type": "umc:raven",
+  "species": "raven"
+}

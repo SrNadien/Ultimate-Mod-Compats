@@ -1,0 +1,40 @@
+{
+  "assigned_items": [
+    "umc:owl_spawn_egg",
+    "umc:moondew"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:owl_spawn_egg"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Lechuza",
+          "template": "modopedia:page/headered_text",
+          "text": "Las lechuzas vigilan el bosque desde las ramas. Ofrece conejo o pollo crudo a una lechuza salvaje para domarla.\n\nUna lechuza ligada permite a su dueño ver en la oscuridad."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "entity": "umc:owl",
+          "scale": 1.1,
+          "template": "modopedia:page/entity",
+          "text": "$(b)Se encuentra en:$(/b)\nBosques"
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:bind_owl_familiar",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Lechuza"
+}

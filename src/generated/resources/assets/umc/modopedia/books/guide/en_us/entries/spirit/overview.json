@@ -1,0 +1,19 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:soul_lantern"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Beyond the Veil",
+          "template": "modopedia:page/headered_text",
+          "text": "The spirits of the dead do not always rest. Witches say a second world lies just behind this one, quiet and cold.\n\nWalk softly if you ever find the way in."
+        }
+      ]
+    }
+  ],
+  "title": "Beyond the Veil"
+}

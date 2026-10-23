@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "umc:block/spirit_portal"
+    },
+    "active=true": {
+      "model": "umc:block/spirit_portal_active"
+    }
+  }
+}

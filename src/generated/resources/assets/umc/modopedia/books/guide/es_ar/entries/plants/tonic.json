@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:vervain_tonic"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:vervain_tonic"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Tónico de verbena",
+          "template": "modopedia:page/headered_text",
+          "text": "Un tónico violeta preparado en el caldero.\n\nSe usa en los ritos que ligan a cuervos y sabuesos como familiares."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "recipe": "umc:kettle/vervain_tonic",
+          "template": "enchanted:recipe/kettle"
+        }
+      ]
+    }
+  ],
+  "title": "Tónico de verbena"
+}

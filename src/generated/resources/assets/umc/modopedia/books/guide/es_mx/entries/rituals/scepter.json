@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:necromancer_scepter"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:necromancer_scepter"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Cetro del nigromante",
+          "template": "modopedia:page/headered_text",
+          "text": "Este rito forja el cetro con el que se manda a los siervos: llamarlos, hacer que se queden o te sigan, u ordenar un ataque."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:forge_necromancer_scepter",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Cetro del nigromante"
+}

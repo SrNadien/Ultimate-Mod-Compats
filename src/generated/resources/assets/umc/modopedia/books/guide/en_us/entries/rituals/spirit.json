@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:spirit_dust"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:spirit_dust"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Spirit Journey",
+          "template": "modopedia:page/headered_text",
+          "text": "Sends the caster to the spirit world for a short while, then brings them back."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:spirit_journey",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Spirit Journey"
+}

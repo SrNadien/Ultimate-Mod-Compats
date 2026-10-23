@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "spirit/overview"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:soul_lantern"
+  },
+  "landing_text": "Más allá del velo hay otro reino.\n\nLo que se sabe de él se anotará en este capítulo.",
+  "sort_num": 10,
+  "title": "Mundo espiritual"
+}

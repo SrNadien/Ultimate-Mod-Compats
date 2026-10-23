@@ -1,0 +1,19 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:bone"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Strange Creatures",
+          "template": "modopedia:page/headered_text",
+          "text": "Witches have always told of beasts that walk between the world of the living and the world of the shadows.\n\nBe careful when you wander far from your circle after dark."
+        }
+      ]
+    }
+  ],
+  "title": "Strange Creatures"
+}

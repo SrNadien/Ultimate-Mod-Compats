@@ -1,0 +1,26 @@
+{
+  "assigned_items": [
+    "umc:witch_boots"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_boots"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Witch's Boots",
+          "template": "modopedia:page/headered_text",
+          "text": "Pointed boots with a gentle curl at the toe.\n\nThey give a little spring to every step."
+        },
+        {
+          "recipe": "umc:witch_boots",
+          "template": "modopedia:recipe/crafting",
+          "y": 75
+        }
+      ]
+    }
+  ],
+  "title": "Witch's Boots"
+}

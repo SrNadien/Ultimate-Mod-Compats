@@ -1,0 +1,26 @@
+{
+  "assigned_items": [
+    "umc:witch_robe"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_robe"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Túnica de bruja",
+          "template": "modopedia:page/headered_text",
+          "text": "Un vestido largo de mangas anchas.\n\nAyuda a quien lo viste a librarse de las maldiciones con el tiempo."
+        },
+        {
+          "recipe": "umc:witch_robe",
+          "template": "modopedia:recipe/crafting",
+          "y": 75
+        }
+      ]
+    }
+  ],
+  "title": "Túnica de bruja"
+}

@@ -1,0 +1,18 @@
+{
+  "entries": [
+    "plants/wormwood",
+    "plants/vervain",
+    "plants/moonbloom",
+    "plants/mugwort",
+    "plants/tincture",
+    "plants/tonic",
+    "plants/moondew"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:wormwood_sprig"
+  },
+  "landing_text": "Los setos guardan más que las hierbas comunes.\n\nEstas plantas alimentan los altares y llenan el caldero y la destilería.",
+  "sort_num": 8,
+  "title": "Plantas"
+}

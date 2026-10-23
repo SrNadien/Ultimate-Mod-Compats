@@ -1,0 +1,30 @@
+{
+  "assigned_items": [
+    "umc:moonbloom"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:moonbloom"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Moonbloom",
+          "template": "modopedia:page/headered_text",
+          "text": "A pale flower that glows softly in the dark.\n\nIt grows wild in forests and taigas. Spun into moonthread or distilled into moondew, it is the heart of witch clothing."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "block": "umc:moonbloom",
+          "template": "modopedia:page/block",
+          "text": "$(b)Found in:$(/b)\nForests and taigas"
+        }
+      ]
+    }
+  ],
+  "title": "Moonbloom"
+}

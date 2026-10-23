@@ -1,0 +1,23 @@
+{
+  "factory": {
+    "type": "enchanted:spirit_journey"
+  },
+  "items": [
+    {
+      "count": 3,
+      "id": "umc:spirit_dust"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:spirit_of_otherwhere"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:ender_dew"
+    }
+  ],
+  "power": 1500,
+  "shapes": {
+    "enchanted:small_circle": "enchanted:otherwhere_chalk"
+  }
+}

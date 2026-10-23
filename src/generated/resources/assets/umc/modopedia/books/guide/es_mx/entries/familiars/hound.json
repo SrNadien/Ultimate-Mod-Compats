@@ -1,0 +1,39 @@
+{
+  "assigned_items": [
+    "enchanted:tongue_of_dog"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:bone"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Sabueso",
+          "template": "modopedia:page/headered_text",
+          "text": "Un lobo domado puede ligarse como sabueso. Su pelaje se oscurece y sus ojos arden como brasas.\n\nUn sabueso ligado hace a su dueño más fuerte y más difícil de herir."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "entity": "umc:familiar_hound",
+          "scale": 0.9,
+          "template": "modopedia:page/entity",
+          "text": "$(b)Se obtiene de:$(/b)\nUn lobo domado"
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:bind_hound_familiar",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Sabueso"
+}

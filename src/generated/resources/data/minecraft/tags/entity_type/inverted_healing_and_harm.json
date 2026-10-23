@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "umc:ghost",
+    "umc:zombie_servant",
+    "umc:skeleton_servant",
+    "umc:vampire"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "umc:block/spirit_log_top",
+    "side": "umc:block/spirit_log"
+  }
+}

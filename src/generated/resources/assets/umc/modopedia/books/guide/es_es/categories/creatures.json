@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "creatures/overview"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:bone"
+  },
+  "landing_text": "No todo lo que se mueve de noche es un animal.\n\nEste capítulo crecerá a medida que se catalogue a las extrañas criaturas de estas tierras.",
+  "sort_num": 9,
+  "title": "Criaturas"
+}

@@ -1,0 +1,31 @@
+{
+  "assigned_items": [
+    "umc:vervain_flower",
+    "umc:vervain_seeds"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:vervain_flower"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Verbena",
+          "template": "modopedia:page/headered_text",
+          "text": "Una hierba esbelta con espigas de flores violetas, cultivada en tierra de cultivo.\n\nSus flores se usan en el tónico de verbena. La verbena también alimenta a los altares cercanos."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "block": "umc:vervain[age=3]",
+          "template": "modopedia:page/block",
+          "text": "$(b)Obtención:$(/b)\nLas semillas caen de la hierba"
+        }
+      ]
+    }
+  ],
+  "title": "Verbena"
+}

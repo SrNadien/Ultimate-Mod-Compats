@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "umc:vampire_fang"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " R ",
+    "RFR",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:blood_sigil"
+  }
+}

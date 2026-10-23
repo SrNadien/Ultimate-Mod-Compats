@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:wormwood_tincture"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:wormwood_tincture"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Tintura de ajenjo",
+          "template": "modopedia:page/headered_text",
+          "text": "Una infusión amarga preparada en el caldero.\n\nEs el ingrediente clave del rito que liga a un sapo como familiar."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "recipe": "umc:kettle/wormwood_tincture",
+          "template": "enchanted:recipe/kettle"
+        }
+      ]
+    }
+  ],
+  "title": "Tintura de ajenjo"
+}

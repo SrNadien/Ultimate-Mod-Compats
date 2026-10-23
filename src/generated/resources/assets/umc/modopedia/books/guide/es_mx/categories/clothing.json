@@ -1,0 +1,16 @@
+{
+  "entries": [
+    "clothing/hat",
+    "clothing/robe",
+    "clothing/cloak",
+    "clothing/boots",
+    "clothing/set"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_hat"
+  },
+  "landing_text": "A una bruja se la reconoce por sus ropajes.\n\nEl sombrero, la túnica, la capa y las botas que se describen aquí se tejen con hilo de luna y aportan algo más que buen aspecto.",
+  "sort_num": 7,
+  "title": "Ropa de bruja"
+}

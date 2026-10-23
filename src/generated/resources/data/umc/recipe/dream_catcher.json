@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "umc:dream_thread"
+    },
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " S ",
+    "TDT",
+    "F F"
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:dream_catcher"
+  }
+}

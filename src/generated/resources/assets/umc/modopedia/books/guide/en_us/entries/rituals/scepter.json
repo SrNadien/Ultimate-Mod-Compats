@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:necromancer_scepter"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:necromancer_scepter"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Necromancer's Scepter",
+          "template": "modopedia:page/headered_text",
+          "text": "This rite forges the scepter used to command your servants: recall them, make them stay or follow, or order an attack."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:forge_necromancer_scepter",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Necromancer's Scepter"
+}

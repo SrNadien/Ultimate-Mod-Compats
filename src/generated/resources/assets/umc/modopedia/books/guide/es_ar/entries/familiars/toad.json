@@ -1,0 +1,40 @@
+{
+  "assigned_items": [
+    "umc:toad_spawn_egg",
+    "umc:wormwood_tincture"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:toad_spawn_egg"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Sapo",
+          "template": "modopedia:page/headered_text",
+          "text": "Los sapos croan en las aguas poco profundas de los pantanos. Dale ojos de araña a un sapo salvaje para ganarte su confianza.\n\nUn sapo ligado presta a su dueño el salto de una rana y le deja respirar bajo el agua."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "entity": "umc:toad",
+          "scale": 1.2,
+          "template": "modopedia:page/entity",
+          "text": "$(b)Se encuentra en:$(/b)\nPantanos"
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:bind_toad_familiar",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Sapo"
+}

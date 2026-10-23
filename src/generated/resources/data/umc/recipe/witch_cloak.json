@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:gold_nugget"
+    },
+    "C": {
+      "item": "umc:witch_cloth"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "CCC",
+    "C C"
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:witch_cloak"
+  }
+}

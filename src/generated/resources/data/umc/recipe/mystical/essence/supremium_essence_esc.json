@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "supremium_essence_esc"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:supremium_essence_esc_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:supremium_essence"
+  }
+}

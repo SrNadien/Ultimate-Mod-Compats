@@ -1,0 +1,40 @@
+{
+  "assigned_items": [
+    "umc:owl_spawn_egg",
+    "umc:moondew"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:owl_spawn_egg"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Owl",
+          "template": "modopedia:page/headered_text",
+          "text": "Owls watch the forest from the branches. Offer a wild owl raw rabbit or chicken to tame it.\n\nA bound owl lets its owner see in the dark."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "entity": "umc:owl",
+          "scale": 1.1,
+          "template": "modopedia:page/entity",
+          "text": "$(b)Found in:$(/b)\nForests"
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:bind_owl_familiar",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Owl"
+}

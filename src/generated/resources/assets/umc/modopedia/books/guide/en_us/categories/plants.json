@@ -1,0 +1,18 @@
+{
+  "entries": [
+    "plants/wormwood",
+    "plants/vervain",
+    "plants/moonbloom",
+    "plants/mugwort",
+    "plants/tincture",
+    "plants/tonic",
+    "plants/moondew"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:wormwood_sprig"
+  },
+  "landing_text": "The hedgerows hold more than the common herbs.\n\nThese plants feed altars and fill the kettle and the distillery.",
+  "sort_num": 8,
+  "title": "Plants"
+}

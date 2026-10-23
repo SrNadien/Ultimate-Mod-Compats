@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "umc:spirit_dust"
+    },
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    " F ",
+    "SDS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:leap_essence"
+  }
+}

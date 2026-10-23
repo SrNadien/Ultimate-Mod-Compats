@@ -1,0 +1,22 @@
+{
+  "type": "enchanted:wheel",
+  "ingredients": [
+    {
+      "count": 1,
+      "id": "umc:moonbloom"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:string"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:whiff_of_magic"
+    }
+  ],
+  "power": 250,
+  "result": {
+    "count": 1,
+    "id": "umc:moonthread"
+  }
+}

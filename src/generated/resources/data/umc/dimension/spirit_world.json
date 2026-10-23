@@ -1,0 +1,102 @@
+{
+  "type": "umc:spirit_world",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "umc:whisper_barrens",
+          "parameters": {
+            "continentalness": [
+              -2.0,
+              2.0
+            ],
+            "depth": [
+              -2.0,
+              2.0
+            ],
+            "erosion": [
+              -2.0,
+              2.0
+            ],
+            "humidity": [
+              -2.0,
+              2.0
+            ],
+            "offset": 0.0,
+            "temperature": [
+              -2.0,
+              -0.25
+            ],
+            "weirdness": [
+              -2.0,
+              2.0
+            ]
+          }
+        },
+        {
+          "biome": "umc:spirit_meadow",
+          "parameters": {
+            "continentalness": [
+              -2.0,
+              2.0
+            ],
+            "depth": [
+              -2.0,
+              2.0
+            ],
+            "erosion": [
+              -2.0,
+              2.0
+            ],
+            "humidity": [
+              -2.0,
+              2.0
+            ],
+            "offset": 0.0,
+            "temperature": [
+              -0.25,
+              0.25
+            ],
+            "weirdness": [
+              -2.0,
+              2.0
+            ]
+          }
+        },
+        {
+          "biome": "umc:spirit_woods",
+          "parameters": {
+            "continentalness": [
+              -2.0,
+              2.0
+            ],
+            "depth": [
+              -2.0,
+              2.0
+            ],
+            "erosion": [
+              -2.0,
+              2.0
+            ],
+            "humidity": [
+              -2.0,
+              2.0
+            ],
+            "offset": 0.0,
+            "temperature": [
+              0.25,
+              2.0
+            ],
+            "weirdness": [
+              -2.0,
+              2.0
+            ]
+          }
+        }
+      ]
+    },
+    "settings": "umc:spirit_world"
+  }
+}

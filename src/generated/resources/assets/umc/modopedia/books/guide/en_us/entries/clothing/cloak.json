@@ -1,0 +1,26 @@
+{
+  "assigned_items": [
+    "umc:witch_cloak"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_cloak"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Witch's Cloak",
+          "template": "modopedia:page/headered_text",
+          "text": "A cloak worn over the shoulders in place of the robe.\n\nIt softens falls and also helps shake off curses."
+        },
+        {
+          "recipe": "umc:witch_cloak",
+          "template": "modopedia:recipe/crafting",
+          "y": 75
+        }
+      ]
+    }
+  ],
+  "title": "Witch's Cloak"
+}

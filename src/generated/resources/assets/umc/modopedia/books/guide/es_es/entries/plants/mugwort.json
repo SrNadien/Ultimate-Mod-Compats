@@ -1,0 +1,30 @@
+{
+  "assigned_items": [
+    "umc:mugwort"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:mugwort"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Artemisa",
+          "template": "modopedia:page/headered_text",
+          "text": "Una hierba gris verdosa que las brujas queman e infusionan para abrir la mente.\n\nCrece salvaje en llanuras y pantanos y se destila junto con la flor de luna."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "block": "umc:mugwort",
+          "template": "modopedia:page/block",
+          "text": "$(b)Se encuentra en:$(/b)\nLlanuras y pantanos"
+        }
+      ]
+    }
+  ],
+  "title": "Artemisa"
+}

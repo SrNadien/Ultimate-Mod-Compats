@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "umc:spirit_dust"
+    },
+    "E": {
+      "item": "minecraft:spider_eye"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " E ",
+    "SDS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:climb_essence"
+  }
+}

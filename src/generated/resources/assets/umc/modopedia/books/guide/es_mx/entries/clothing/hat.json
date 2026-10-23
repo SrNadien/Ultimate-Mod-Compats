@@ -1,0 +1,26 @@
+{
+  "assigned_items": [
+    "umc:witch_hat"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_hat"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Sombrero de bruja",
+          "template": "modopedia:page/headered_text",
+          "text": "Un sombrero alto y puntiagudo de ala ancha.\n\nLlevado junto con el resto del conjunto alarga las pociones beneficiosas que bebas."
+        },
+        {
+          "recipe": "umc:witch_hat",
+          "template": "modopedia:recipe/crafting",
+          "y": 75
+        }
+      ]
+    }
+  ],
+  "title": "Sombrero de bruja"
+}

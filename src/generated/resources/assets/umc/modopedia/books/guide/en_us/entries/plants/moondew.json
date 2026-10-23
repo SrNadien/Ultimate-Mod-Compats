@@ -1,0 +1,33 @@
+{
+  "assigned_items": [
+    "umc:moondew"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:moondew"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Moondew",
+          "template": "modopedia:page/headered_text",
+          "text": "Moonbloom and mugwort give up their essence in the distillery.\n\nMoondew is used in the rites that bind owl and hound familiars."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "recipe": "umc:distilling/moondew",
+              "template": "enchanted:page/distillery"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Moondew"
+}

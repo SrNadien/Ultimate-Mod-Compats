@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "creatures/overview"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:bone"
+  },
+  "landing_text": "Not everything that moves in the night is an animal.\n\nThis chapter will grow as the strange creatures of this land are catalogued.",
+  "sort_num": 9,
+  "title": "Creatures"
+}

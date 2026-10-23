@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "E": {
+      "item": "umc:ectoplasm"
+    },
+    "G": {
+      "item": "umc:grave_dust"
+    }
+  },
+  "pattern": [
+    "BGB",
+    "BEB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:summoning_horn"
+  }
+}

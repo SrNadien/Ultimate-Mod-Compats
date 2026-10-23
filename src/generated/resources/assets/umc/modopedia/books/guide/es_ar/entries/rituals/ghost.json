@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:ectoplasm"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:ectoplasm"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Fantasma",
+          "template": "modopedia:page/headered_text",
+          "text": "Invoca a un fantasma. Los golpes le hacen poco daño y su toque puede cegar."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:summon_ghost",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Fantasma"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "enchanted:kettle",
+  "cook_colour": "2E1B57",
+  "final_colour": "8B5BD6",
+  "ingredients": [
+    {
+      "count": 1,
+      "id": "umc:vervain_flower"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:glistering_melon_slice"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:odour_of_purity"
+    }
+  ],
+  "power": 2500,
+  "requires_bottle": true,
+  "result": {
+    "count": 1,
+    "id": "umc:vervain_tonic"
+  }
+}

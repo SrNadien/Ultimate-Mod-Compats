@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "S": {
+      "item": "enchanted:spirit_of_otherwhere"
+    }
+  },
+  "pattern": [
+    " A ",
+    "GSG",
+    " A "
+  ],
+  "result": {
+    "count": 4,
+    "id": "umc:spirit_dust"
+  }
+}

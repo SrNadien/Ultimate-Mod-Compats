@@ -1,0 +1,22 @@
+{
+  "entries": [
+    "rituals/overview",
+    "rituals/zombies",
+    "rituals/skeletons",
+    "rituals/ghost",
+    "rituals/imps",
+    "rituals/ent",
+    "rituals/scepter",
+    "rituals/cleanse",
+    "rituals/moon",
+    "rituals/blood",
+    "rituals/spirit"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:grave_dust"
+  },
+  "landing_text": "Hay obras demasiado grandes para un caldero.\n\nEstos ritos se realizan dentro de un círculo de tiza, con las ofrendas dispuestas y poder de altar suficiente para alimentarlos.",
+  "sort_num": 5,
+  "title": "Rituales"
+}

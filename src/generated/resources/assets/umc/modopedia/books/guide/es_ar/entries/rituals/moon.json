@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:lunar_talisman"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:lunar_talisman"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Pacto de la luna",
+          "template": "modopedia:page/headered_text",
+          "text": "Un pacto que carga voluntariamente la maldición del hombre lobo sobre quien lo realiza. Solo puede sellarse de noche."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:pact_of_the_moon",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Pacto de la luna"
+}

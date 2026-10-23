@@ -1,0 +1,19 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:bone"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Criaturas extrañas",
+          "template": "modopedia:page/headered_text",
+          "text": "Las brujas siempre han hablado de bestias que caminan entre el mundo de los vivos y el de las sombras.\n\nTen cuidado al alejarte de tu círculo después del anochecer."
+        }
+      ]
+    }
+  ],
+  "title": "Criaturas extrañas"
+}

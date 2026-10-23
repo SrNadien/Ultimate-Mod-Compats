@@ -1,0 +1,27 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:bone"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Skeleton Servants",
+          "template": "modopedia:page/headered_text",
+          "text": "Call skeletons from the grave to serve you for a while."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:summon_skeleton_servants",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Skeleton Servants"
+}

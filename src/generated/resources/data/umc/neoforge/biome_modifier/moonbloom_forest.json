@@ -1,0 +1,6 @@
+{
+  "type": "umc:config_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "umc:moonbloom_patch",
+  "step": "vegetal_decoration"
+}

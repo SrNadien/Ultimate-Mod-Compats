@@ -1,0 +1,40 @@
+{
+  "assigned_items": [
+    "umc:raven_spawn_egg",
+    "umc:vervain_tonic"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:raven_spawn_egg"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Raven",
+          "template": "modopedia:page/headered_text",
+          "text": "Ravens haunt taigas and open plains. Rotten flesh or seeds will tame a wild raven.\n\nA bound raven brings its owner fortune and a swift step."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "entity": "umc:raven",
+          "scale": 1.2,
+          "template": "modopedia:page/entity",
+          "text": "$(b)Found in:$(/b)\nTaigas and plains"
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:bind_raven_familiar",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Raven"
+}

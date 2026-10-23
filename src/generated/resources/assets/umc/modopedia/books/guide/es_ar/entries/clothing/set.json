@@ -1,0 +1,48 @@
+{
+  "assigned_items": [
+    "umc:witch_cloth",
+    "umc:moonthread"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_cloth"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "El conjunto completo",
+          "template": "modopedia:page/headered_text",
+          "text": "Viste sombrero, túnica o capa y botas a la vez para despertar el bonus completo.\n\nCada pieza también hace que los altares cercanos se recarguen más rápido, y el librarse de maldiciones crece con las piezas puestas."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "header": "Materiales",
+          "template": "modopedia:page/headered_text",
+          "text": "El hilo de luna se hila en una rueca y luego se convierte en tela de bruja."
+        },
+        {
+          "recipe": "umc:witch_cloth",
+          "template": "modopedia:recipe/crafting",
+          "y": 65
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "recipe": "umc:spinning/moonthread",
+              "template": "enchanted:page/spinning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Bonus del conjunto"
+}

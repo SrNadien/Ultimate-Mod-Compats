@@ -1,0 +1,204 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.neoforged.gradle.userdev' version '7.0.171'
+}
+
+version =minecraft_version + "-" + mod_version + "-" + tag_lanzador
+group = mod_group_id
+
+base {
+    archivesName = mod_name
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+runs {
+    configureEach {
+        workingDirectory project.file('run')
+
+        systemProperty 'forge.logging.markers', 'REGISTRIES'
+        systemProperty 'forge.logging.console.level', 'debug'
+
+        modSource sourceSets.main
+    }
+
+    client {
+        systemProperty 'umc.kubejs.registerAll', 'true'
+        programArgument '--quickPlaySingleplayer'
+        programArgument 'New World'
+    }
+
+    server {
+        programArgument '--nogui'
+    }
+
+    data {
+        workingDirectory project.file('run-data')
+
+        programArguments.addAll '--mod', mod_id,
+                                '--all',
+                                '--output', file('src/generated/resources/').getAbsolutePath(),
+                                '--existing', file('src/main/resources/').getAbsolutePath()
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    mavenCentral()
+
+    maven {
+        name = 'Favouriteless Maven'
+        url = 'https://maven.favouriteless.dev/releases'
+    }
+    maven {
+        name = 'GeckoLib'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+    }
+    maven {
+        url = "https://maven.blamejared.com"
+    }
+    maven {
+        name = 'KubeJS'
+        url = 'https://maven.latvian.dev/releases'
+        content {
+            includeGroup 'dev.latvian.mods'
+            includeGroup 'dev.latvian.apps'
+        }
+    }
+    maven {
+        name = 'Architectury'
+        url = 'https://maven.architectury.dev/'
+    }
+    maven {
+        name = 'CurseMaven'
+        url = 'https://www.cursemaven.com'
+        content {
+            includeGroup 'curse.maven'
+        }
+    }
+    maven {
+        name = 'Curios'
+        url = 'https://maven.theillusivec4.top/'
+        content {
+            includeGroup 'top.theillusivec4.curios'
+        }
+    }
+    maven {
+        name = 'JitPack'
+        url = 'https://jitpack.io'
+        content {
+            includeGroup 'com.github.rtyley'
+        }
+    }
+}
+
+dependencies {
+    implementation "net.neoforged:neoforge:${neo_version}"
+
+    implementation("net.favouriteless.enchanted:enchanted-neoforge-${minecraft_version}:${enchanted_version}") {
+        exclude group: "software.bernie.geckolib"
+    }
+    compileOnly "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+
+    compileOnly "dev.latvian.mods:kubejs-neoforge:${kubejs_version}"
+    compileOnly "dev.latvian.mods:rhino:${rhino_version}"
+    compileOnly "curse.maven:mystical-agriculture-${mysticalagriculture_id}:${mysticalagriculture_version_id}"
+    compileOnly "curse.maven:cucumber-${cucumber_id}:${cucumber_version_id}"
+    runtimeOnly "dev.latvian.mods:kubejs-neoforge:${kubejs_version}"
+    runtimeOnly "dev.latvian.mods:rhino:${rhino_version}"
+    runtimeOnly("dev.architectury:architectury-neoforge:${architectury_version}") { transitive = false }
+
+    runtimeOnly("software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_runtime_version}") { transitive = false }
+    runtimeOnly("com.hrznstudio:titanium:${titanium_version}") { transitive = false }
+    runtimeOnly("top.theillusivec4.curios:curios-neoforge:${curios_version}") { transitive = false }
+    runtimeOnly "curse.maven:kotlin-for-forge-${kotlinforforge_id}:${kotlinforforge_version_id}"
+    runtimeOnly "curse.maven:applied-energistics-2-${ae2_id}:${ae2_version_id}"
+    runtimeOnly "curse.maven:create-${create_id}:${create_version_id}"
+    runtimeOnly "curse.maven:advancedae-${advancedae_id}:${advancedae_version_id}"
+    runtimeOnly "curse.maven:extendedae-${extendedae_id}:${extendedae_version_id}"
+    runtimeOnly "curse.maven:guideme-${guideme_id}:${guideme_version_id}"
+    runtimeOnly "curse.maven:glodium-${glodium_id}:${glodium_version_id}"
+    runtimeOnly "curse.maven:cucumber-${cucumber_id}:${cucumber_version_id}"
+    runtimeOnly "curse.maven:mystical-agriculture-${mysticalagriculture_id}:${mysticalagriculture_version_id}"
+    runtimeOnly "curse.maven:aaron-${aaron_id}:${aaron_version_id}"
+    runtimeOnly "curse.maven:excessive-utilities-${excessiveutilities_id}:${excessiveutilities_version_id}"
+    runtimeOnly "curse.maven:functional-storage-${functionalstorage_id}:${functionalstorage_version_id}"
+    runtimeOnly "curse.maven:generator-galore-${generatorgalore_id}:${generatorgalore_version_id}"
+    runtimeOnly "curse.maven:lithostitched-${lithostitched_id}:${lithostitched_version_id}"
+    if (file(thaumaturge_jar).exists()) {
+        runtimeOnly files(thaumaturge_jar)
+    }
+}
+
+tasks.withType(ProcessResources).configureEach {
+    var replaceProperties = [
+        minecraft_version: minecraft_version,
+        neo_version: neo_version,
+        loader_version_range: loader_version_range,
+        enchanted_version_range: enchanted_version_range,
+        kubejs_version_range: kubejs_version_range,
+        geckolib_version_range: geckolib_version_range,
+        mod_id: mod_id,
+        mod_name: mod_name,
+        mod_named: mod_named,
+        mod_license: mod_license,
+        mod_version: mod_version,
+        mod_authors: mod_authors,
+        mod_description: mod_description,
+    ]
+
+    inputs.properties replaceProperties
+
+    filesMatching(['META-INF/neoforge.mods.toml', 'pack.mcmeta']) {
+        expand replaceProperties + [project: project]
+    }
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes([
+            "Specification-Title"     : mod_name,
+            "Specification-Vendor"    : mod_authors,
+            "Specification-Version"   : "1",
+            "Implementation-Title"    : project.name,
+            "Implementation-Version"  : project.version,
+            "Implementation-Vendor"   : mod_authors,
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+sourceSets {
+    main {
+        resources {
+            exclude '.cache'
+        }
+    }
+}
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/repo"
+        }
+    }
+}

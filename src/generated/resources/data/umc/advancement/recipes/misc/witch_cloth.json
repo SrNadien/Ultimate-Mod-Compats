@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_moonthread": {
+      "conditions": {
+        "items": [
+          {
+            "items": "umc:moonthread"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "umc:witch_cloth"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_moonthread"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "umc:witch_cloth"
+    ]
+  }
+}

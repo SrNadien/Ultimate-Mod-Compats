@@ -1,0 +1,40 @@
+{
+  "assigned_items": [
+    "umc:raven_spawn_egg",
+    "umc:vervain_tonic"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:raven_spawn_egg"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Cuervo",
+          "template": "modopedia:page/headered_text",
+          "text": "Los cuervos rondan las taigas y las llanuras. La carne podrida o las semillas domarán a un cuervo salvaje.\n\nUn cuervo ligado trae a su dueño fortuna y un paso veloz."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "entity": "umc:raven",
+          "scale": 1.2,
+          "template": "modopedia:page/entity",
+          "text": "$(b)Se encuentra en:$(/b)\nTaigas y llanuras"
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:bind_raven_familiar",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Cuervo"
+}

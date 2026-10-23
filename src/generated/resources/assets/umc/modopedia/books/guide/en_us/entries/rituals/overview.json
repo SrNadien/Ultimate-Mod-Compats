@@ -1,0 +1,28 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "umc:grave_dust"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Rites",
+          "template": "modopedia:page/headered_text",
+          "text": "Draw the circle shown in the rite, set the offerings on it and make sure an altar nearby holds enough power.\n\nEvery rite page lists its offerings, its circle and the power it costs."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "header": "Familiar Rites",
+          "template": "modopedia:page/headered_text",
+          "text": "The rites that bind familiars are described in the Familiars chapter."
+        }
+      ]
+    }
+  ],
+  "title": "Casting Rites"
+}

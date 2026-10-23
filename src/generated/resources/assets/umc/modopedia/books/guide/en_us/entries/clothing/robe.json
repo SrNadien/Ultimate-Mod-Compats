@@ -1,0 +1,26 @@
+{
+  "assigned_items": [
+    "umc:witch_robe"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_robe"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Witch's Robe",
+          "template": "modopedia:page/headered_text",
+          "text": "A long dress with wide sleeves.\n\nIt helps its wearer shake off curses over time."
+        },
+        {
+          "recipe": "umc:witch_robe",
+          "template": "modopedia:recipe/crafting",
+          "y": 75
+        }
+      ]
+    }
+  ],
+  "title": "Witch's Robe"
+}

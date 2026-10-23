@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:wormwood_tincture"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:wormwood_tincture"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Wormwood Tincture",
+          "template": "modopedia:page/headered_text",
+          "text": "A bitter infusion brewed in the kettle.\n\nIt is the key ingredient of the rite that binds a toad familiar."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "recipe": "umc:kettle/wormwood_tincture",
+          "template": "enchanted:recipe/kettle"
+        }
+      ]
+    }
+  ],
+  "title": "Wormwood Tincture"
+}

@@ -1,0 +1,40 @@
+{
+  "assigned_items": [
+    "umc:toad_spawn_egg",
+    "umc:wormwood_tincture"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:toad_spawn_egg"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Toad",
+          "template": "modopedia:page/headered_text",
+          "text": "Toads croak in the shallows of swamps. Feed a wild toad spider eyes to win its trust.\n\nA bound toad lends its owner a frog's spring and lets them breathe under water."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "entity": "umc:toad",
+          "scale": 1.2,
+          "template": "modopedia:page/entity",
+          "text": "$(b)Found in:$(/b)\nSwamps"
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:bind_toad_familiar",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Toad"
+}

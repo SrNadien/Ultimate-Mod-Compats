@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "tertium_essence"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:tertium_essence_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mysticalagriculture:tertium_essence"
+  }
+}

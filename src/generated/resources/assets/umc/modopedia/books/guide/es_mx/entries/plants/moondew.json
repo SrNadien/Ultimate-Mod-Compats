@@ -1,0 +1,33 @@
+{
+  "assigned_items": [
+    "umc:moondew"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:moondew"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Rocío lunar",
+          "template": "modopedia:page/headered_text",
+          "text": "La flor de luna y la artemisa ceden su esencia en la destilería.\n\nEl rocío lunar se usa en los ritos que ligan a lechuzas y sabuesos como familiares."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "recipe": "umc:distilling/moondew",
+              "template": "enchanted:page/distillery"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Rocío lunar"
+}

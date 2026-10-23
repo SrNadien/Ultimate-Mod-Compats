@@ -1,0 +1,27 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:bone"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Siervos esqueleto",
+          "template": "modopedia:page/headered_text",
+          "text": "Llama a esqueletos de la tumba para que te sirvan durante un tiempo."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:summon_skeleton_servants",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Siervos esqueleto"
+}

@@ -1,0 +1,31 @@
+{
+  "assigned_items": [
+    "umc:wormwood_sprig",
+    "umc:wormwood_seeds"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:wormwood_sprig"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Ajenjo",
+          "template": "modopedia:page/headered_text",
+          "text": "Una hierba plateada y amarga que se siembra en tierra de cultivo.\n\nLas plantas maduras dan ramitas, base de la tintura de ajenjo. El ajenjo también alimenta a los altares cercanos."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "block": "umc:wormwood[age=3]",
+          "template": "modopedia:page/block",
+          "text": "$(b)Obtención:$(/b)\nLas semillas caen de la hierba"
+        }
+      ]
+    }
+  ],
+  "title": "Ajenjo"
+}

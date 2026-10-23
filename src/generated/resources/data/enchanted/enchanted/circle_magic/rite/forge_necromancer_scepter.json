@@ -1,0 +1,33 @@
+{
+  "factory": {
+    "type": "enchanted:create_item",
+    "items": [
+      {
+        "count": 1,
+        "id": "umc:necromancer_scepter"
+      }
+    ]
+  },
+  "items": [
+    {
+      "count": 1,
+      "id": "minecraft:blaze_rod"
+    },
+    {
+      "count": 3,
+      "id": "umc:ectoplasm"
+    },
+    {
+      "count": 3,
+      "id": "umc:grave_dust"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:soul_of_the_world"
+    }
+  ],
+  "power": 4500,
+  "shapes": {
+    "enchanted:medium_circle": "enchanted:nether_chalk"
+  }
+}

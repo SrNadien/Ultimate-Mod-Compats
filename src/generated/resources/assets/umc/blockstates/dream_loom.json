@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,threads=0": {
+      "model": "umc:block/dream_loom_0",
+      "y": 90
+    },
+    "facing=east,threads=1": {
+      "model": "umc:block/dream_loom_1",
+      "y": 90
+    },
+    "facing=east,threads=2": {
+      "model": "umc:block/dream_loom_2",
+      "y": 90
+    },
+    "facing=east,threads=3": {
+      "model": "umc:block/dream_loom_3",
+      "y": 90
+    },
+    "facing=north,threads=0": {
+      "model": "umc:block/dream_loom_0"
+    },
+    "facing=north,threads=1": {
+      "model": "umc:block/dream_loom_1"
+    },
+    "facing=north,threads=2": {
+      "model": "umc:block/dream_loom_2"
+    },
+    "facing=north,threads=3": {
+      "model": "umc:block/dream_loom_3"
+    },
+    "facing=south,threads=0": {
+      "model": "umc:block/dream_loom_0",
+      "y": 180
+    },
+    "facing=south,threads=1": {
+      "model": "umc:block/dream_loom_1",
+      "y": 180
+    },
+    "facing=south,threads=2": {
+      "model": "umc:block/dream_loom_2",
+      "y": 180
+    },
+    "facing=south,threads=3": {
+      "model": "umc:block/dream_loom_3",
+      "y": 180
+    },
+    "facing=west,threads=0": {
+      "model": "umc:block/dream_loom_0",
+      "y": 270
+    },
+    "facing=west,threads=1": {
+      "model": "umc:block/dream_loom_1",
+      "y": 270
+    },
+    "facing=west,threads=2": {
+      "model": "umc:block/dream_loom_2",
+      "y": 270
+    },
+    "facing=west,threads=3": {
+      "model": "umc:block/dream_loom_3",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:rotten_flesh"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Siervos zombi",
+          "template": "modopedia:page/headered_text",
+          "text": "Levanta unos cuantos zombis que te obedecen y luchan a tu lado hasta que se desvanecen."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:summon_zombie_servants",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Siervos zombi"
+}

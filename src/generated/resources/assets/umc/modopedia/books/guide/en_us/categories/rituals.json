@@ -1,0 +1,22 @@
+{
+  "entries": [
+    "rituals/overview",
+    "rituals/zombies",
+    "rituals/skeletons",
+    "rituals/ghost",
+    "rituals/imps",
+    "rituals/ent",
+    "rituals/scepter",
+    "rituals/cleanse",
+    "rituals/moon",
+    "rituals/blood",
+    "rituals/spirit"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:grave_dust"
+  },
+  "landing_text": "Some work is too great for a kettle.\n\nThese rites are cast inside a chalk circle, with the offerings laid out and enough altar power to feed them.",
+  "sort_num": 5,
+  "title": "Rituals"
+}

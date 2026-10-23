@@ -1,0 +1,25 @@
+{
+  "type": "enchanted:kettle",
+  "cook_colour": "2F3B18",
+  "final_colour": "86A34A",
+  "ingredients": [
+    {
+      "count": 1,
+      "id": "umc:wormwood_sprig"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:spider_eye"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:whiff_of_magic"
+    }
+  ],
+  "power": 2000,
+  "requires_bottle": true,
+  "result": {
+    "count": 1,
+    "id": "umc:wormwood_tincture"
+  }
+}

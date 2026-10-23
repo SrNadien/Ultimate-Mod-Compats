@@ -1,0 +1,25 @@
+{
+  "factory": {
+    "type": "enchanted:summon_minions",
+    "count": 2,
+    "entity": "umc:imp"
+  },
+  "items": [
+    {
+      "count": 1,
+      "id": "umc:imp_horn"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:demonic_blood"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:blaze_powder"
+    }
+  ],
+  "power": 3500,
+  "shapes": {
+    "enchanted:medium_circle": "enchanted:nether_chalk"
+  }
+}

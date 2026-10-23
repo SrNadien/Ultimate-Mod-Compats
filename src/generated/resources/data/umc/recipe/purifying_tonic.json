@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "G": {
+      "item": "enchanted:garlic"
+    },
+    "S": {
+      "item": "umc:silver_ingot"
+    },
+    "W": {
+      "item": "enchanted:wolfsbane_flower"
+    }
+  },
+  "pattern": [
+    " G ",
+    "WBS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:purifying_tonic"
+  }
+}

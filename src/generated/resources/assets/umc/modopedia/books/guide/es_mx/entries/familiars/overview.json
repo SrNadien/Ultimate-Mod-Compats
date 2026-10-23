@@ -1,0 +1,28 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "umc:toad_spawn_egg"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Familiares",
+          "template": "modopedia:page/headered_text",
+          "text": "Doma primero al animal, colócalo dentro de un círculo de tiza mediano y realiza su rito de vinculación. Mientras esté ligado, el familiar otorga un bonus a su dueño.\n\nUna bruja solo puede tener un familiar ligado a la vez."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "header": "Cuidados",
+          "template": "modopedia:page/headered_text",
+          "text": "Agáchate y usa a tu familiar para despedirlo. El rito de $(b)invocar familiar$(/b) lo trae de vuelta.\n\nLos familiares ignoran el fuego, las caídas y el ahogamiento, y un familiar derrotado solo es despedido, nunca se pierde."
+        }
+      ]
+    }
+  ],
+  "title": "Ligar familiares"
+}

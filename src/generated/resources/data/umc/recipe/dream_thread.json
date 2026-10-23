@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "umc:spirit_dust"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "SDS"
+  ],
+  "result": {
+    "count": 2,
+    "id": "umc:dream_thread"
+  }
+}

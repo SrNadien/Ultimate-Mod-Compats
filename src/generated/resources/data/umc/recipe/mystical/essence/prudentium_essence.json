@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "prudentium_essence"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:prudentium_essence_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mysticalagriculture:prudentium_essence"
+  }
+}

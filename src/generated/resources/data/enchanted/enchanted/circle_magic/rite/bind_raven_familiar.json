@@ -1,0 +1,24 @@
+{
+  "factory": {
+    "type": "enchanted:bind_species_familiar",
+    "species": "umc:raven"
+  },
+  "items": [
+    {
+      "count": 1,
+      "id": "umc:vervain_tonic"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:reek_of_misfortune"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:ink_sac"
+    }
+  ],
+  "power": 5000,
+  "shapes": {
+    "enchanted:medium_circle": "enchanted:ritual_chalk"
+  }
+}

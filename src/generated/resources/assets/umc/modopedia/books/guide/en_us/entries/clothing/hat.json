@@ -1,0 +1,26 @@
+{
+  "assigned_items": [
+    "umc:witch_hat"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_hat"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Witch's Hat",
+          "template": "modopedia:page/headered_text",
+          "text": "A tall pointed hat with a wide brim.\n\nWorn together with the rest of the set it lengthens the beneficial potions you drink."
+        },
+        {
+          "recipe": "umc:witch_hat",
+          "template": "modopedia:recipe/crafting",
+          "y": 75
+        }
+      ]
+    }
+  ],
+  "title": "Witch's Hat"
+}

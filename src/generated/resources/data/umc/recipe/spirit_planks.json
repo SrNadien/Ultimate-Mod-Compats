@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "umc:spirit_log"
+    }
+  },
+  "pattern": [
+    "L"
+  ],
+  "result": {
+    "count": 4,
+    "id": "umc:spirit_planks"
+  }
+}

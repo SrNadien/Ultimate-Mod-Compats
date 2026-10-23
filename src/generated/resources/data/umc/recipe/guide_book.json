@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "I": {
+      "item": "minecraft:ink_sac"
+    },
+    "S": {
+      "item": "umc:wormwood_sprig"
+    }
+  },
+  "pattern": [
+    "IB",
+    "FS"
+  ],
+  "result": {
+    "components": {
+      "modopedia:book": "umc:guide"
+    },
+    "count": 1,
+    "id": "modopedia:book"
+  }
+}

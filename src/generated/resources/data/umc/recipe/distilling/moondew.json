@@ -1,0 +1,27 @@
+{
+  "type": "enchanted:distilling",
+  "ingredients": [
+    {
+      "count": 2,
+      "id": "enchanted:clay_jar"
+    },
+    {
+      "count": 1,
+      "id": "umc:moonbloom"
+    },
+    {
+      "count": 1,
+      "id": "umc:mugwort"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "umc:moondew"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:whiff_of_magic"
+    }
+  ]
+}

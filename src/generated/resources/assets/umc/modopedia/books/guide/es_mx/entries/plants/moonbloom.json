@@ -1,0 +1,30 @@
+{
+  "assigned_items": [
+    "umc:moonbloom"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:moonbloom"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Flor de luna",
+          "template": "modopedia:page/headered_text",
+          "text": "Una flor pálida que brilla suavemente en la oscuridad.\n\nCrece salvaje en bosques y taigas. Hilada como hilo de luna o destilada como rocío lunar, es el corazón de la ropa de bruja."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "block": "umc:moonbloom",
+          "template": "modopedia:page/block",
+          "text": "$(b)Se encuentra en:$(/b)\nBosques y taigas"
+        }
+      ]
+    }
+  ],
+  "title": "Flor de luna"
+}

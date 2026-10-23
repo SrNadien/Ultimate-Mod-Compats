@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "umc:werewolf_fang"
+    },
+    "S": {
+      "item": "umc:silver_ingot"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SFS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:lunar_talisman"
+  }
+}

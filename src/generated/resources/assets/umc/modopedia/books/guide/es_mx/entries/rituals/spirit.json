@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:spirit_dust"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:spirit_dust"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Viaje espiritual",
+          "template": "modopedia:page/headered_text",
+          "text": "Envía a quien lo realiza al mundo espiritual durante un rato y después lo trae de vuelta."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:spirit_journey",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Viaje espiritual"
+}

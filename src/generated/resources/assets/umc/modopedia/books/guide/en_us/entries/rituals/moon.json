@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:lunar_talisman"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:lunar_talisman"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Pact of the Moon",
+          "template": "modopedia:page/headered_text",
+          "text": "A pact that takes the werewolf curse on the caster of its own free will. It can only be sealed at night."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:pact_of_the_moon",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Pact of the Moon"
+}

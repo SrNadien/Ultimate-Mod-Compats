@@ -1,0 +1,39 @@
+{
+  "assigned_items": [
+    "enchanted:tongue_of_dog"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "minecraft:bone"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Hound",
+          "template": "modopedia:page/headered_text",
+          "text": "A tamed wolf can be bound as a hound. Its coat darkens and its eyes smoulder like embers.\n\nA bound hound makes its owner stronger and harder to hurt."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "entity": "umc:familiar_hound",
+          "scale": 0.9,
+          "template": "modopedia:page/entity",
+          "text": "$(b)Made from:$(/b)\nA tamed wolf"
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:bind_hound_familiar",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Hound"
+}

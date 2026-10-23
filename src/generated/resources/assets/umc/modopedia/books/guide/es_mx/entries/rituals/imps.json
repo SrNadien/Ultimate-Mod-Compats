@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:imp_horn"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:imp_horn"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Imps",
+          "template": "modopedia:page/headered_text",
+          "text": "Llama a imps a tu lado. Lanzan pequeñas bolas de fuego y prenden a su objetivo."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:summon_imps",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Imps"
+}

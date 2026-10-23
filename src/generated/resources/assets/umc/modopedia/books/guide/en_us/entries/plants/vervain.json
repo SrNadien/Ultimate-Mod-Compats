@@ -1,0 +1,31 @@
+{
+  "assigned_items": [
+    "umc:vervain_flower",
+    "umc:vervain_seeds"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:vervain_flower"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Vervain",
+          "template": "modopedia:page/headered_text",
+          "text": "A slender herb with spikes of violet flowers, grown on farmland.\n\nIts flowers go into vervain tonic. Vervain also feeds nearby altars."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "block": "umc:vervain[age=3]",
+          "template": "modopedia:page/block",
+          "text": "$(b)Procurement:$(/b)\nSeeds drop from grass"
+        }
+      ]
+    }
+  ],
+  "title": "Vervain"
+}

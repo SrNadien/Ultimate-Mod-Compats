@@ -1,0 +1,16 @@
+{
+  "entries": [
+    "familiars/overview",
+    "familiars/toad",
+    "familiars/owl",
+    "familiars/raven",
+    "familiars/hound"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:toad_spawn_egg"
+  },
+  "landing_text": "El gato no es el único compañero que puede tener una bruja.\n\nEste capítulo explica cómo domar criaturas y ligarlas a ti como familiares.",
+  "sort_num": 6,
+  "title": "Familiares"
+}

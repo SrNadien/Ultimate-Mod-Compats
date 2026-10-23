@@ -1,0 +1,27 @@
+{
+  "assigned_items": [],
+  "icon": {
+    "count": 1,
+    "id": "enchanted:ent_twig"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Ent",
+          "template": "modopedia:page/headered_text",
+          "text": "Despierta a un árbol andante. Teme al fuego y a las hachas."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:summon_ent",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Ent"
+}

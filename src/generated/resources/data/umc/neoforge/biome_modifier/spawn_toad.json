@@ -1,0 +1,6 @@
+{
+  "type": "umc:config_spawns",
+  "biomes": "#c:is_swamp",
+  "entity_type": "umc:toad",
+  "species": "toad"
+}

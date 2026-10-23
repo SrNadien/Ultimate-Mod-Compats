@@ -1,0 +1,29 @@
+{
+  "assigned_items": [
+    "umc:blood_sigil"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:blood_sigil"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Pact of Blood",
+          "template": "modopedia:page/headered_text",
+          "text": "A pact that takes the vampire curse on the caster of its own free will. It can only be sealed at night."
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "rite": "enchanted:pact_of_blood",
+          "template": "enchanted:page/rite"
+        }
+      ]
+    }
+  ],
+  "title": "Pact of Blood"
+}

@@ -1,0 +1,26 @@
+{
+  "assigned_items": [
+    "umc:witch_cloak"
+  ],
+  "icon": {
+    "count": 1,
+    "id": "umc:witch_cloak"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Capa de bruja",
+          "template": "modopedia:page/headered_text",
+          "text": "Una capa que se lleva sobre los hombros en lugar de la túnica.\n\nAmortigua las caídas y también ayuda a librarse de maldiciones."
+        },
+        {
+          "recipe": "umc:witch_cloak",
+          "template": "modopedia:recipe/crafting",
+          "y": 75
+        }
+      ]
+    }
+  ],
+  "title": "Capa de bruja"
+}
