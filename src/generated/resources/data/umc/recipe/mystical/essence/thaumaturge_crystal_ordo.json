@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "thaumaturge_crystal_ordo"
+      "crop": "thaumaturge_crystal_ordo",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

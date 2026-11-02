@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "source_gem"
+      "crop": "source_gem",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

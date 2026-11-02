@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalexpansion"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagradditions"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "chromium",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:chromium_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:chromium_essence"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mysticalagriculture:prudentium_essence"
+    },
+    "X": [
+      {
+        "item": "umc:infusion_crystal_tier_3"
+      },
+      {
+        "item": "mysticalagriculture:master_infusion_crystal"
+      }
+    ]
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "id": "mysticalagriculture:tertium_essence"
+  }
+}

@@ -10,6 +10,8 @@ import nadiendev.umc.datagen.providers.CreaturesData;
 import nadiendev.umc.datagen.providers.MysticalAgricultureDataGenLangCompat;
 import nadiendev.umc.datagen.providers.MysticalAgricultureDataGenModelsCompat;
 import nadiendev.umc.datagen.providers.MysticalAgricultureDataGenRecipesCompat;
+import nadiendev.umc.datagen.providers.AgriCraftDataGenPlantsCompat;
+import nadiendev.umc.datagen.providers.MysticalAgricultureDataGenTagsCompat;
 import nadiendev.umc.datagen.providers.SpiritData;
 import nadiendev.umc.datagen.providers.UmcBlockLoot;
 import nadiendev.umc.datagen.providers.UmcBlockTagsProvider;
@@ -35,7 +37,7 @@ public final class UMCDataGenerators {
 
     private static final List<String> LOCALES = List.of("en_us", "es_ar", "es_mx", "es_es");
 
-    private static final List<DataModule> MODULES = List.of(new CoreData(), new CreaturesData(), new SpiritData(), new CraftingData(), new MysticalAgricultureDataGenLangCompat(), new MysticalAgricultureDataGenModelsCompat(), new MysticalAgricultureDataGenRecipesCompat());
+    private static final List<DataModule> MODULES = List.of(new CoreData(), new CreaturesData(), new SpiritData(), new CraftingData(), new MysticalAgricultureDataGenLangCompat(), new MysticalAgricultureDataGenModelsCompat(), new MysticalAgricultureDataGenRecipesCompat(), new MysticalAgricultureDataGenTagsCompat(), new AgriCraftDataGenPlantsCompat());
 
     private UMCDataGenerators() {
     }

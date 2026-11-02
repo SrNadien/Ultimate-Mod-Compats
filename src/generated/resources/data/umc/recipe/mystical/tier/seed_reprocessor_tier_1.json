@@ -1,0 +1,40 @@
+{
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "tag": "umc:tier_essence/1"
+    },
+    {
+      "tag": "c:storage_blocks/iron"
+    },
+    {
+      "tag": "umc:tier_essence/1"
+    },
+    {
+      "tag": "c:storage_blocks/iron"
+    },
+    {
+      "tag": "umc:tier_essence/1"
+    },
+    {
+      "tag": "c:storage_blocks/iron"
+    },
+    {
+      "tag": "umc:tier_essence/1"
+    },
+    [
+      {
+        "item": "umc:infusion_crystal_tier_1"
+      },
+      {
+        "item": "mysticalagriculture:master_infusion_crystal"
+      }
+    ]
+  ],
+  "input": {
+    "item": "mysticalagriculture:seed_reprocessor"
+  },
+  "result": {
+    "id": "umc:seed_reprocessor_tier_1"
+  }
+}

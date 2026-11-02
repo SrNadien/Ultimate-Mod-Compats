@@ -10,7 +10,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "chromium"
+      "crop": "chromium",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

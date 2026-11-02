@@ -54,8 +54,8 @@ public final class MysticalCropCatalog {
             crop("entro", "mysticalagriculture:5", false, "allthecompressed:entro_block_1x", List.of("allthecompressed"), List.of(), "Entro", "Entro"),
             crop("ferricore", "mysticalagradditions:6", false, "justdirethings:ferricore_block", List.of("justdirethings", "mysticalagradditions"), List.of(), "FerriCore", "FerriCore"),
             crop("flux_dust", "mysticalagriculture:1", false, "fluxnetworks:flux_block", List.of("fluxnetworks"), List.of(), "Flux", "Flux"),
-            crop("imperium_essence", "mysticalagriculture:4", false, "mysticalagriculture:imperium_essence", List.of(), List.of(), "Imperium Essence", "Esencia de imperium"),
-            crop("insanium_essence", "mysticalagradditions:6", false, "mysticalagriculture:supremium_essence", List.of("mysticalagradditions"), List.of(), "Insanium Essence", "Esencia de insanium"),
+            crop("imperium_essence", "mysticalagriculture:4", false, "mysticalagriculture:imperium_essence", List.of(), List.of(), "Imperium", "Imperium"),
+            crop("insanium_essence", "mysticalagradditions:6", false, "mysticalagriculture:supremium_essence", List.of("mysticalagradditions"), List.of(), "Insanium", "Insanium"),
             crop("kivi", "mysticalagriculture:2", false, "xycraft_world:kivi", List.of("xycraft_world"), List.of(), "Kivi", "Kivi"),
             crop("nadienite_ingot", "mysticalagriculture:5", false, "ultimatearmoury:nadienite_block", List.of("ultimatearmoury"), List.of(), "Nadienite", "Nadienita"),
             crop("naquadah", "mysticalagradditions:6", false, "mekanism_extras:block_naquadah", List.of("mekanism_extras", "mysticalagradditions"), List.of(), "Naquadah", "Naquadah"),
@@ -63,14 +63,14 @@ public final class MysticalCropCatalog {
             crop("predicciondematrix", "mysticalagriculture:3", false, "hostilenetworks:prediction_matrix", List.of("hostilenetworks"), List.of(), "Prediction Matrix", "Matriz de predicción"),
             crop("prometheum", "mysticalagriculture:4", false, "oritech:prometheum_ingot", List.of("oritech"), List.of(), "Prometheum", "Prometeo"),
             crop("prosperity_shard", "mysticalagriculture:5", false, "mysticalagriculture:prosperity_block", List.of(), List.of(), "Prosperity Shard", "Fragmento de prosperidad"),
-            crop("prudentium_essence", "mysticalagriculture:2", false, "mysticalagriculture:prudentium_essence", List.of(), List.of(), "Prudentium Essence", "Esencia de prudentium"),
+            crop("prudentium_essence", "mysticalagriculture:2", false, "mysticalagriculture:prudentium_essence", List.of(), List.of(), "Prudentium", "Prudentium"),
             crop("redstoneingot", "mysticalagriculture:2", false, "extendedcrafting:redstone_ingot_block", List.of("extendedcrafting"), List.of(), "Redstone Ingot", "Lingote de redstone"),
             crop("sky_steel_ingot", "mysticalagriculture:5", false, "allthecompressed:sky_steel_block_1x", List.of("allthecompressed"), List.of(), "Sky Steel", "Acero celeste"),
             crop("source_gem", "mysticalagriculture:2", false, "ars_nouveau:source_gem_block", List.of("ars_nouveau"), List.of(), "Source Gem", "Gema de fuente"),
             crop("spirit_gem", "mysticalagriculture:3", false, "occultism:spirit_campfire", List.of("occultism"), List.of(), "Spirit Gem", "Gema espiritual"),
             crop("super_cacotas", "mysticalagriculture:5", false, "ultimate_utilities:super_caca", List.of("ultimate_utilities"), List.of(), "Super Cacotas", "Súper cacotas"),
-            crop("supremium_essence_esc", "mysticalagriculture:5", false, "mysticalagriculture:supremium_essence", List.of(), List.of(), "Supremium Essence", "Esencia de supremium"),
-            crop("tertium_essence", "mysticalagriculture:3", false, "mysticalagriculture:tertium_essence", List.of(), List.of(), "Tertium Essence", "Esencia de tertium"),
+            crop("supremium_essence_esc", "mysticalagriculture:5", false, "mysticalagriculture:supremium_essence", List.of(), List.of(), "Supremium", "Supremium"),
+            crop("tertium_essence", "mysticalagriculture:3", false, "mysticalagriculture:tertium_essence", List.of(), List.of(), "Tertium", "Tertium"),
             crop("thaumaturge_alumentum", "mysticalagriculture:4", false, "thaumaturge:alumentum", List.of("thaumaturge"), List.of(), "Alumentum", "Alumentum"),
             crop("thaumaturge_amber", "mysticalagriculture:3", false, "thaumaturge:amber", List.of("thaumaturge"), List.of(), "Amber", "Ámbar"),
             crop("thaumaturge_brass", "mysticalagriculture:2", false, "thaumaturge:ingot_brass", List.of("thaumaturge"), List.of(), "Thaumaturge Brass", "Latón taumatúrgico"),
@@ -87,7 +87,17 @@ public final class MysticalCropCatalog {
             crop("thaumaturge_void_metal", "mysticalagriculture:4", false, "thaumaturge:ingot_void", List.of("thaumaturge"), List.of(), "Void Metal", "Metal del vacío"),
             crop("unobtainium", "mysticalagradditions:6", true, "c:storage_blocks/unobtainium", List.of("allthemodium", "mysticalagradditions"), List.of(), "Unobtainium", "Unobtainium"),
             crop("vibranium", "mysticalagradditions:6", true, "c:storage_blocks/vibranium", List.of("allthemodium", "mysticalagradditions"), List.of(), "Vibranium", "Vibranio"),
-            crop("xychorium_gem", "mysticalagriculture:3", true, "c:gems/xychorium", List.of("xycraft_world"), List.of(), "Xychorium Gem", "Gema de xychorium")
+            crop("xychorium_gem", "mysticalagriculture:3", true, "c:gems/xychorium", List.of("xycraft_world"), List.of(), "Xychorium Gem", "Gema de xychorium"),
+            tinted("darkstone", "mysticalagriculture:3", false, "forbidden_arcanus:darkstone", List.of("forbidden_arcanus"), "Darkstone", "Piedra oscura", "ingot", 0x1E1D29),
+            tinted("crimson_iron", "mysticalagriculture:3", true, "c:ingots/crimson_iron", List.of("occultism"), "Crimson Iron", "Hierro carmesí", "ingot", 0xFC6087),
+            tinted("azure_silver", "mysticalagriculture:3", true, "c:ingots/azure_silver", List.of("occultism"), "Azure Silver", "Plata azur", "ingot", 0xFABEFC),
+            tinted("unexplored_wood", "mysticalagriculture:2", true, "regions_unexplored:logs", List.of("regions_unexplored"), "Unexplored Wood", "Madera inexplorada", "dust", 0xBF991D),
+            tinted("soul_dust", "mysticalagriculture:2", false, "mysticalagriculture:soul_dust", List.of(), "Soul Dust", "Polvo de alma", "dust", 0x6B5445),
+            tinted("soulstone_cobble", "mysticalagriculture:2", false, "mysticalagriculture:soulstone_cobble", List.of(), "Soulstone Cobblestone", "Adoquín de piedra de alma", "dust", 0x7E7E86),
+            tinted("ornium_essence", "mysticalextendedtier:7", false, "mysticalagradditions:insanium_essence", List.of("mysticalagradditions", "mysticalextendedtier"), "Ornium", "Ornium", "dust", 0x432454),
+            tinted("lightium_essence", "mysticalextendedtier:8", false, "mysticalextendedtier:ornium_essence", List.of("mysticalextendedtier"), "Lightium", "Lightium", "dust", 0x66859B),
+            tinted("tornium_essence", "mysticalextendedtier:9", false, "mysticalextendedtier:lightium_essence", List.of("mysticalextendedtier"), "Tornium", "Tornium", "dust", 0x4D4D4D),
+            tinted("ouranium_essence", "mysticalextendedtier:10", false, "mysticalextendedtier:tornium_essence", List.of("mysticalextendedtier"), "Ouranium", "Ouranium", "dust", 0x153D44)
     );
 
     private MysticalCropCatalog() {
@@ -97,12 +107,21 @@ public final class MysticalCropCatalog {
         return ALL;
     }
 
+    private static MysticalCropDefinition tinted(String id, String tier, boolean tagIngredient, String ingredient, List<String> requires,
+                                                 String english, String spanish, String textureBase, int color) {
+        Map<String, String> names = new LinkedHashMap<>();
+        names.put("en_us", english);
+        names.put("es_es", spanish);
+        String essenceResult = ESSENCE_RESULTS.getOrDefault(id, tagIngredient ? null : ingredient);
+        return new MysticalCropDefinition(id, tier, RESOURCE_TYPE, tagIngredient, ingredient, requires, List.of(), Map.copyOf(names), essenceResult, textureBase, color);
+    }
+
     private static MysticalCropDefinition crop(String id, String tier, boolean tagIngredient, String ingredient,
                                                List<String> requires, List<String> requiresAny, String english, String spanish) {
         Map<String, String> names = new LinkedHashMap<>();
         names.put("en_us", english);
         names.put("es_es", spanish);
         String essenceResult = ESSENCE_RESULTS.getOrDefault(id, tagIngredient ? null : ingredient);
-        return new MysticalCropDefinition(id, tier, RESOURCE_TYPE, tagIngredient, ingredient, requires, requiresAny, Map.copyOf(names), essenceResult);
+        return new MysticalCropDefinition(id, tier, RESOURCE_TYPE, tagIngredient, ingredient, requires, requiresAny, Map.copyOf(names), essenceResult, null, 0);
     }
 }

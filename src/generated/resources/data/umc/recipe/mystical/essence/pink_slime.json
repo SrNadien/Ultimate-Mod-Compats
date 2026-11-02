@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "pink_slime"
+      "crop": "pink_slime",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

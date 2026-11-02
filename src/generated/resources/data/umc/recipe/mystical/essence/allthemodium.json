@@ -14,7 +14,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "allthemodium"
+      "crop": "allthemodium",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "nadiendev.umc.mixin",
+  "plugin": "nadiendev.umc.core.mixin.UmcMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AwakeningAltarTileEntityMixin",
+    "EssenceFurnaceTileEntityMixin",
+    "InfusionAltarTileEntityMixin",
+    "RecipeManagerMixin",
+    "ReprocessorTileEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

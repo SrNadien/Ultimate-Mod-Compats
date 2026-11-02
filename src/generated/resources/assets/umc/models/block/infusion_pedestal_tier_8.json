@@ -1,0 +1,7 @@
+{
+  "parent": "mysticalagriculture:block/infusion_pedestal",
+  "textures": {
+    "1": "umc:block/mystical/infusion_altar_tier_8_top",
+    "particle": "umc:block/mystical/infusion_pedestal_tier_8_base"
+  }
+}

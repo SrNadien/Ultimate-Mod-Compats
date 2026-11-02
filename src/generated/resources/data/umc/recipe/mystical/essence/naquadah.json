@@ -10,7 +10,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "naquadah"
+      "crop": "naquadah",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

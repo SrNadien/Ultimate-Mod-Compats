@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mysticalagriculture:imperium_essence"
+    },
+    "X": {
+      "item": "umc:infusion_crystal_tier_4"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "id": "umc:infusion_crystal_tier_5"
+  }
+}

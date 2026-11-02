@@ -1,0 +1,9 @@
+{
+  "parent": "mysticalagriculture:item/essence_vessel",
+  "textures": {
+    "0": "umc:block/mystical/essence_vessel_tier_3_base",
+    "1": "umc:block/mystical/essence_vessel_tier_3_top",
+    "2": "umc:block/mystical/essence_vessel_tier_3_side",
+    "particle": "umc:block/mystical/essence_vessel_tier_3_base"
+  }
+}

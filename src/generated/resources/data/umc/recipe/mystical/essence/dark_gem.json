@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "dark_gem"
+      "crop": "dark_gem",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

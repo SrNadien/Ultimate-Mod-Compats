@@ -6,6 +6,7 @@ import nadiendev.umc.core.registry.UmcItems;
 import nadiendev.umc.core.registry.UmcTabs;
 import nadiendev.umc.crafting.registry.CraftingRegistry;
 import nadiendev.umc.creatures.registry.CreaturesRegistry;
+import nadiendev.umc.mysticalagriculture.tier.TierAltarRegistry;
 import nadiendev.umc.spirit.registry.SpiritRegistry;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -24,6 +25,7 @@ public class UltimateModCompats {
         CreaturesRegistry.register(modBus);
         SpiritRegistry.register(modBus);
         CraftingRegistry.register(modBus);
+        TierAltarRegistry.register(modBus);
 
         container.registerConfig(ModConfig.Type.COMMON, UmcConfig.SPEC, UmcConfig.FILE);
     }

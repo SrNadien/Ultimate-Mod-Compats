@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "andesite_alloy"
+      "crop": "andesite_alloy",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

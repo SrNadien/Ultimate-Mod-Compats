@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthecompressed"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "entro",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:entro_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:entro_essence"
+  }
+}

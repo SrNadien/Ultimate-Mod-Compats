@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "cajita_feliz"
+      "crop": "cajita_feliz",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

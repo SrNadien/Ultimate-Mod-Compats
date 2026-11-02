@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "supremium_essence_esc",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:supremium_essence_esc_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:supremium_essence_esc_essence"
+  }
+}

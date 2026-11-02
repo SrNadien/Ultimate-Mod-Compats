@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mysticalagriculture:prosperity_shard"
+    },
+    "%": {
+      "item": "mysticalagriculture:inferium_essence"
+    },
+    "X": {
+      "tag": "c:gems/diamond"
+    }
+  },
+  "pattern": [
+    "%#%",
+    "#X#",
+    "%#%"
+  ],
+  "result": {
+    "id": "umc:infusion_crystal_tier_1"
+  }
+}

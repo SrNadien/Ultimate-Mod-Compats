@@ -130,6 +130,8 @@ dependencies {
     runtimeOnly "curse.maven:glodium-${glodium_id}:${glodium_version_id}"
     runtimeOnly "curse.maven:cucumber-${cucumber_id}:${cucumber_version_id}"
     runtimeOnly "curse.maven:mystical-agriculture-${mysticalagriculture_id}:${mysticalagriculture_version_id}"
+    runtimeOnly "curse.maven:mystical-agradditions-${mysticalagradditions_id}:${mysticalagradditions_version_id}"
+    runtimeOnly "curse.maven:mystical-extended-tier-${mysticalextendedtier_id}:${mysticalextendedtier_version_id}"
     runtimeOnly "curse.maven:aaron-${aaron_id}:${aaron_version_id}"
     runtimeOnly "curse.maven:excessive-utilities-${excessiveutilities_id}:${excessiveutilities_version_id}"
     runtimeOnly "curse.maven:functional-storage-${functionalstorage_id}:${functionalstorage_version_id}"

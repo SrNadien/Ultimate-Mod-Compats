@@ -10,7 +10,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "chaos_shard"
+      "crop": "chaos_shard",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "prosperity_shard",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:prosperity_shard_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:prosperity_shard_essence"
+  }
+}

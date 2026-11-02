@@ -1,0 +1,31 @@
+{
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "tag": "umc:tier_essence/4"
+    },
+    {
+      "tag": "umc:tier_essence/4"
+    },
+    {
+      "tag": "umc:tier_essence/4"
+    },
+    {
+      "tag": "umc:tier_essence/4"
+    },
+    [
+      {
+        "item": "umc:infusion_crystal_tier_4"
+      },
+      {
+        "item": "mysticalagriculture:master_infusion_crystal"
+      }
+    ]
+  ],
+  "input": {
+    "item": "umc:essence_vessel_tier_3"
+  },
+  "result": {
+    "id": "umc:essence_vessel_tier_4"
+  }
+}

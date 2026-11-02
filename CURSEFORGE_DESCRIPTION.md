@@ -17,7 +17,7 @@ Requires **NeoForge 1.21.1**, **Enchanted 4.2.7+** and **GeckoLib 4.7+**.
 ## Support for other mods (optional)
 Optional, each one can be switched off in `config/umc.toml`. Full details in the [wiki](https://github.com/SrNadien/Ultimate-Mod-Compats/wiki).
 - **KubeJS support** for Enchanted, Thaumaturge, Applied Energistics 2, Advanced AE, Extended AE, Create, Generator Galore, Excessive Utilities and Functional Storage.
-- **Mystical Agriculture:** 54 extra seeds.
+- **Mystical Agriculture:** 64 extra seeds and a tier system (levels 1 to 10) with its own altars, pedestals, vessels, reprocessors, furnaces and infusion crystals.
 
 ## Commands
 - `/umc form <vampire|werewolf|hunter|human> [players]` (operators)
@@ -63,7 +63,7 @@ Requiere **NeoForge 1.21.1**, **Enchanted 4.2.7+** y **GeckoLib 4.7+**.
 ## Soporte de otros mods (opcional)
 Opcional, cada uno se puede desactivar en `config/umc.toml`. Todos los detalles están en la [wiki](https://github.com/SrNadien/Ultimate-Mod-Compats/wiki).
 - **Soporte de KubeJS** para Enchanted, Thaumaturge, Applied Energistics 2, Advanced AE, Extended AE, Create, Generator Galore, Excessive Utilities y Functional Storage.
-- **Mystical Agriculture:** 54 semillas extra.
+- **Mystical Agriculture:** 64 semillas extra y un sistema de niveles (1 a 10) con sus propios altares, pedestales, recipientes, reprocesadores, hornos y cristales de infusión.
 
 ## Comandos
 - `/umc form <vampire|werewolf|hunter|human> [jugadores]` (operadores)

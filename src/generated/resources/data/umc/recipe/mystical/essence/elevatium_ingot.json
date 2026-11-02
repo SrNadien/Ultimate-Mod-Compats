@@ -5,8 +5,13 @@
       "modid": "kubejs"
     },
     {
+      "type": "neoforge:item_exists",
+      "item": "kubejs:ingot_of_elevation"
+    },
+    {
       "type": "umc:mystical_crop",
-      "crop": "elevatium_ingot"
+      "crop": "elevatium_ingot",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

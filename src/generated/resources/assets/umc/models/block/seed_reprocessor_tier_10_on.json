@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "umc:block/mystical/seed_reprocessor_tier_10_front_on",
+    "side": "umc:block/mystical/machine_tier_10_side",
+    "top": "umc:block/mystical/machine_tier_10_side"
+  }
+}

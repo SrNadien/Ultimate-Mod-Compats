@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "deorum_ingot"
+      "crop": "deorum_ingot",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

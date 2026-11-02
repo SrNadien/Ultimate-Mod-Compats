@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "ender_ingot"
+      "crop": "ender_ingot",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

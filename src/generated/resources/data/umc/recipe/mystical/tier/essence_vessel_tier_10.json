@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalextendedtier"
+    }
+  ],
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "tag": "umc:tier_essence/10"
+    },
+    {
+      "tag": "umc:tier_essence/10"
+    },
+    {
+      "tag": "umc:tier_essence/10"
+    },
+    {
+      "tag": "umc:tier_essence/10"
+    },
+    [
+      {
+        "item": "umc:infusion_crystal_tier_10"
+      },
+      {
+        "item": "mysticalagriculture:master_infusion_crystal"
+      }
+    ]
+  ],
+  "input": {
+    "item": "umc:essence_vessel_tier_9"
+  },
+  "result": {
+    "id": "umc:essence_vessel_tier_10"
+  }
+}

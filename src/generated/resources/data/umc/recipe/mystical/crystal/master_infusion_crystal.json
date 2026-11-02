@@ -1,0 +1,35 @@
+{
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "item": "umc:infusion_crystal_tier_1"
+    },
+    {
+      "item": "umc:infusion_crystal_tier_2"
+    },
+    {
+      "item": "umc:infusion_crystal_tier_3"
+    },
+    {
+      "item": "umc:infusion_crystal_tier_4"
+    },
+    {
+      "item": "umc:infusion_crystal_tier_5"
+    },
+    {
+      "item": "umc:infusion_crystal_tier_6"
+    },
+    {
+      "item": "mysticalagradditions:insanium_gemstone_block"
+    },
+    {
+      "item": "mysticalagriculture:nether_star_seeds"
+    }
+  ],
+  "input": {
+    "item": "mysticalagriculture:supremium_gemstone_block"
+  },
+  "result": {
+    "id": "mysticalagriculture:master_infusion_crystal"
+  }
+}

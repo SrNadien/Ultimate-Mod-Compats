@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism_extras"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagradditions"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "naquadah",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:naquadah_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:naquadah_essence"
+  }
+}

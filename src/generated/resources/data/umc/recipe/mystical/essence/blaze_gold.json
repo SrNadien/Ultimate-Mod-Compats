@@ -10,7 +10,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "blaze_gold"
+      "crop": "blaze_gold",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

@@ -1,0 +1,46 @@
+{
+  "type": "mysticalagriculture:awakening",
+  "essences": [
+    {
+      "count": 12,
+      "id": "mysticalagriculture:air_essence"
+    },
+    {
+      "count": 12,
+      "id": "mysticalagriculture:earth_essence"
+    },
+    {
+      "count": 12,
+      "id": "mysticalagriculture:water_essence"
+    },
+    {
+      "count": 12,
+      "id": "mysticalagriculture:fire_essence"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "umc:tier_essence/4"
+    },
+    [
+      {
+        "item": "umc:infusion_crystal_tier_4"
+      },
+      {
+        "item": "mysticalagriculture:master_infusion_crystal"
+      }
+    ],
+    {
+      "item": "mysticalagriculture:cognizant_dust"
+    },
+    {
+      "item": "mysticalagriculture:cognizant_dust"
+    }
+  ],
+  "input": {
+    "item": "umc:awakening_pedestal_tier_3"
+  },
+  "result": {
+    "id": "umc:awakening_pedestal_tier_4"
+  }
+}

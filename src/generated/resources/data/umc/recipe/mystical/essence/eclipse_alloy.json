@@ -10,7 +10,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "eclipse_alloy"
+      "crop": "eclipse_alloy",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

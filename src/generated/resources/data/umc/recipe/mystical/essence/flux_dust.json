@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "flux_dust"
+      "crop": "flux_dust",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

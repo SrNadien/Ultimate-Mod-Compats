@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "tertium_essence",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:tertium_essence_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:tertium_essence_essence"
+  }
+}

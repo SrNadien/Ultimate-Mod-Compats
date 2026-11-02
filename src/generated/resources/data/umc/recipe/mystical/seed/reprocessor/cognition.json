@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "experienceobelisk"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "cognition",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:cognition_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:cognition_essence"
+  }
+}

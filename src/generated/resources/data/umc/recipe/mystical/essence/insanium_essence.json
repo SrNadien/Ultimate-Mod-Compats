@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "insanium_essence"
+      "crop": "insanium_essence",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

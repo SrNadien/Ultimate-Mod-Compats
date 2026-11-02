@@ -2,7 +2,8 @@
   "neoforge:conditions": [
     {
       "type": "umc:mystical_crop",
-      "crop": "imperium_essence"
+      "crop": "imperium_essence",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "thaumaturge_salis_mundus"
+      "crop": "thaumaturge_salis_mundus",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

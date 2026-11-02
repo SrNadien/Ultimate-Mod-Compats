@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "thaumaturge_crystal_ignis"
+      "crop": "thaumaturge_crystal_ignis",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

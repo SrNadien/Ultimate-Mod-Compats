@@ -10,7 +10,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "unobtainium"
+      "crop": "unobtainium",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

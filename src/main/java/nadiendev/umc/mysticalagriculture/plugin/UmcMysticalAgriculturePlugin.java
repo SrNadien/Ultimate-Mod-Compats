@@ -13,6 +13,7 @@ import java.util.Map;
 import nadiendev.umc.mysticalagriculture.catalog.MysticalCropCatalog;
 import nadiendev.umc.mysticalagriculture.catalog.MysticalCropDefinition;
 import nadiendev.umc.mysticalagriculture.config.MysticalAgricultureConfig;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.ModList;
@@ -23,6 +24,7 @@ import org.slf4j.LoggerFactory;
 public class UmcMysticalAgriculturePlugin implements IMysticalAgriculturePlugin {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(UmcMysticalAgriculturePlugin.class);
+    private static final String KUBEJS = "kubejs";
 
     private final Map<Crop, MysticalCropDefinition> registered = new LinkedHashMap<>();
 
@@ -34,7 +36,7 @@ public class UmcMysticalAgriculturePlugin implements IMysticalAgriculturePlugin 
         }
         ModList mods = ModList.get();
         for (MysticalCropDefinition definition : MysticalCropCatalog.all()) {
-            if (!config.cropEnabled(definition.id()) || !definition.modsLoaded(mods)) {
+            if (!config.cropEnabled(definition.id()) || !definition.modsLoaded(mods) || isMissingScriptedItem(definition)) {
                 continue;
             }
             Crop crop = create(config, definition);
@@ -57,6 +59,13 @@ public class UmcMysticalAgriculturePlugin implements IMysticalAgriculturePlugin 
             crop.setTier(tier);
             crop.setType(type);
         });
+        SeedTableDump.writeIfRequested(registry);
+    }
+
+    private static boolean isMissingScriptedItem(MysticalCropDefinition definition) {
+        return definition.requires().contains(KUBEJS)
+                && !definition.tagIngredient()
+                && !BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(definition.ingredient()));
     }
 
     private static Crop create(MysticalAgricultureConfig config, MysticalCropDefinition definition) {
@@ -69,11 +78,14 @@ public class UmcMysticalAgriculturePlugin implements IMysticalAgriculturePlugin 
         textures.setFlowerTexture(definition.flowerTexture());
         textures.setEssenceTexture(definition.essenceTexture());
         textures.setSeedTexture(definition.seedTexture());
+        if (definition.tinted()) {
+            crop.setFlowerColor(definition.color());
+        }
         crop.setDisplayName(Component.translatable(definition.translationKey()));
         crop.getRecipeConfig()
-                .setSeedCraftingRecipeEnabled(config.seedCraftingRecipes())
-                .setSeedInfusionRecipeEnabled(config.seedInfusionRecipes())
-                .setSeedReprocessorRecipeEnabled(config.seedReprocessorRecipes());
+                .setSeedCraftingRecipeEnabled(false)
+                .setSeedInfusionRecipeEnabled(false)
+                .setSeedReprocessorRecipeEnabled(false);
         return crop;
     }
 }

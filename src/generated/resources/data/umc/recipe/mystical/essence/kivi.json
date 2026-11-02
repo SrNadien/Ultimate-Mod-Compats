@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "kivi"
+      "crop": "kivi",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

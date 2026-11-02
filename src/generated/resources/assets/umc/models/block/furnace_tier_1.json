@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "umc:block/mystical/furnace_tier_1_front",
+    "side": "umc:block/mystical/machine_tier_1_side",
+    "top": "umc:block/mystical/machine_tier_1_side"
+  }
+}

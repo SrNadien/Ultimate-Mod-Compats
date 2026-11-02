@@ -110,3 +110,13 @@ ${mod_description}
     versionRange="[0,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="agricraft"
+    type="optional"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[mixins]]
+config="umc.mixins.json"

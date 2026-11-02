@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "crystal_matrix"
+      "crop": "crystal_matrix",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

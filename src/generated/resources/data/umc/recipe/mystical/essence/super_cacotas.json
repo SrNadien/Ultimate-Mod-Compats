@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "super_cacotas"
+      "crop": "super_cacotas",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

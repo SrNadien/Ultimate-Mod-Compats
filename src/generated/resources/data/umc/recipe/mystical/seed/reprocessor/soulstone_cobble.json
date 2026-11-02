@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "soulstone_cobble",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:soulstone_cobble_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:soulstone_cobble_essence"
+  }
+}

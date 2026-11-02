@@ -1,0 +1,52 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagradditions"
+    }
+  ],
+  "type": "mysticalagriculture:awakening",
+  "essences": [
+    {
+      "count": 18,
+      "id": "mysticalagriculture:air_essence"
+    },
+    {
+      "count": 18,
+      "id": "mysticalagriculture:earth_essence"
+    },
+    {
+      "count": 18,
+      "id": "mysticalagriculture:water_essence"
+    },
+    {
+      "count": 18,
+      "id": "mysticalagriculture:fire_essence"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "umc:tier_essence/6"
+    },
+    [
+      {
+        "item": "umc:infusion_crystal_tier_6"
+      },
+      {
+        "item": "mysticalagriculture:master_infusion_crystal"
+      }
+    ],
+    {
+      "item": "mysticalagriculture:cognizant_dust"
+    },
+    {
+      "item": "mysticalagriculture:cognizant_dust"
+    }
+  ],
+  "input": {
+    "item": "umc:awakening_pedestal_tier_5"
+  },
+  "result": {
+    "id": "umc:awakening_pedestal_tier_6"
+  }
+}

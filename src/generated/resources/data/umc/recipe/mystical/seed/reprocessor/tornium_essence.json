@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalextendedtier"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "tornium_essence",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:tornium_essence_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:tornium_essence_essence"
+  }
+}

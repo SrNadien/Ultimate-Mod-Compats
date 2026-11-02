@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "prometheum"
+      "crop": "prometheum",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

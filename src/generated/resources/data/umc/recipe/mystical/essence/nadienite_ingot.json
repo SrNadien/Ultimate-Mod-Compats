@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "nadienite_ingot"
+      "crop": "nadienite_ingot",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

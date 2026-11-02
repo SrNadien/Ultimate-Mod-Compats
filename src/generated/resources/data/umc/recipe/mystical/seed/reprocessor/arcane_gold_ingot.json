@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "eidolon"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "arcane_gold_ingot",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:arcane_gold_ingot_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:arcane_gold_ingot_essence"
+  }
+}

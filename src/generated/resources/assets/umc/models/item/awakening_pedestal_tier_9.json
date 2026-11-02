@@ -1,0 +1,7 @@
+{
+  "parent": "mysticalagriculture:item/awakening_pedestal",
+  "textures": {
+    "1": "umc:block/mystical/awakening_altar_tier_9_top",
+    "particle": "umc:block/mystical/awakening_pedestal_tier_9_base"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "tag": "umc:tier_essence/5"
+    },
+    {
+      "tag": "umc:tier_essence/5"
+    },
+    {
+      "tag": "umc:tier_essence/5"
+    },
+    {
+      "tag": "umc:tier_essence/5"
+    },
+    [
+      {
+        "item": "umc:infusion_crystal_tier_5"
+      },
+      {
+        "item": "mysticalagriculture:master_infusion_crystal"
+      }
+    ]
+  ],
+  "input": {
+    "item": "umc:infusion_pedestal_tier_4"
+  },
+  "result": {
+    "id": "umc:infusion_pedestal_tier_5"
+  }
+}

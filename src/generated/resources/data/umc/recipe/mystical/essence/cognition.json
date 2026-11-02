@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "cognition"
+      "crop": "cognition",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "spirit_gem"
+      "crop": "spirit_gem",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

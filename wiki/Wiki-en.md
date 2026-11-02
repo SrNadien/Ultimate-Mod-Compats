@@ -19,7 +19,8 @@ Guide for players and modpack creators. Mod `umc` (NeoForge 1.21.1), by NadienDe
    - [Excessive Utilities](#49-excessive-utilities)
    - [Functional Storage](#410-functional-storage)
 5. [Mystical Agriculture Crops](#5-mystical-agriculture-crops)
-6. [FAQ and Known Issues](#6-faq-and-known-issues)
+6. [Mystical Agriculture Tier System](#6-mystical-agriculture-tier-system)
+7. [FAQ and Known Issues](#7-faq-and-known-issues)
 
 ---
 
@@ -28,7 +29,7 @@ Guide for players and modpack creators. Mod `umc` (NeoForge 1.21.1), by NadienDe
 **Ultimate Mod Compats** (id `umc`) is an addon for **Enchanted** that does two things:
 
 - Adds **its own content**: creatures (werewolf, vampire, hunter and new mobs), a spirit world and witch crafting (familiars, clothing, plants).
-- Adds **KubeJS compatibility** for other mods (recipes and events those mods do not provide), and **54 extra crops** for Mystical Agriculture.
+- Adds **KubeJS compatibility** for other mods (recipes and events those mods do not provide), and **64 extra crops** for Mystical Agriculture.
 
 ### Dependencies
 
@@ -250,7 +251,6 @@ To disable a single compatibility, set its key to `false`. It takes effect when 
 | --- | --- | --- |
 | `compat.mysticalagriculture.enabled` | `true` | Master switch: when `false`, no crop is registered |
 | `compat.mysticalagriculture.crop_namespace` | `"umc"` | Namespace of the crop ids (the items are still `mysticalagriculture:`) |
-| `compat.mysticalagriculture.recipes.seed_crafting` | `true` | Crafting recipe for each seed |
 | `compat.mysticalagriculture.recipes.seed_infusion` | `true` | Recipe for each seed in the Infusion Altar |
 | `compat.mysticalagriculture.recipes.seed_reprocessor` | `true` | Recipe for each seed in the Seed Reprocessor |
 | `compat.mysticalagriculture.recipes.essence_crafting` | `true` | Recipe that turns the essence into the crop's item |
@@ -1777,7 +1777,7 @@ ServerEvents.recipes(event => {
 
 ## 5. Mystical Agriculture Crops
 
-If **Mystical Agriculture** is installed, UMC adds **54 extra crops** natively (without KubeJS). Each crop is only registered when the mods it needs are loaded (column "Required mods").
+If **Mystical Agriculture** is installed, UMC adds **64 extra crops** natively (without KubeJS). Each crop is only registered when the mods it needs are loaded (column "Required mods").
 
 ### How the Ids Work
 
@@ -1792,7 +1792,7 @@ Example: the crop `thaumaturge_thaumium` gives `mysticalagriculture:thaumaturge_
 
 Each crop can be turned off separately with `compat.mysticalagriculture.crops.<id> = false`, and the whole system with `compat.mysticalagriculture.enabled = false`.
 
-### The 54 Crops
+### The 64 Crops
 
 - **Tier:** the tier level. 1 to 5 are from Mystical Agriculture; 6 is from Mystical Agradditions (which is why it requires that mod).
 - **Material:** ingredient the seed is crafted with. With `#` it is a tag.
@@ -1803,6 +1803,7 @@ Each crop can be turned off separately with `compat.mysticalagriculture.crops.<i
 | `allthemodium` | Allthemodium | 6 (Agradditions) | allthecompressed:allthemodium_block_4x | allthecompressed, mysticalagradditions | 2x allthemodium:allthemodium_ingot |
 | `andesite_alloy` | Andesite Alloy | 5 | create:andesite_alloy_block | create | 2x create:andesite_alloy |
 | `arcane_gold_ingot` | Arcane Gold | 5 | eidolon:arcane_gold_block | eidolon | 2x eidolon:arcane_gold_ingot |
+| `azure_silver` | Azure Silver | 3 | #c:ingots/azure_silver | occultism | (no recipe) |
 | `black_quartz` | Black Quartz | 3 | #c:gems/black_quartz | one of: actuallyadditions / occultism | (no recipe) |
 | `blaze_gold` | Blaze Gold | 6 (Agradditions) | justdirethings:blazegold_block | justdirethings, mysticalagradditions | 2x justdirethings:blazegold_ingot |
 | `cajita_feliz` | Happy Box | 1 | ultimatefoods:cajita_feliz | ultimatefoods | 12x ultimatefoods:cajita_feliz |
@@ -1810,9 +1811,11 @@ Each crop can be turned off separately with `compat.mysticalagriculture.crops.<i
 | `chaos_shard` | Chaos Shard | 6 (Agradditions) | draconicevolution:chaos_shard | draconicevolution, mysticalagradditions | 2x draconicevolution:chaos_shard |
 | `chromium` | Chromium | 6 (Agradditions) | mysticalexpansion:etherium_ingot_block | mysticalexpansion, mysticalagradditions | 2x mysticalexpansion:etherium_ingot |
 | `cognition` | Cognitive Alloy | 5 | experienceobelisk:cognitive_alloy_block | experienceobelisk | 2x experienceobelisk:cognitive_alloy |
+| `crimson_iron` | Crimson Iron | 3 | #c:ingots/crimson_iron | occultism | (no recipe) |
 | `crystal_matrix` | Crystal Matrix | 5 | avaritia:crystal_matrix | avaritia | 2x avaritia:crystal_matrix_ingot |
 | `cuarzorosa` | Rose Quartz | 6 (Agradditions) | create:polished_rose_quartz | create, mysticalagradditions | 2x create:polished_rose_quartz |
 | `dark_gem` | Dark Gem | 3 | evilcraft:dark_block | evilcraft | 4x evilcraft:dark_gem |
+| `darkstone` | Darkstone | 3 | forbidden_arcanus:darkstone | forbidden_arcanus | 4x forbidden_arcanus:darkstone |
 | `deorum_ingot` | Deorum | 4 | forbidden_arcanus:deorum_block | forbidden_arcanus | 3x forbidden_arcanus:deorum_ingot |
 | `eclipse_alloy` | Eclipse Alloy | 6 (Agradditions) | justdirethings:eclipsealloy_block | justdirethings, mysticalagradditions | 2x justdirethings:eclipsealloy_ingot |
 | `elevatium_ingot` | Elevatium | 4 | kubejs:ingot_of_elevation | kubejs | 3x kubejs:ingot_of_elevation |
@@ -1820,8 +1823,8 @@ Each crop can be turned off separately with `compat.mysticalagriculture.crops.<i
 | `entro` | Entro | 5 | allthecompressed:entro_block_1x | allthecompressed | 2x allthecompressed:entro_block_1x |
 | `ferricore` | FerriCore | 6 (Agradditions) | justdirethings:ferricore_block | justdirethings, mysticalagradditions | 2x justdirethings:ferricore_ingot |
 | `flux_dust` | Flux | 1 | fluxnetworks:flux_block | fluxnetworks | 12x fluxnetworks:flux_dust |
-| `imperium_essence` | Imperium Essence | 4 | mysticalagriculture:imperium_essence | (none) | 3x mysticalagriculture:imperium_essence |
-| `insanium_essence` | Insanium Essence | 6 (Agradditions) | mysticalagriculture:supremium_essence | mysticalagradditions | 2x mysticalagriculture:supremium_essence |
+| `imperium_essence` | Imperium | 4 | mysticalagriculture:imperium_essence | (none) | 3x mysticalagriculture:imperium_essence |
+| `insanium_essence` | Insanium | 6 (Agradditions) | mysticalagriculture:supremium_essence | mysticalagradditions | 2x mysticalagriculture:supremium_essence |
 | `kivi` | Kivi | 2 | xycraft_world:kivi | xycraft_world | 6x xycraft_world:kivi |
 | `nadienite_ingot` | Nadienite | 5 | ultimatearmoury:nadienite_block | ultimatearmoury | 2x ultimatearmoury:nadienite_ingot |
 | `naquadah` | Naquadah | 6 (Agradditions) | mekanism_extras:block_naquadah | mekanism_extras, mysticalagradditions | 2x mekanism_extras:ingot_naquadah |
@@ -1829,14 +1832,14 @@ Each crop can be turned off separately with `compat.mysticalagriculture.crops.<i
 | `predicciondematrix` | Prediction Matrix | 3 | hostilenetworks:prediction_matrix | hostilenetworks | 4x hostilenetworks:prediction_matrix |
 | `prometheum` | Prometheum | 4 | oritech:prometheum_ingot | oritech | 3x oritech:prometheum_ingot |
 | `prosperity_shard` | Prosperity Shard | 5 | mysticalagriculture:prosperity_block | (none) | 2x mysticalagriculture:prosperity_shard |
-| `prudentium_essence` | Prudentium Essence | 2 | mysticalagriculture:prudentium_essence | (none) | 6x mysticalagriculture:prudentium_essence |
+| `prudentium_essence` | Prudentium | 2 | mysticalagriculture:prudentium_essence | (none) | 6x mysticalagriculture:prudentium_essence |
 | `redstoneingot` | Redstone Ingot | 2 | extendedcrafting:redstone_ingot_block | extendedcrafting | 6x extendedcrafting:redstone_ingot |
 | `sky_steel_ingot` | Sky Steel | 5 | allthecompressed:sky_steel_block_1x | allthecompressed | 2x megacells:sky_steel_ingot |
 | `source_gem` | Source Gem | 2 | ars_nouveau:source_gem_block | ars_nouveau | 6x ars_nouveau:source_gem |
 | `spirit_gem` | Spirit Gem | 3 | occultism:spirit_campfire | occultism | 4x occultism:spirit_campfire |
 | `super_cacotas` | Super Cacotas | 5 | ultimate_utilities:super_caca | ultimate_utilities | 2x ultimate_utilities:super_caca |
-| `supremium_essence_esc` | Supremium Essence | 5 | mysticalagriculture:supremium_essence | (none) | 2x mysticalagriculture:supremium_essence |
-| `tertium_essence` | Tertium Essence | 3 | mysticalagriculture:tertium_essence | (none) | 4x mysticalagriculture:tertium_essence |
+| `supremium_essence_esc` | Supremium | 5 | mysticalagriculture:supremium_essence | (none) | 2x mysticalagriculture:supremium_essence |
+| `tertium_essence` | Tertium | 3 | mysticalagriculture:tertium_essence | (none) | 4x mysticalagriculture:tertium_essence |
 | `thaumaturge_alumentum` | Alumentum | 4 | thaumaturge:alumentum | thaumaturge | 3x thaumaturge:alumentum |
 | `thaumaturge_amber` | Amber | 3 | thaumaturge:amber | thaumaturge | 4x thaumaturge:amber |
 | `thaumaturge_brass` | Thaumaturge Brass | 2 | thaumaturge:ingot_brass | thaumaturge | 6x thaumaturge:ingot_brass |
@@ -1851,9 +1854,18 @@ Each crop can be turned off separately with `compat.mysticalagriculture.crops.<i
 | `thaumaturge_salis_mundus` | Salis Mundus | 2 | thaumaturge:salis_mundus | thaumaturge | 6x thaumaturge:salis_mundus |
 | `thaumaturge_thaumium` | Thaumium | 3 | thaumaturge:ingot_thaumium | thaumaturge | 4x thaumaturge:ingot_thaumium |
 | `thaumaturge_void_metal` | Void Metal | 4 | thaumaturge:ingot_void | thaumaturge | 3x thaumaturge:ingot_void |
+| `unexplored_wood` | Unexplored Wood | 2 | #regions_unexplored:logs | regions_unexplored | (no recipe) |
 | `unobtainium` | Unobtainium | 6 (Agradditions) | #c:storage_blocks/unobtainium | allthemodium, mysticalagradditions | 2x allthemodium:unobtainium_ingot |
 | `vibranium` | Vibranium | 6 (Agradditions) | #c:storage_blocks/vibranium | allthemodium, mysticalagradditions | 2x allthemodium:vibranium_ingot |
 | `xychorium_gem` | Xychorium Gem | 3 | #c:gems/xychorium | xycraft_world | (no recipe) |
+| `soul_dust` | Soul Dust | 2 | mysticalagriculture:soul_dust | (none) | 6x mysticalagriculture:soul_dust |
+| `soulstone_cobble` | Soulstone Cobblestone | 2 | mysticalagriculture:soulstone_cobble | (none) | 6x mysticalagriculture:soulstone_cobble |
+| `ornium_essence` | Ornium | 7 (Extended Tier) | mysticalagradditions:insanium_essence | mysticalagradditions, mysticalextendedtier | 1x mysticalagradditions:insanium_essence |
+| `lightium_essence` | Lightium | 8 (Extended Tier) | mysticalextendedtier:ornium_essence | mysticalextendedtier | 1x mysticalextendedtier:ornium_essence |
+| `tornium_essence` | Tornium | 9 (Extended Tier) | mysticalextendedtier:lightium_essence | mysticalextendedtier | 1x mysticalextendedtier:lightium_essence |
+| `ouranium_essence` | Ouranium | 10 (Extended Tier) | mysticalextendedtier:tornium_essence | mysticalextendedtier | 1x mysticalextendedtier:tornium_essence |
+
+The crops `darkstone`, `crimson_iron`, `azure_silver` and `unexplored_wood` have no textures of their own: they use the generic Mystical Agriculture textures (ingot or dust) tinted with the color of the crop.
 
 Summary by mod: 14 crops need `thaumaturge`; tier 6 crops need `mysticalagradditions`; `imperium_essence`, `prosperity_shard`, `prudentium_essence`, `supremium_essence_esc` and `tertium_essence` need no mod other than Mystical Agriculture.
 
@@ -1863,7 +1875,6 @@ Mystical Agriculture generates the recipes for each seed with the material from 
 
 | Recipe | Key | Where it is made |
 | --- | --- | --- |
-| Crafting | `compat.mysticalagriculture.recipes.seed_crafting` | Crafting table |
 | Infusion | `compat.mysticalagriculture.recipes.seed_infusion` | Infusion Altar |
 | Reprocessor | `compat.mysticalagriculture.recipes.seed_reprocessor` | Seed Reprocessor (from seed to essence) |
 
@@ -1891,7 +1902,7 @@ EEE
 | 5 | 2 |
 | 6 | 2 |
 
-- They are generated by datagen in `data/umc/recipe/mystical/essence/<id>.json`: there are **52 recipes**. The crops `black_quartz` and `xychorium_gem` have no essence recipe because their material is a tag (there is no single result item).
+- They are generated by datagen in `data/umc/recipe/mystical/essence/<id>.json`: there are **59 recipes**. The crops `black_quartz`, `xychorium_gem`, `crimson_iron`, `azure_silver` and `unexplored_wood` have no essence recipe because their material is a tag (there is no single result item).
 - They are enabled with `compat.mysticalagriculture.recipes.essence_crafting`.
 - They carry `neoforge:mod_loaded` conditions (one for each mod the crop requires, apart from Mystical Agriculture) and the custom condition `umc:mystical_crop`.
 
@@ -1934,7 +1945,367 @@ It is true only if **all** of these are met:
 
 ---
 
-## 6. FAQ and Known Issues
+## 6. Mystical Agriculture Tier System
+
+If **Mystical Agriculture** is installed, UMC adds a level system from 1 to 10. Every level has its own altar and each altar only makes the recipes of its level. Everything is turned off with `compat.mysticalagriculture.tiers.enabled = false`.
+
+### Altar Rules
+
+| Altar | What it can make |
+| --- | --- |
+| **Base MA** infusion or awakening altar | Only the seeds of the 4 elements (air, earth, fire and water), the upgrade to level 1 and recipes that are not seeds |
+| **Level N** altar | Seeds and essences of level **N** and level **N−1** (level 1 only makes level 1) and the upgrade to level N+1 |
+| **Level N** awakening altar | The same, and `awakened_*` items count as level 6 |
+
+- A level N altar only works if its pedestals and essence vessels are **level N or higher** (`structure_tier_required` and `higher_tier_structure_allowed`).
+- JEI shows one category per level (for example "Infusion Altar (Tier 3)") with its altar as the catalyst. Recipes the base altar cannot make are hidden from its category.
+
+### Items per Level (1 to 10)
+
+| Item | Id | How it is upgraded |
+| --- | --- | --- |
+| Infusion Altar | `umc:infusion_altar_tier_N` | In the level N−1 infusion altar (level 1 in the base MA altar) |
+| Awakening Altar | `umc:awakening_altar_tier_N` | In the level N−1 awakening altar |
+| Infusion Pedestal | `umc:infusion_pedestal_tier_N` | In the level N−1 infusion altar |
+| Awakening Pedestal | `umc:awakening_pedestal_tier_N` | In the level N−1 awakening altar |
+| Essence Vessel | `umc:essence_vessel_tier_N` | In the level N−1 infusion altar |
+| Seed Reprocessor | `umc:seed_reprocessor_tier_N` | In the level N−1 infusion altar |
+| Furnace | `umc:furnace_tier_N` | In the level N−1 infusion altar |
+| Infusion Crystal | `umc:infusion_crystal_tier_N` | Crafting table |
+
+Every upgrade needs the **infusion crystal of its level** (or the **Master Infusion Crystal**, which works in its place) as a material, plus essences of its level. The color of each item is the average color of the essence of its level.
+
+### Infusion Crystals
+
+- Level 1 is made like the MA crystal: 4 inferium essences, 4 prosperity shards and a diamond.
+- Level N (2 to 10) is made in a cross with the level N−1 crystal in the center and 4 level N−1 essences.
+- Every level N essence (2 to 10) is made in a cross with the level N crystal (or the Master Infusion Crystal) in the center and 4 level N−1 essences.
+- The **Master Infusion Crystal** (unbreakable) is made in the base infusion altar: a supremium gemstone block in the center, the first 6 crystals, an insanium gemstone block and a nether star seed.
+- The original Mystical Agriculture, Agradditions and Extended Tier recipes for those items are removed.
+- Durability: `compat.mysticalagriculture.crystals.durability` (1000 by default).
+
+### Reprocessors and Furnaces
+
+The values are those of Mystical Agriculture 1.18, extended from level 6 to 10. Speed and fuel use are multiplied on top of the base machine's.
+
+| Level | Reprocessor: ticks / fuel per tick / capacity | Furnace: cook / fuel multiplier |
+| --- | --- | --- |
+| 1 | 100 / 40 / 120000 | 0.84 / 0.84 |
+| 2 | 80 / 60 / 180000 | 0.625 / 0.84 |
+| 3 | 55 / 100 / 300000 | 0.4 / 0.68 |
+| 4 | 20 / 320 / 420000 | 0.145 / 0.5 |
+| 5 | 5 / 1440 / 640000 | 0.025 / 0.2 |
+| 6 | 3 / 2880 / 900000 | 0.015 / 0.15 |
+| 7 | 2 / 5760 / 1200000 | 0.01 / 0.12 |
+| 8 | 1 / 11520 / 1600000 | 0.006 / 0.1 |
+| 9 | 1 / 23040 / 2400000 | 0.004 / 0.08 |
+| 10 | 1 / 46080 / 3200000 | 0.002 / 0.05 |
+
+### Creative Tab
+
+All of this is in the **Ultimate Mod Compats: Mystical Agriculture** tab, grouped by kind (crystals, altars, pedestals, vessels, reprocessors, furnaces, seeds and essences) and sorted by level inside each group.
+
+### Configuration
+
+| Key | Default | What it does |
+| --- | --- | --- |
+| `compat.mysticalagriculture.tiers.enabled` | `true` | Turns the whole system on |
+| `compat.mysticalagriculture.tiers.base_altars_elemental_only` | `true` | The base altar only makes the seeds of the 4 elements |
+| `compat.mysticalagriculture.tiers.previous_tier_allowed` | `true` | The level N altar also makes level N−1 |
+| `compat.mysticalagriculture.tiers.structure_tier_required` | `true` | Pedestals and vessels must be the altar's level or higher |
+| `compat.mysticalagriculture.tiers.higher_tier_structure_allowed` | `true` | When `false`, they must be exactly the altar's level |
+| `compat.mysticalagriculture.tiers.remove_seed_crafting` | `true` | Removes every crafting table recipe of seeds (MA and its addons): seeds are only made in the altars |
+| `compat.mysticalagriculture.crystals.durability` | `1000` | Uses of every infusion crystal |
+
+### Seed Table per Level
+
+It includes the seeds of Mystical Agriculture, Mystical Agradditions, Mystical Extended Tier and the 64 from UMC (the table is generated from the crop registry).
+
+#### Tier 1 (12)
+
+| Seed | Mod |
+| --- | --- |
+| `air_seeds` | mysticalagriculture |
+| `cajita_feliz_seeds` | umc |
+| `deepslate_seeds` | mysticalagriculture |
+| `dirt_seeds` | mysticalagriculture |
+| `earth_seeds` | mysticalagriculture |
+| `fire_seeds` | mysticalagriculture |
+| `flux_dust_seeds` | umc |
+| `ice_seeds` | mysticalagriculture |
+| `inferium_seeds` | mysticalagriculture |
+| `stone_seeds` | mysticalagriculture |
+| `water_seeds` | mysticalagriculture |
+| `wood_seeds` | mysticalagriculture |
+
+#### Tier 2 (38)
+
+| Seed | Mod |
+| --- | --- |
+| `aluminum_seeds` | mysticalagriculture |
+| `amethyst_seeds` | mysticalagriculture |
+| `apatite_seeds` | mysticalagriculture |
+| `armadillo_seeds` | mysticalagriculture |
+| `basalt_seeds` | mysticalagriculture |
+| `chicken_seeds` | mysticalagriculture |
+| `coal_seeds` | mysticalagriculture |
+| `coral_seeds` | mysticalagriculture |
+| `cow_seeds` | mysticalagriculture |
+| `dye_seeds` | mysticalagriculture |
+| `fish_seeds` | mysticalagriculture |
+| `grains_of_infinity_seeds` | mysticalagriculture |
+| `honey_seeds` | mysticalagriculture |
+| `kivi_seeds` | umc |
+| `limestone_seeds` | mysticalagriculture |
+| `marble_seeds` | mysticalagriculture |
+| `menril_seeds` | mysticalagriculture |
+| `mystical_flower_seeds` | mysticalagriculture |
+| `nature_seeds` | mysticalagriculture |
+| `nether_seeds` | mysticalagriculture |
+| `pig_seeds` | mysticalagriculture |
+| `prudentium_essence_seeds` | umc |
+| `redstoneingot_seeds` | umc |
+| `rubber_seeds` | mysticalagriculture |
+| `saltpeter_seeds` | mysticalagriculture |
+| `sheep_seeds` | mysticalagriculture |
+| `silicon_seeds` | mysticalagriculture |
+| `slime_seeds` | mysticalagriculture |
+| `soul_dust_seeds` | umc |
+| `soulstone_cobble_seeds` | umc |
+| `source_gem_seeds` | umc |
+| `squid_seeds` | mysticalagriculture |
+| `sulfur_seeds` | mysticalagriculture |
+| `thaumaturge_brass_seeds` | umc |
+| `thaumaturge_quicksilver_seeds` | umc |
+| `thaumaturge_salis_mundus_seeds` | umc |
+| `turtle_seeds` | mysticalagriculture |
+| `unexplored_wood_seeds` | umc |
+
+#### Tier 3 (53)
+
+| Seed | Mod |
+| --- | --- |
+| `amethyst_bronze_seeds` | mysticalagriculture |
+| `aquamarine_seeds` | mysticalagriculture |
+| `azure_silver_seeds` | umc |
+| `basalz_seeds` | mysticalagriculture |
+| `black_quartz_seeds` | umc |
+| `blitz_seeds` | mysticalagriculture |
+| `blizz_seeds` | mysticalagriculture |
+| `brass_seeds` | mysticalagriculture |
+| `bronze_seeds` | mysticalagriculture |
+| `certus_quartz_seeds` | mysticalagriculture |
+| `conductive_alloy_seeds` | mysticalagriculture |
+| `copper_seeds` | mysticalagriculture |
+| `copper_alloy_seeds` | mysticalagriculture |
+| `creeper_seeds` | mysticalagriculture |
+| `crimson_iron_seeds` | umc |
+| `dark_gem_seeds` | umc |
+| `darkstone_seeds` | umc |
+| `glowstone_seeds` | mysticalagriculture |
+| `graphite_seeds` | mysticalagriculture |
+| `iron_seeds` | mysticalagriculture |
+| `ironwood_seeds` | mysticalagriculture |
+| `lead_seeds` | mysticalagriculture |
+| `manasteel_seeds` | mysticalagriculture |
+| `nether_quartz_seeds` | mysticalagriculture |
+| `obsidian_seeds` | mysticalagriculture |
+| `phantom_seeds` | mysticalagriculture |
+| `pig_iron_seeds` | mysticalagriculture |
+| `predicciondematrix_seeds` | umc |
+| `prismarine_seeds` | mysticalagriculture |
+| `quartz_enriched_iron_seeds` | mysticalagriculture |
+| `rabbit_seeds` | mysticalagriculture |
+| `redstone_seeds` | mysticalagriculture |
+| `redstone_alloy_seeds` | mysticalagriculture |
+| `sculk_seeds` | mysticalagriculture |
+| `silver_seeds` | mysticalagriculture |
+| `skeleton_seeds` | mysticalagriculture |
+| `sky_stone_seeds` | mysticalagriculture |
+| `slimesteel_seeds` | mysticalagriculture |
+| `spider_seeds` | mysticalagriculture |
+| `spirit_gem_seeds` | umc |
+| `steeleaf_seeds` | mysticalagriculture |
+| `tertium_essence_seeds` | umc |
+| `thaumaturge_amber_seeds` | umc |
+| `thaumaturge_crystal_aer_seeds` | umc |
+| `thaumaturge_crystal_aqua_seeds` | umc |
+| `thaumaturge_crystal_ignis_seeds` | umc |
+| `thaumaturge_crystal_ordo_seeds` | umc |
+| `thaumaturge_crystal_terra_seeds` | umc |
+| `thaumaturge_thaumium_seeds` | umc |
+| `tin_seeds` | mysticalagriculture |
+| `xychorium_gem_seeds` | umc |
+| `zinc_seeds` | mysticalagriculture |
+| `zombie_seeds` | mysticalagriculture |
+
+#### Tier 4 (49)
+
+| Seed | Mod |
+| --- | --- |
+| `blaze_seeds` | mysticalagriculture |
+| `blazing_crystal_seeds` | mysticalagriculture |
+| `breeze_seeds` | mysticalagriculture |
+| `cobalt_seeds` | mysticalagriculture |
+| `compressed_iron_seeds` | mysticalagriculture |
+| `constantan_seeds` | mysticalagriculture |
+| `dark_steel_seeds` | mysticalagriculture |
+| `deorum_ingot_seeds` | umc |
+| `electrum_seeds` | mysticalagriculture |
+| `elementium_seeds` | mysticalagriculture |
+| `elevatium_ingot_seeds` | umc |
+| `end_seeds` | mysticalagriculture |
+| `enderman_seeds` | mysticalagriculture |
+| `energetic_alloy_seeds` | mysticalagriculture |
+| `energized_steel_seeds` | mysticalagriculture |
+| `experience_seeds` | mysticalagriculture |
+| `fiery_ingot_seeds` | mysticalagriculture |
+| `fluix_seeds` | mysticalagriculture |
+| `fluorite_seeds` | mysticalagriculture |
+| `flux_infused_ingot_seeds` | mysticalagriculture |
+| `ghast_seeds` | mysticalagriculture |
+| `gold_seeds` | mysticalagriculture |
+| `hop_graphite_seeds` | mysticalagriculture |
+| `imperium_essence_seeds` | umc |
+| `invar_seeds` | mysticalagriculture |
+| `knightmetal_seeds` | mysticalagriculture |
+| `lapis_lazuli_seeds` | mysticalagriculture |
+| `lumium_seeds` | mysticalagriculture |
+| `nickel_seeds` | mysticalagriculture |
+| `osmium_seeds` | mysticalagriculture |
+| `peridot_seeds` | mysticalagriculture |
+| `pink_slime_seeds` | umc |
+| `prometheum_seeds` | umc |
+| `pulsating_alloy_seeds` | mysticalagriculture |
+| `refined_glowstone_seeds` | mysticalagriculture |
+| `refined_obsidian_seeds` | mysticalagriculture |
+| `rose_gold_seeds` | mysticalagriculture |
+| `ruby_seeds` | mysticalagriculture |
+| `sapphire_seeds` | mysticalagriculture |
+| `signalum_seeds` | mysticalagriculture |
+| `soularium_seeds` | mysticalagriculture |
+| `soulium_seeds` | mysticalagriculture |
+| `starmetal_seeds` | mysticalagriculture |
+| `steel_seeds` | mysticalagriculture |
+| `thaumaturge_alumentum_seeds` | umc |
+| `thaumaturge_crystal_perditio_seeds` | umc |
+| `thaumaturge_crystal_vitium_seeds` | umc |
+| `thaumaturge_void_metal_seeds` | umc |
+| `uranium_seeds` | mysticalagriculture |
+
+#### Tier 5 (32)
+
+| Seed | Mod |
+| --- | --- |
+| `andesite_alloy_seeds` | umc |
+| `arcane_gold_ingot_seeds` | umc |
+| `cognition_seeds` | umc |
+| `crystal_matrix_seeds` | umc |
+| `cyanite_seeds` | mysticalagriculture |
+| `diamond_seeds` | mysticalagriculture |
+| `draconium_seeds` | mysticalagriculture |
+| `emerald_seeds` | mysticalagriculture |
+| `end_steel_seeds` | mysticalagriculture |
+| `ender_ingot_seeds` | umc |
+| `enderium_seeds` | mysticalagriculture |
+| `entro_seeds` | umc |
+| `flux_infused_gem_seeds` | mysticalagriculture |
+| `hepatizon_seeds` | mysticalagriculture |
+| `iridium_seeds` | mysticalagriculture |
+| `manyullyn_seeds` | mysticalagriculture |
+| `nadienite_ingot_seeds` | umc |
+| `netherite_seeds` | mysticalagriculture |
+| `niotic_crystal_seeds` | mysticalagriculture |
+| `platinum_seeds` | mysticalagriculture |
+| `prosperity_shard_seeds` | umc |
+| `queens_slime_seeds` | mysticalagriculture |
+| `rock_crystal_seeds` | mysticalagriculture |
+| `sky_steel_ingot_seeds` | umc |
+| `spirited_crystal_seeds` | mysticalagriculture |
+| `super_cacotas_seeds` | umc |
+| `supremium_essence_esc_seeds` | umc |
+| `terrasteel_seeds` | mysticalagriculture |
+| `uraninite_seeds` | mysticalagriculture |
+| `vibrant_alloy_seeds` | mysticalagriculture |
+| `wither_skeleton_seeds` | mysticalagriculture |
+| `yellorium_seeds` | mysticalagriculture |
+
+#### Tier 6 (18)
+
+| Seed | Mod |
+| --- | --- |
+| `allthemodium_seeds` | umc |
+| `awakened_draconium_seeds` | mysticalagradditions |
+| `blaze_gold_seeds` | umc |
+| `celestigem_seeds` | umc |
+| `chaos_shard_seeds` | umc |
+| `chromium_seeds` | umc |
+| `cuarzorosa_seeds` | umc |
+| `dragon_egg_seeds` | mysticalagradditions |
+| `eclipse_alloy_seeds` | umc |
+| `ferricore_seeds` | umc |
+| `gaia_spirit_seeds` | mysticalagradditions |
+| `insanium_essence_seeds` | umc |
+| `naquadah_seeds` | umc |
+| `nether_star_seeds` | mysticalagradditions |
+| `neutronium_seeds` | mysticalagradditions |
+| `nitro_crystal_seeds` | mysticalagradditions |
+| `unobtainium_seeds` | umc |
+| `vibranium_seeds` | umc |
+
+#### Tier 7 (3)
+
+| Seed | Mod |
+| --- | --- |
+| `comerald_seeds` | mysticalextendedtier |
+| `elinvonze_seeds` | mysticalextendedtier |
+| `ornium_essence_seeds` | umc |
+
+#### Tier 8 (4)
+
+| Seed | Mod |
+| --- | --- |
+| `better_gold_seeds` | mysticalextendedtier |
+| `fayronium_seeds` | mysticalextendedtier |
+| `lightium_essence_seeds` | umc |
+| `queens_steel_seeds` | mysticalextendedtier |
+
+#### Tier 9 (4)
+
+| Seed | Mod |
+| --- | --- |
+| `manyerium_seeds` | mysticalextendedtier |
+| `mithrydium_seeds` | mysticalextendedtier |
+| `plaslitherite_seeds` | mysticalextendedtier |
+| `tornium_essence_seeds` | umc |
+
+#### Tier 10 (5)
+
+| Seed | Mod |
+| --- | --- |
+| `elyndrite_seeds` | mysticalextendedtier |
+| `infinity_seeds` | mysticalextendedtier |
+| `manronium_steel_seeds` | mysticalextendedtier |
+| `manyedrite_seeds` | mysticalextendedtier |
+| `ouranium_essence_seeds` | umc |
+
+### Awakening Recipes
+
+`awakened_*` items count as **level 6**, so they are only made in the level 6 or 7 awakening altar (the base MA altar does not make them). These are the awakening altar recipes of Mystical Agriculture, Agradditions and Extended Tier:
+
+| Recipe | Center item | Result | Essences | Level |
+| --- | --- | --- | --- | --- |
+| `mysticalagriculture:awakened_supremium_block_awakening` | `mysticalagriculture:supremium_block` | `mysticalagriculture:awakened_supremium_block` | 10x air, 10x earth, 10x water, 10x fire | 6 |
+| `mysticalagriculture:awakened_supremium_upgrade` | `mysticalagriculture:supremium_upgrade` | `mysticalagriculture:awakened_supremium_upgrade` | 20x air, 20x earth, 20x water, 20x fire | 6 |
+| `mysticalagradditions:awakened_supremium_paxel` | `mysticalagradditions:supremium_paxel` | `mysticalagradditions:awakened_supremium_paxel` | 40x air, 40x earth, 40x water, 40x fire | 6 |
+
+### Augments and Essence Gear
+
+Mystical Agriculture augments ("Health Boost IV Augment", etc.) and the essence gear made in the infusion altar use their own level: a level 4 augment is only made in the level 4 or 5 altar. The base MA altar no longer makes them.
+
+---
+
+## 7. FAQ and Known Issues
 
 ### I used an event and KubeJS says it does not exist
 

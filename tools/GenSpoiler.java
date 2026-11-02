@@ -47,7 +47,7 @@ public class GenSpoiler {
         g.setFont(new Font("Segoe UI", Font.BOLD, 66));
         shadowText(g, "ULTIMATE MOD COMPATS", 220, 100, Color.WHITE);
         g.setFont(new Font("Segoe UI", Font.PLAIN, 28));
-        shadowText(g, "Magia inspirada en Witchery para Enchanted · NeoForge 1.21.1", 222, 150, new Color(0xC9B8FF));
+        shadowText(g, "Hombres lobo y vampiros para Enchanted · NeoForge 1.21.1", 222, 150, new Color(0xC9B8FF));
 
         g.setColor(new Color(0xFF7AD9));
         g.fillRoundRect(222, 168, 190, 44, 16, 16);
@@ -76,7 +76,8 @@ public class GenSpoiler {
         panel(g, 1180, 235, 390, 600);
         g.setFont(new Font("Segoe UI", Font.BOLD, 28));
         shadowText(g, "PESTAÑA PROPIA", 1204, 280, new Color(0xFFE680));
-        BufferedImage crop = screenshot.getSubimage(240, 82, 392, 326);
+        int[] area = args.length >= 7 ? new int[]{Integer.parseInt(args[3]), Integer.parseInt(args[4]), Integer.parseInt(args[5]), Integer.parseInt(args[6])} : new int[]{240, 82, 392, 326};
+        BufferedImage crop = screenshot.getSubimage(area[0], area[1], area[2], area[3]);
         g.drawImage(crop, 1186, 310, 378, 315, null);
         g.setFont(new Font("Segoe UI", Font.PLAIN, 22));
         shadowText(g, "Gato espacial, fondo con estrellas", 1204, 670, new Color(0xE6DCFF));

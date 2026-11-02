@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "thaumaturge_amber"
+      "crop": "thaumaturge_amber",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

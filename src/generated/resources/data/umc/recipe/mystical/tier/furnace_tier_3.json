@@ -1,0 +1,40 @@
+{
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "tag": "umc:tier_essence/3"
+    },
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "tag": "umc:tier_essence/3"
+    },
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "tag": "umc:tier_essence/3"
+    },
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "tag": "umc:tier_essence/3"
+    },
+    [
+      {
+        "item": "umc:infusion_crystal_tier_3"
+      },
+      {
+        "item": "mysticalagriculture:master_infusion_crystal"
+      }
+    ]
+  ],
+  "input": {
+    "item": "umc:furnace_tier_2"
+  },
+  "result": {
+    "id": "umc:furnace_tier_3"
+  }
+}

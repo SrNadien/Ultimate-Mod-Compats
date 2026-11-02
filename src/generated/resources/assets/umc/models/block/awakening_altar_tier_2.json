@@ -1,0 +1,8 @@
+{
+  "parent": "mysticalagriculture:block/awakening_altar",
+  "textures": {
+    "1": "umc:block/mystical/awakening_altar_tier_2_side",
+    "2": "umc:block/mystical/awakening_altar_tier_2_bottom",
+    "3": "umc:block/mystical/awakening_altar_tier_2_top"
+  }
+}

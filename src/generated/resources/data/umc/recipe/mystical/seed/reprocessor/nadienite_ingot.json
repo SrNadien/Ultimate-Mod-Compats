@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "nadienite_ingot",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:nadienite_ingot_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:nadienite_ingot_essence"
+  }
+}

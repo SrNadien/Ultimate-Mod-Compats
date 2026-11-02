@@ -1,6 +1,8 @@
 package nadiendev.umc.core.registry;
 
 import nadiendev.umc.UltimateModCompats;
+import nadiendev.umc.mysticalagriculture.tier.TierAltarRegistry;
+import nadiendev.umc.mysticalagriculture.tier.TierTabOrder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -9,6 +11,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -28,8 +31,22 @@ public final class UmcTabs {
                     .filter(entry -> entry.getKey().location().getNamespace().equals(UltimateModCompats.MODID) || isScriptedWitcheryItem(entry.getKey().location().getNamespace(), entry.getValue()))
                     .map(entry -> entry.getValue())
                     .filter(item -> item != UmcItems.TAB_ICON.get())
+                    .filter(item -> !TierAltarRegistry.items().contains(item))
                     .forEach(output::accept))
             .build());
+
+    public static final String MYSTICAL_KEY = "itemGroup." + UltimateModCompats.MODID + ".mystical";
+
+    private static void registerMystical() {
+        TABS.register("mystical", () -> CreativeModeTab.builder()
+                .title(Component.translatable(MYSTICAL_KEY))
+                .icon(() -> new ItemStack(TierAltarRegistry.items().get(0)))
+                .withLabelColor(0xFFE6DCFF)
+                .displayItems((parameters, output) -> {
+                    TierTabOrder.items().forEach(output::accept);
+                })
+                .build());
+    }
 
     private static boolean isScriptedWitcheryItem(String namespace, Item item) {
         if (!namespace.equals(KUBEJS_NAMESPACE)) {
@@ -47,6 +64,9 @@ public final class UmcTabs {
     }
 
     public static void register(IEventBus modBus) {
+        if (ModList.get().isLoaded(TierAltarRegistry.MYSTICAL_AGRICULTURE)) {
+            registerMystical();
+        }
         TABS.register(modBus);
     }
 }

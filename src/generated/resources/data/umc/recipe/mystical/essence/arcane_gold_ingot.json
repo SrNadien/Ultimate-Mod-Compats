@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "arcane_gold_ingot"
+      "crop": "arcane_gold_ingot",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

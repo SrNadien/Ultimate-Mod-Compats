@@ -6,7 +6,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "thaumaturge_void_metal"
+      "crop": "thaumaturge_void_metal",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

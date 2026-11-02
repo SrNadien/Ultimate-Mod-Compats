@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "occultism"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "azure_silver",
+      "recipe": "seed_reprocessor"
+    }
+  ],
+  "type": "mysticalagriculture:reprocessor",
+  "input": {
+    "item": "mysticalagriculture:azure_silver_seeds"
+  },
+  "result": {
+    "count": 2,
+    "id": "mysticalagriculture:azure_silver_essence"
+  }
+}

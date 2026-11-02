@@ -10,7 +10,8 @@
     },
     {
       "type": "umc:mystical_crop",
-      "crop": "ferricore"
+      "crop": "ferricore",
+      "recipe": "essence_crafting"
     }
   ],
   "type": "minecraft:crafting_shaped",

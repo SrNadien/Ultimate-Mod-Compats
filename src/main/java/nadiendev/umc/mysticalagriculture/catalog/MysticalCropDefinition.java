@@ -15,14 +15,21 @@ public record MysticalCropDefinition(
         List<String> requires,
         List<String> requiresAny,
         Map<String, String> names,
-        String essenceResult) {
+        String essenceResult,
+        String textureBase,
+        int color) {
 
     private static final int ESSENCE_COUNT_NUMERATOR = 12;
+    private static final String GENERIC_NAMESPACE = "mysticalagriculture";
 
     public static final String LANG_PREFIX = "umc.mysticalagriculture.crop.";
 
     public String translationKey() {
         return LANG_PREFIX + id;
+    }
+
+    public boolean tinted() {
+        return textureBase != null;
     }
 
     public ResourceLocation seedTexture() {
@@ -34,7 +41,11 @@ public record MysticalCropDefinition(
     }
 
     public ResourceLocation flowerTexture() {
-        return texture("block/mystical/" + id + "_flower");
+        return tinted() ? generic("block/flower_" + textureBase) : texture("block/mystical/" + id + "_flower");
+    }
+
+    private static ResourceLocation generic(String path) {
+        return ResourceLocation.fromNamespaceAndPath(GENERIC_NAMESPACE, path);
     }
 
     private static ResourceLocation texture(String path) {
