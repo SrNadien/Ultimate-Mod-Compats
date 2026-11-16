@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "excessive_utilities"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalextendedtier"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "bedrockium_ingot",
+      "recipe": "essence_crafting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:bedrockium_ingot_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "excessive_utilities:bedrockium_ingot"
+  }
+}

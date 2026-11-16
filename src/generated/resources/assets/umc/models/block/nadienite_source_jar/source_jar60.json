@@ -1,0 +1,6 @@
+{
+  "parent": "ars_nouveau:block/source_jar/source_jar60",
+  "textures": {
+    "2": "umc:block/nadienite_source_jar"
+  }
+}

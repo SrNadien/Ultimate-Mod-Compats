@@ -1,0 +1,52 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ars_nouveau"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthemodium"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "arsnouveau"
+    }
+  ],
+  "type": "ars_nouveau:enchanting_apparatus",
+  "keepNbtOfReagent": true,
+  "pedestalItems": [
+    {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    {
+      "item": "allthemodium:allthemodium_ingot"
+    }
+  ],
+  "reagent": {
+    "item": "ars_nouveau:source_jar"
+  },
+  "result": {
+    "count": 1,
+    "id": "umc:allthemodium_source_jar"
+  },
+  "sourceCost": 10000
+}

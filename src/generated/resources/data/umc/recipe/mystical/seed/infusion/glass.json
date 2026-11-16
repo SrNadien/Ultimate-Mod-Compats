@@ -1,0 +1,61 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "glass",
+      "recipe": "seed_infusion"
+    }
+  ],
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:glass"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:glass"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:glass"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:glass"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:glass"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:glass"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:glass"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:glass"
+    }
+  ],
+  "input": {
+    "type": "mysticalagriculture:crop_component",
+    "component": "seed",
+    "crop": "umc:glass"
+  },
+  "result": {
+    "count": 1,
+    "id": "mysticalagriculture:glass_seeds"
+  }
+}

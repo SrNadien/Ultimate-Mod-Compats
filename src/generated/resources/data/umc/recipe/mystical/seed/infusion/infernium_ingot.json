@@ -1,0 +1,65 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "infernium_ingot",
+      "recipe": "seed_infusion"
+    }
+  ],
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:infernium_ingot"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:infernium_ingot"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:infernium_ingot"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:infernium_ingot"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:infernium_ingot"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:infernium_ingot"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:infernium_ingot"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:infernium_ingot"
+    }
+  ],
+  "input": {
+    "type": "mysticalagriculture:crop_component",
+    "component": "seed",
+    "crop": "umc:infernium_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "mysticalagriculture:infernium_ingot_seeds"
+  }
+}

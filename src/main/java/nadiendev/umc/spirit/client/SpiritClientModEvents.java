@@ -23,6 +23,7 @@ public final class SpiritClientModEvents {
     public static void onKeys(RegisterKeyMappingsEvent event) {
         event.register(SpiritKeys.CYCLE_INFUSION);
         event.register(SpiritKeys.SPIRIT_RETURN);
+        event.register(SpiritKeys.TOGGLE_HUD);
     }
 
     @SubscribeEvent

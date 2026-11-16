@@ -23,7 +23,12 @@
     "EEE"
   ],
   "result": {
-    "count": 3,
-    "id": "thaumaturge:crystal_vitium"
+    "components": {
+      "thaumaturge:crystal_aspect": {
+        "aspect": "thaumaturge:vitium"
+      }
+    },
+    "count": 4,
+    "id": "thaumaturge:essentia_crystal"
   }
 }

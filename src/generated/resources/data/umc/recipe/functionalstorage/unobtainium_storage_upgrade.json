@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "functionalstorage"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthemodium"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "functionalstorage"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "allthemodium:unobtainium_block"
+    },
+    "C": {
+      "tag": "c:chests/wooden"
+    },
+    "D": {
+      "item": "umc:vibranium_storage_upgrade"
+    },
+    "I": {
+      "item": "allthemodium:unobtainium_ingot"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "CDC",
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:unobtainium_storage_upgrade"
+  }
+}

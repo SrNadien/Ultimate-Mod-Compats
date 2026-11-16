@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "pyrestone_crystal",
+      "recipe": "essence_crafting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:pyrestone_crystal_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ultimatearmoury:pyrestone_crystal"
+  }
+}

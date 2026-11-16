@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "advanced_ae"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "quantum_infused_dust",
+      "recipe": "essence_crafting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:quantum_infused_dust_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 3,
+    "id": "advanced_ae:quantum_infused_dust"
+  }
+}

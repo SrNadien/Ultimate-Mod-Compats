@@ -2,6 +2,7 @@ package nadiendev.umc.core.registry;
 
 import com.mojang.serialization.MapCodec;
 import nadiendev.umc.UltimateModCompats;
+import nadiendev.umc.core.condition.CompatCondition;
 import nadiendev.umc.mysticalagriculture.condition.MysticalCropCondition;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.conditions.ICondition;
@@ -16,6 +17,9 @@ public final class UmcConditions {
 
     public static final DeferredHolder<MapCodec<? extends ICondition>, MapCodec<MysticalCropCondition>> MYSTICAL_CROP =
             CONDITIONS.register("mystical_crop", () -> MysticalCropCondition.CODEC);
+
+    public static final DeferredHolder<MapCodec<? extends ICondition>, MapCodec<CompatCondition>> COMPAT =
+            CONDITIONS.register("compat", () -> CompatCondition.CODEC);
 
     private UmcConditions() {
     }

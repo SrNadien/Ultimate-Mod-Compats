@@ -1,0 +1,65 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "pyrestone_crystal",
+      "recipe": "seed_infusion"
+    }
+  ],
+  "type": "mysticalagriculture:infusion",
+  "ingredients": [
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:pyrestone_crystal"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:pyrestone_crystal"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:pyrestone_crystal"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:pyrestone_crystal"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:pyrestone_crystal"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:pyrestone_crystal"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "material",
+      "crop": "umc:pyrestone_crystal"
+    },
+    {
+      "type": "mysticalagriculture:crop_component",
+      "component": "essence",
+      "crop": "umc:pyrestone_crystal"
+    }
+  ],
+  "input": {
+    "type": "mysticalagriculture:crop_component",
+    "component": "seed",
+    "crop": "umc:pyrestone_crystal"
+  },
+  "result": {
+    "count": 1,
+    "id": "mysticalagriculture:pyrestone_crystal_seeds"
+  }
+}

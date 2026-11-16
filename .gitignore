@@ -68,3 +68,5 @@ blockbench/
 continuar.md
 .github/appmod/
 .github/modernize/
+CURSEFORGE_DESCRIPTION.md
+tools/*

@@ -2,7 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "allthecompressed"
+      "modid": "extendedae"
     },
     {
       "type": "umc:mystical_crop",
@@ -23,7 +23,7 @@
     "EEE"
   ],
   "result": {
-    "count": 2,
-    "id": "allthecompressed:entro_block_1x"
+    "count": 4,
+    "id": "extendedae:entro_crystal"
   }
 }

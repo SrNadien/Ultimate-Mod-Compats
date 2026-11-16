@@ -1,0 +1,6 @@
+{
+  "parent": "ars_nouveau:block/source_jar/source_jar20",
+  "textures": {
+    "2": "umc:block/piglich_source_jar"
+  }
+}

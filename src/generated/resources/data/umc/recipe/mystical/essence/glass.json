@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "umc:mystical_crop",
+      "crop": "glass",
+      "recipe": "essence_crafting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:glass_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:glass"
+  }
+}

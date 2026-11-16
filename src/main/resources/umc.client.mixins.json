@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "nadiendev.umc.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CreativeInventoryScreenTitleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

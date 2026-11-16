@@ -1,0 +1,6 @@
+{
+  "parent": "ars_nouveau:block/source_jar/source_jar30",
+  "textures": {
+    "2": "umc:block/allthemodium_source_jar"
+  }
+}

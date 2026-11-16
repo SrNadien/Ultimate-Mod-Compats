@@ -15,5 +15,6 @@ public class CoreItemModels extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(UmcItems.TAB_ICON.get());
+        basicItem(UmcItems.EXAMPLE.get());
     }
 }

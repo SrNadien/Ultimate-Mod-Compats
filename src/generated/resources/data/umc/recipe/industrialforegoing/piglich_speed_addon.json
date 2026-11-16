@@ -1,0 +1,52 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthemodium"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:dissolution_chamber",
+  "input": [
+    {
+      "item": "umc:unobtainium_speed_addon"
+    },
+    {
+      "item": "allthemodium:piglich_heart"
+    },
+    {
+      "item": "allthemodium:piglich_heart"
+    },
+    {
+      "item": "allthemodium:piglich_heart"
+    },
+    {
+      "item": "allthemodium:piglich_heart"
+    },
+    {
+      "item": "allthemodium:piglich_heart_block"
+    },
+    {
+      "item": "industrialforegoing:plastic"
+    },
+    {
+      "item": "industrialforegoing:plastic"
+    }
+  ],
+  "inputFluid": {
+    "amount": 1000,
+    "fluid": "industrialforegoing:latex"
+  },
+  "output": {
+    "count": 1,
+    "id": "umc:piglich_speed_addon"
+  },
+  "processingTime": 1500
+}

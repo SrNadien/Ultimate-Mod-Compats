@@ -101,15 +101,28 @@ jobs:
           # The name shown on CurseForge is the name of the jar without its extension
           display=$(basename "$jar" .jar)
 
-          relations='[{"slug":"enchanted-witchcraft","type":"requiredDependency"},
-            {"slug":"geckolib","type":"requiredDependency"},
+          relations='[{"slug":"enchanted-witchcraft","type":"optionalDependency"},
+            {"slug":"geckolib","type":"optionalDependency"},
             {"slug":"kubejs","type":"optionalDependency"},
             {"slug":"applied-energistics-2","type":"optionalDependency"},
             {"slug":"advancedae","type":"optionalDependency"},
             {"slug":"create","type":"optionalDependency"},
             {"slug":"mystical-agriculture","type":"optionalDependency"},
             {"slug":"excessive-utilities","type":"optionalDependency"},
-            {"slug":"functional-storage","type":"optionalDependency"}]'
+            {"slug":"functional-storage","type":"optionalDependency"},
+            {"slug":"thaumaturge","type":"optionalDependency"},
+            {"slug":"mystical-agradditions","type":"optionalDependency"},
+            {"slug":"mystical-extended-tier","type":"optionalDependency"},
+            {"slug":"ultimate-armoury-tools-and-weapons","type":"optionalDependency"},
+            {"slug":"enderio","type":"optionalDependency"},
+            {"slug":"ars-nouveau","type":"optionalDependency"},
+            {"slug":"industrial-foregoing","type":"optionalDependency"},
+            {"slug":"allthemodium","type":"optionalDependency"},
+            {"slug":"allthecompressed","type":"optionalDependency"},
+            {"slug":"xycraft","type":"optionalDependency"},
+            {"slug":"xycraft-world","type":"optionalDependency"},
+            {"slug":"solar-flux-reborn","type":"optionalDependency"},
+            {"slug":"hammerlib","type":"optionalDependency"}]'
 
           metadata=$(jq -nc \
             --arg changelog "$CHANGELOG" \

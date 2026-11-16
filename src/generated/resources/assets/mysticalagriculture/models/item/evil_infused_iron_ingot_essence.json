@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "umc:item/mystical/evil_infused_iron_ingot_essence"
+  }
+}

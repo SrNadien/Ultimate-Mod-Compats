@@ -8,6 +8,10 @@
       "type": "umc:mystical_crop",
       "crop": "insanium_essence",
       "recipe": "essence_crafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
     }
   ],
   "type": "minecraft:crafting_shaped",

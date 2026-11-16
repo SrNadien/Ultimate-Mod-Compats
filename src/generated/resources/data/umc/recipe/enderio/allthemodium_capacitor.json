@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthemodium"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "enderio"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "ultimatearmoury:nadienite_block"
+    },
+    "I": {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    "P": {
+      "item": "umc:nadienite_capacitor"
+    }
+  },
+  "pattern": [
+    " I ",
+    "PCP",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:allthemodium_capacitor"
+  }
+}

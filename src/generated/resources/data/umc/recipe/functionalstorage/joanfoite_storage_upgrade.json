@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "functionalstorage"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "functionalstorage"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "ultimatearmoury:joanfoite_block"
+    },
+    "C": {
+      "tag": "c:chests/wooden"
+    },
+    "D": {
+      "item": "umc:mushashite_storage_upgrade"
+    },
+    "I": {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "CDC",
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:joanfoite_storage_upgrade"
+  }
+}

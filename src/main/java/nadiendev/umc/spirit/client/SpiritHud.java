@@ -17,6 +17,9 @@ import net.minecraft.world.entity.player.Player;
 
 public class SpiritHud implements LayeredDraw.Layer {
 
+    /** Turned on and off with the key of the HUD. */
+    static boolean visible = true;
+
     private static final int BAR_WIDTH = 44;
     private static final int ROW_HEIGHT = 11;
 
@@ -27,7 +30,7 @@ public class SpiritHud implements LayeredDraw.Layer {
         if (player == null || minecraft.options.hideGui || minecraft.getDebugOverlay().showDebugScreen()) {
             return;
         }
-        if (!SpiritConfig.ENABLED.get() || !SpiritConfig.HUD_ENABLED.get()) {
+        if (!visible || !SpiritConfig.ENABLED.get() || !SpiritConfig.HUD_ENABLED.get()) {
             return;
         }
         Font font = minecraft.font;

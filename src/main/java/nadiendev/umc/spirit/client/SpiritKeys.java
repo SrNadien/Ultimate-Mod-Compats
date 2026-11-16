@@ -12,6 +12,9 @@ public final class SpiritKeys {
     public static final KeyMapping CYCLE_INFUSION = new KeyMapping("key.umc.cycle_infusion", KeyConflictContext.IN_GAME, InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_V, CATEGORY);
     public static final KeyMapping SPIRIT_RETURN = new KeyMapping("key.umc.spirit_return", KeyConflictContext.IN_GAME, InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_B, CATEGORY);
 
+    /** Hides and shows the box of the infusions and the time in the corner of the screen. */
+    public static final KeyMapping TOGGLE_HUD = new KeyMapping("key.umc.toggle_spirit_hud", KeyConflictContext.IN_GAME, InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_J, CATEGORY);
+
     private SpiritKeys() {
     }
 }

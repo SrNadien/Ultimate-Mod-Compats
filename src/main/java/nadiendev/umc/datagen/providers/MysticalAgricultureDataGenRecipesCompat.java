@@ -216,7 +216,9 @@ public class MysticalAgricultureDataGenRecipesCompat implements DataModule {
         tierUpgrades(sink);
         crystals(sink);
         for (MysticalCropDefinition definition : MysticalCropCatalog.all()) {
-            if (definition.hasEssenceRecipe()) {
+            if (definition.id().equals(ENTRO_INGOT)) {
+                entroRecipes(sink, definition);
+            } else if (definition.hasEssenceRecipe()) {
                 sink.data("recipe/mystical/essence/" + definition.id(), essenceRecipe(definition));
             }
             seedRecipes(sink, definition);
@@ -306,10 +308,30 @@ public class MysticalAgricultureDataGenRecipesCompat implements DataModule {
         return condition;
     }
 
+    /** The id of the crop whose essence makes the dust, the ingot and the crystal of entro, each with its own shape. */
+    private static final String ENTRO_INGOT = "entro_ingot";
+
+    /**
+     * One essence of entro in a row of three makes 3 entro dust, a ring of eight makes 4 entro ingots. The entro
+     * crystals are made only from the ring of essence of the entro crop.
+     */
+    private static void entroRecipes(UmcJsonSink sink, MysticalCropDefinition definition) {
+        sink.data("recipe/mystical/essence/entro_ingot_dust", essenceRecipe(definition, new String[]{"EEE"}, "extendedae:entro_dust", 3));
+        sink.data("recipe/mystical/essence/entro_ingot", essenceRecipe(definition, ESSENCE_PATTERN, "extendedae:entro_ingot", 4));
+    }
+
     private static JsonObject essenceRecipe(MysticalCropDefinition definition) {
+        return essenceRecipe(definition, ESSENCE_PATTERN, definition.essenceResult(), -1);
+    }
+
+    private static JsonObject essenceRecipe(MysticalCropDefinition definition, String[] rows, String resultId, int amount) {
         JsonArray conditions = conditions(definition, MysticalCropCondition.ESSENCE_CRAFTING);
+        String resultMod = resultId.substring(0, resultId.indexOf(':'));
+        if (!resultMod.equals("minecraft") && !definition.requires().contains(resultMod)) {
+            conditions.add(modLoaded(resultMod));
+        }
         JsonArray pattern = new JsonArray();
-        for (String row : ESSENCE_PATTERN) {
+        for (String row : rows) {
             pattern.add(row);
         }
         JsonObject essence = new JsonObject();
@@ -317,8 +339,16 @@ public class MysticalAgricultureDataGenRecipesCompat implements DataModule {
         JsonObject key = new JsonObject();
         key.add("E", essence);
         JsonObject result = new JsonObject();
-        result.addProperty("id", definition.essenceResult());
-        result.addProperty("count", definition.essenceCraftCount());
+        result.addProperty("id", resultId);
+        var aspect = MysticalCropCatalog.essenceAspect(definition.id());
+        result.addProperty("count", amount > 0 ? amount : aspect.isPresent() ? MysticalCropCatalog.aspectCrystalsPerCraft() : definition.essenceCraftCount());
+        aspect.ifPresent(value -> {
+            JsonObject crystalAspect = new JsonObject();
+            crystalAspect.addProperty("aspect", value);
+            JsonObject components = new JsonObject();
+            components.add("thaumaturge:crystal_aspect", crystalAspect);
+            result.add("components", components);
+        });
         JsonObject recipe = new JsonObject();
         recipe.addProperty("type", "minecraft:crafting_shaped");
         recipe.addProperty("category", "misc");

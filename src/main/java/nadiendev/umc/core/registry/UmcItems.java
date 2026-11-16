@@ -11,6 +11,7 @@ public final class UmcItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(UltimateModCompats.MODID);
 
     public static final DeferredItem<Item> TAB_ICON = ITEMS.registerSimpleItem("tab_icon");
+    public static final DeferredItem<Item> EXAMPLE = ITEMS.registerSimpleItem("example_item");
 
     private UmcItems() {
     }

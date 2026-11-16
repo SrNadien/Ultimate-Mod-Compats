@@ -34,6 +34,9 @@ public final class UmcConfig {
         builder.comment("Bundled Mystical Agriculture crops").push("mysticalagriculture");
         MysticalAgricultureConfig.define(builder);
         builder.pop();
+        builder.comment("Items of the Ultimate Armoury materials for other mods").push("items");
+        CompatSwitches.define(builder);
+        builder.pop();
         builder.pop();
 
         SPEC = builder.build();

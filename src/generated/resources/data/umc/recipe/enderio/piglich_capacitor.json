@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthemodium"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "enderio"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:gears/unobtainium"
+    },
+    "I": {
+      "item": "allthemodium:piglich_heart"
+    },
+    "P": {
+      "item": "umc:unobtainium_capacitor"
+    }
+  },
+  "pattern": [
+    " I ",
+    "PCP",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:piglich_capacitor"
+  }
+}

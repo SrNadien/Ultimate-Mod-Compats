@@ -1,0 +1,71 @@
+{
+  "parent": "umc:block/unobtainium_source_jar/source_jar0",
+  "overrides": [
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar_sliver",
+      "predicate": {
+        "ars_nouveau:source": 0.01
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar10",
+      "predicate": {
+        "ars_nouveau:source": 0.1
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar20",
+      "predicate": {
+        "ars_nouveau:source": 0.2
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar30",
+      "predicate": {
+        "ars_nouveau:source": 0.3
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar40",
+      "predicate": {
+        "ars_nouveau:source": 0.4
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar50",
+      "predicate": {
+        "ars_nouveau:source": 0.5
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar60",
+      "predicate": {
+        "ars_nouveau:source": 0.6
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar70",
+      "predicate": {
+        "ars_nouveau:source": 0.7
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar80",
+      "predicate": {
+        "ars_nouveau:source": 0.8
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar90",
+      "predicate": {
+        "ars_nouveau:source": 0.9
+      }
+    },
+    {
+      "model": "umc:block/unobtainium_source_jar/source_jar100",
+      "predicate": {
+        "ars_nouveau:source": 1.0
+      }
+    }
+  ]
+}

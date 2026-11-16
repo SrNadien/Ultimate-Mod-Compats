@@ -1,0 +1,52 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ars_nouveau"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "arsnouveau"
+    }
+  ],
+  "type": "ars_nouveau:enchanting_apparatus",
+  "keepNbtOfReagent": true,
+  "pedestalItems": [
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    }
+  ],
+  "reagent": {
+    "item": "ars_nouveau:source_jar"
+  },
+  "result": {
+    "count": 1,
+    "id": "umc:joanfoite_source_jar"
+  },
+  "sourceCost": 10000
+}

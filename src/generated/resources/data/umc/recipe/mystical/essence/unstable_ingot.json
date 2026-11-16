@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "excessive_utilities"
+    },
+    {
+      "type": "umc:mystical_crop",
+      "crop": "unstable_ingot",
+      "recipe": "essence_crafting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "mysticalagriculture:unstable_ingot_essence"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "excessive_utilities:semi_unstable_nugget"
+  }
+}

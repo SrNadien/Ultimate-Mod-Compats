@@ -23,7 +23,12 @@
     "EEE"
   ],
   "result": {
+    "components": {
+      "thaumaturge:crystal_aspect": {
+        "aspect": "thaumaturge:terra"
+      }
+    },
     "count": 4,
-    "id": "thaumaturge:crystal_terra"
+    "id": "thaumaturge:essentia_crystal"
   }
 }

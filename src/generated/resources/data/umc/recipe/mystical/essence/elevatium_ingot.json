@@ -2,11 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "kubejs"
-    },
-    {
-      "type": "neoforge:item_exists",
-      "item": "kubejs:ingot_of_elevation"
+      "modid": "ultimatearmoury"
     },
     {
       "type": "umc:mystical_crop",
@@ -28,6 +24,6 @@
   ],
   "result": {
     "count": 3,
-    "id": "kubejs:ingot_of_elevation"
+    "id": "ultimatearmoury:ascendium_ingot"
   }
 }

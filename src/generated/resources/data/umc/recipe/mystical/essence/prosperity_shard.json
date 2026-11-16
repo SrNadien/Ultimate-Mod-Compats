@@ -4,6 +4,10 @@
       "type": "umc:mystical_crop",
       "crop": "prosperity_shard",
       "recipe": "essence_crafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
     }
   ],
   "type": "minecraft:crafting_shaped",

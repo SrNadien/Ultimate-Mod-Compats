@@ -72,6 +72,13 @@
     "umc:furnace_tier_7",
     "umc:furnace_tier_8",
     "umc:furnace_tier_9",
-    "umc:furnace_tier_10"
+    "umc:furnace_tier_10",
+    "umc:mushashite_source_jar",
+    "umc:joanfoite_source_jar",
+    "umc:nadienite_source_jar",
+    "umc:allthemodium_source_jar",
+    "umc:vibranium_source_jar",
+    "umc:unobtainium_source_jar",
+    "umc:piglich_source_jar"
   ]
 }

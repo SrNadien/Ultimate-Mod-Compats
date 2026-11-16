@@ -15,21 +15,16 @@ public record MysticalCropDefinition(
         List<String> requires,
         List<String> requiresAny,
         Map<String, String> names,
-        String essenceResult,
-        String textureBase,
-        int color) {
+        String essenceResult) {
 
     private static final int ESSENCE_COUNT_NUMERATOR = 12;
-    private static final String GENERIC_NAMESPACE = "mysticalagriculture";
+    /** The crops whose essence ring does not make the amount of the tier: the unstable ingot gives one nugget, entro 4 crystals. */
+    private static final Map<String, Integer> CRAFT_AMOUNT = Map.of("unstable_ingot", 1, "entro", 4);
 
     public static final String LANG_PREFIX = "umc.mysticalagriculture.crop.";
 
     public String translationKey() {
         return LANG_PREFIX + id;
-    }
-
-    public boolean tinted() {
-        return textureBase != null;
     }
 
     public ResourceLocation seedTexture() {
@@ -41,11 +36,7 @@ public record MysticalCropDefinition(
     }
 
     public ResourceLocation flowerTexture() {
-        return tinted() ? generic("block/flower_" + textureBase) : texture("block/mystical/" + id + "_flower");
-    }
-
-    private static ResourceLocation generic(String path) {
-        return ResourceLocation.fromNamespaceAndPath(GENERIC_NAMESPACE, path);
+        return texture("block/mystical/" + id + "_flower");
     }
 
     private static ResourceLocation texture(String path) {
@@ -61,7 +52,7 @@ public record MysticalCropDefinition(
     }
 
     public int essenceCraftCount() {
-        return Math.max(1, ESSENCE_COUNT_NUMERATOR / tierLevel());
+        return CRAFT_AMOUNT.getOrDefault(id, Math.max(1, ESSENCE_COUNT_NUMERATOR / tierLevel()));
     }
 
     public boolean modsLoaded(ModList mods) {

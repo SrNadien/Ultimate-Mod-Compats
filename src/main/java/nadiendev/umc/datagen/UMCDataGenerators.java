@@ -4,15 +4,23 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import nadiendev.umc.UltimateModCompats;
+import nadiendev.umc.datagen.providers.ArsNouveauDataGenCompat;
 import nadiendev.umc.datagen.providers.CoreData;
 import nadiendev.umc.datagen.providers.CraftingData;
 import nadiendev.umc.datagen.providers.CreaturesData;
+import nadiendev.umc.datagen.providers.EnderIoDataGenLangCompat;
+import nadiendev.umc.datagen.providers.EnderIoDataGenModelsCompat;
+import nadiendev.umc.datagen.providers.EnderIoDataGenRecipesCompat;
+import nadiendev.umc.datagen.providers.ForegoingDataGenCompat;
+import nadiendev.umc.datagen.providers.FunctionalStorageDataGenCompat;
 import nadiendev.umc.datagen.providers.MysticalAgricultureDataGenLangCompat;
 import nadiendev.umc.datagen.providers.MysticalAgricultureDataGenModelsCompat;
 import nadiendev.umc.datagen.providers.MysticalAgricultureDataGenRecipesCompat;
 import nadiendev.umc.datagen.providers.AgriCraftDataGenPlantsCompat;
 import nadiendev.umc.datagen.providers.MysticalAgricultureDataGenTagsCompat;
+import nadiendev.umc.datagen.providers.SolarFluxDataGenCompat;
 import nadiendev.umc.datagen.providers.SpiritData;
+import nadiendev.umc.datagen.providers.ThaumaturgeDataGenCompat;
 import nadiendev.umc.datagen.providers.UmcBlockLoot;
 import nadiendev.umc.datagen.providers.UmcBlockTagsProvider;
 import nadiendev.umc.datagen.providers.UmcEntityLoot;
@@ -37,7 +45,7 @@ public final class UMCDataGenerators {
 
     private static final List<String> LOCALES = List.of("en_us", "es_ar", "es_mx", "es_es");
 
-    private static final List<DataModule> MODULES = List.of(new CoreData(), new CreaturesData(), new SpiritData(), new CraftingData(), new MysticalAgricultureDataGenLangCompat(), new MysticalAgricultureDataGenModelsCompat(), new MysticalAgricultureDataGenRecipesCompat(), new MysticalAgricultureDataGenTagsCompat(), new AgriCraftDataGenPlantsCompat());
+    private static final List<DataModule> MODULES = List.of(new CoreData(), new CreaturesData(), new SpiritData(), new CraftingData(), new MysticalAgricultureDataGenLangCompat(), new MysticalAgricultureDataGenModelsCompat(), new MysticalAgricultureDataGenRecipesCompat(), new MysticalAgricultureDataGenTagsCompat(), new AgriCraftDataGenPlantsCompat(), new EnderIoDataGenLangCompat(), new EnderIoDataGenModelsCompat(), new EnderIoDataGenRecipesCompat(), new ForegoingDataGenCompat(), new ThaumaturgeDataGenCompat(), new ArsNouveauDataGenCompat(), new SolarFluxDataGenCompat(), new FunctionalStorageDataGenCompat());
 
     private UMCDataGenerators() {
     }

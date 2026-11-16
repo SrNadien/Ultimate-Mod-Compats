@@ -2,7 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "allthecompressed"
+      "modid": "extendedae"
     },
     {
       "type": "umc:mystical_crop",

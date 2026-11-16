@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="${loader_version_range}"
+loaderVersion="[${loader_version},)"
 license="${mod_license}"
 
 [[mods]]
@@ -30,93 +30,187 @@ ${mod_description}
 [[dependencies.${mod_id}]]
     modId="geckolib"
     type="required"
-    versionRange="${geckolib_version_range}"
+    versionRange="[${geckolib_version},)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="enchanted"
     type="required"
-    versionRange="${enchanted_version_range}"
+    versionRange="[${enchanted_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="fractal"
+    type="required"
+    versionRange="[${fractal_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="kubejs"
     type="optional"
-    versionRange="${kubejs_version_range}"
+    versionRange="[${kubejs_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="thaumaturge"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${thaumaturge_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="ae2"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${ae2_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="advanced_ae"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${advancedae_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="extendedae"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${extendedae_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="create"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${create_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="allthemodium"
+    type="optional"
+    versionRange="[${allthemodium_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="allthecompressed"
+    type="optional"
+    versionRange="[${allthecompressed_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="xycraft_core"
+    type="optional"
+    versionRange="[${xycraft_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="xycraft_world"
+    type="optional"
+    versionRange="[${xycraft_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="hammerlib"
+    type="optional"
+    versionRange="[${hammerlib_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="solarflux"
+    type="optional"
+    versionRange="[${solarflux_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="generatorgalore"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${generatorgalore_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="excessive_utilities"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${excessive_utilities_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="functionalstorage"
     type="optional"
-    versionRange="[0,)"
-    ordering="AFTER"
+    versionRange="[${functionalstorage_version},)"
+    ordering="BEFORE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="mysticalagriculture"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${mysticalagriculture_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="mysticalagradditions"
+    type="optional"
+    versionRange="[${mysticalagradditions_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="mysticalextendedtier"
+    type="optional"
+    versionRange="[${mysticalextendedtier_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="ultimatearmoury"
+    type="optional"
+    versionRange="[${ultimatearmoury_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="enderio"
+    type="optional"
+    versionRange="[${enderio_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="ars_nouveau"
+    type="optional"
+    versionRange="[${ars_nouveau_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="industrialforegoing"
+    type="optional"
+    versionRange="[${industrialforegoing_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="agricraft"
     type="optional"
-    versionRange="[0,)"
+    versionRange="[${agricraft_version},)"
     ordering="AFTER"
     side="BOTH"
 
 [[mixins]]
 config="umc.mixins.json"
+
+[[mixins]]
+config="umc.client.mixins.json"

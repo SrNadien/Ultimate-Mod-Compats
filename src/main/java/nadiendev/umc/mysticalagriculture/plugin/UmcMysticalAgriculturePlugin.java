@@ -78,9 +78,6 @@ public class UmcMysticalAgriculturePlugin implements IMysticalAgriculturePlugin 
         textures.setFlowerTexture(definition.flowerTexture());
         textures.setEssenceTexture(definition.essenceTexture());
         textures.setSeedTexture(definition.seedTexture());
-        if (definition.tinted()) {
-            crop.setFlowerColor(definition.color());
-        }
         crop.setDisplayName(Component.translatable(definition.translationKey()));
         crop.getRecipeConfig()
                 .setSeedCraftingRecipeEnabled(false)

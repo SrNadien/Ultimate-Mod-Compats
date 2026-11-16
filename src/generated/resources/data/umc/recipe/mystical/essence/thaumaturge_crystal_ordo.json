@@ -23,7 +23,12 @@
     "EEE"
   ],
   "result": {
+    "components": {
+      "thaumaturge:crystal_aspect": {
+        "aspect": "thaumaturge:ordo"
+      }
+    },
     "count": 4,
-    "id": "thaumaturge:crystal_ordo"
+    "id": "thaumaturge:essentia_crystal"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthemodium"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "enderio"
+    }
+  ],
+  "type": "enderio:energy",
+  "description": {
+    "translate": "conduit.umc.allthemodium_energy"
+  },
+  "texture": "umc:block/conduit/allthemodium_energy",
+  "transfer_rate": 20000000
+}

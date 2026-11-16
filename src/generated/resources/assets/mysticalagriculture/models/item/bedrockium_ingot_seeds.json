@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "umc:item/mystical/bedrockium_ingot_seeds"
+  }
+}

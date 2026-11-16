@@ -1,0 +1,144 @@
+{
+  "values": {
+    "umc:allthemodium_grinding_ball": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "allthemodium"
+        },
+        {
+          "type": "umc:compat",
+          "compat": "enderio"
+        }
+      ],
+      "BonusMultiplier": 1.75,
+      "Durability": 2500,
+      "OutputMultiplier": 1.85,
+      "PowerUse": 0.7
+    },
+    "umc:joanfoite_grinding_ball": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "ultimatearmoury"
+        },
+        {
+          "type": "umc:compat",
+          "compat": "enderio"
+        }
+      ],
+      "BonusMultiplier": 6.0,
+      "Durability": 7500,
+      "OutputMultiplier": 6.0,
+      "PowerUse": 0.5
+    },
+    "umc:mushashite_grinding_ball": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "ultimatearmoury"
+        },
+        {
+          "type": "umc:compat",
+          "compat": "enderio"
+        }
+      ],
+      "BonusMultiplier": 5.0,
+      "Durability": 7500,
+      "OutputMultiplier": 5.0,
+      "PowerUse": 0.5
+    },
+    "umc:nadienite_grinding_ball": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "ultimatearmoury"
+        },
+        {
+          "type": "umc:compat",
+          "compat": "enderio"
+        }
+      ],
+      "BonusMultiplier": 70.0,
+      "Durability": 7500,
+      "OutputMultiplier": 70.0,
+      "PowerUse": 0.5
+    },
+    "umc:piglich_grinding_ball": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "allthemodium"
+        },
+        {
+          "type": "umc:compat",
+          "compat": "enderio"
+        }
+      ],
+      "BonusMultiplier": 90.0,
+      "Durability": 7500,
+      "OutputMultiplier": 90.0,
+      "PowerUse": 0.5
+    },
+    "umc:unobtainium_grinding_ball": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "allthemodium"
+        },
+        {
+          "type": "umc:compat",
+          "compat": "enderio"
+        }
+      ],
+      "BonusMultiplier": 2.1,
+      "Durability": 7500,
+      "OutputMultiplier": 2.25,
+      "PowerUse": 0.5
+    },
+    "umc:vibranium_grinding_ball": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "allthemodium"
+        },
+        {
+          "type": "umc:compat",
+          "compat": "enderio"
+        }
+      ],
+      "BonusMultiplier": 1.9,
+      "Durability": 5000,
+      "OutputMultiplier": 2.0,
+      "PowerUse": 0.6
+    }
+  }
+}

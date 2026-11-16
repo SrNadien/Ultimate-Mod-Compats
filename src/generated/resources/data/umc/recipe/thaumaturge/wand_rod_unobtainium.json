@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thaumaturge"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthemodium"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "thaumaturge_wands"
+    }
+  ],
+  "type": "thaumaturge:arcane_workbench_shaped",
+  "crystals": [],
+  "key": {
+    "I": {
+      "item": "allthemodium:unobtainium_ingot"
+    }
+  },
+  "pattern": [
+    "  I",
+    " I ",
+    "I  "
+  ],
+  "research": {
+    "entry": "thaumaturge:base_auromancy"
+  },
+  "result": {
+    "count": 1,
+    "id": "umc:wand_rod_unobtainium"
+  },
+  "vis": 150
+}

@@ -1,0 +1,52 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:dissolution_chamber",
+  "input": [
+    {
+      "item": "industrialforegoing:efficiency_addon_tier_2"
+    },
+    {
+      "item": "industrialforegoing:efficiency_addon_tier_2"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "ultimatearmoury:joanfoite_ingot"
+    },
+    {
+      "item": "industrialforegoing:plastic"
+    },
+    {
+      "item": "industrialforegoing:plastic"
+    }
+  ],
+  "inputFluid": {
+    "amount": 1000,
+    "fluid": "industrialforegoing:latex"
+  },
+  "output": {
+    "count": 1,
+    "id": "umc:joanfoite_efficiency_addon"
+  },
+  "processingTime": 400
+}

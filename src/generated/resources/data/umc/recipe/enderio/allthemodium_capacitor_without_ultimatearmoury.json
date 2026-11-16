@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "allthemodium"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "enderio"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "ultimatearmoury"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:ingots/vibrant_alloy"
+    },
+    "I": {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    "P": {
+      "item": "enderio:octadic_capacitor"
+    }
+  },
+  "pattern": [
+    " I ",
+    "PCP",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "umc:allthemodium_capacitor"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "ars_nouveau:block/source_jar/source_jar80",
+  "textures": {
+    "2": "umc:block/vibranium_source_jar"
+  }
+}

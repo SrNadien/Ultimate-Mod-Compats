@@ -76,6 +76,9 @@ public class SpiritData implements DataModule {
         lang.add("key.categories.umc_spirit", "Ultimate Mod Compats: Spirit");
         lang.add("key.umc.cycle_infusion", "Cycle Infusion");
         lang.add("key.umc.spirit_return", "Return From the Spirit World");
+        lang.add("key.umc.toggle_spirit_hud", "Show or Hide the Spirit HUD");
+        lang.add("hud.umc.spirit_hud_on", "Spirit HUD shown");
+        lang.add("hud.umc.spirit_hud_off", "Spirit HUD hidden");
         lang.add("hud.umc.spirit_time", "Spirit world: %s s");
         lang.add("tooltip.umc.essence", "Grants %s seconds of infusion energy");
         lang.add("message.umc.portal_needs_dust", "The portal needs %s spirit dust to open");
@@ -154,6 +157,9 @@ public class SpiritData implements DataModule {
         lang.add("key.categories.umc_spirit", "Ultimate Mod Compats: Espíritu");
         lang.add("key.umc.cycle_infusion", "Cambiar infusión");
         lang.add("key.umc.spirit_return", "Volver del mundo espiritual");
+        lang.add("key.umc.toggle_spirit_hud", "Mostrar u ocultar el HUD espiritual");
+        lang.add("hud.umc.spirit_hud_on", "HUD espiritual visible");
+        lang.add("hud.umc.spirit_hud_off", "HUD espiritual oculto");
         lang.add("hud.umc.spirit_time", "Mundo espiritual: %s s");
         lang.add("tooltip.umc.essence", "Otorga %s segundos de energía de infusión");
         lang.add("message.umc.portal_needs_dust", "El portal necesita %s de polvo espiritual para abrirse");

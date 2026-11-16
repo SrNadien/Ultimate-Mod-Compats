@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ultimatearmoury"
+    },
+    {
+      "type": "umc:compat",
+      "compat": "enderio"
+    }
+  ],
+  "type": "enderio:fluid",
+  "description": {
+    "translate": "conduit.umc.nadienite_fluid"
+  },
+  "texture": "umc:block/conduit/nadienite_fluid",
+  "transfer_rate": 50000
+}

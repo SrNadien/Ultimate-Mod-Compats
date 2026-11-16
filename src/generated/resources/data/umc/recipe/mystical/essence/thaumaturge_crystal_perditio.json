@@ -23,7 +23,12 @@
     "EEE"
   ],
   "result": {
-    "count": 3,
-    "id": "thaumaturge:crystal_perditio"
+    "components": {
+      "thaumaturge:crystal_aspect": {
+        "aspect": "thaumaturge:perditio"
+      }
+    },
+    "count": 4,
+    "id": "thaumaturge:essentia_crystal"
   }
 }

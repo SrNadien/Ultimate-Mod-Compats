@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "umc:wand_cap_mushashite",
+      "required": false
+    },
+    {
+      "id": "umc:wand_cap_joanfoite",
+      "required": false
+    },
+    {
+      "id": "umc:wand_cap_nadienite",
+      "required": false
+    },
+    {
+      "id": "umc:wand_cap_allthemodium",
+      "required": false
+    },
+    {
+      "id": "umc:wand_cap_vibranium",
+      "required": false
+    },
+    {
+      "id": "umc:wand_cap_unobtainium",
+      "required": false
+    },
+    {
+      "id": "umc:wand_cap_piglich",
+      "required": false
+    }
+  ]
+}

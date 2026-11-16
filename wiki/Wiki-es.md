@@ -29,7 +29,7 @@ Guía para jugadores y creadores de modpacks. Mod `umc` (NeoForge 1.21.1), autor
 **Ultimate Mod Compats** (id `umc`) es un addon para **Enchanted** que hace dos cosas:
 
 - Añade **contenido propio**: criaturas (hombre lobo, vampiro, cazador y mobs nuevos), un mundo espiritual y artesanía de brujas (familiares, ropa, plantas).
-- Añade **compatibilidad con KubeJS** para otros mods (recetas y eventos que esos mods no traen), y **64 cultivos extra** para Mystical Agriculture.
+- Añade **compatibilidad con KubeJS** para otros mods (recetas y eventos que esos mods no traen), y **85 cultivos extra** para Mystical Agriculture.
 
 ### Dependencias
 
@@ -108,7 +108,21 @@ Resumen corto de lo que añade el mod por sí mismo. Todo se puede apagar desde 
 
 ### Pestaña creativa
 
-Una pestaña propia llamada **Ultimate Mod Compats** (id `umc:main`) con los objetos del mod. El icono es el objeto `umc:tab_icon` (en español, "Gato Espacial").
+Una sola pestaña llamada **Ultimate Mod Compats** (id `umc:main`), hecha con [Fractal](https://github.com/DaFuqs/Fractal), con subpestañas. El icono es el objeto `umc:tab_icon` (en español, "Gato Espacial"). Arriba solo aparece el nombre del mod.
+
+| Subpestaña | Qué tiene | Cuándo sale |
+| --- | --- | --- |
+| Semillas | Las semillas de los cultivos de UMC | Con Mystical Agriculture |
+| Altares | Altares de infusión y del despertar por nivel | Con Mystical Agriculture |
+| Pedestales | Pedestales y recipientes de esencia por nivel | Con Mystical Agriculture |
+| Brujeria | Los objetos propios del mod | Siempre |
+| Esencias | Las esencias de los cultivos de UMC | Con Mystical Agriculture |
+| Cristales | Cristales de infusión por nivel ("Cristal de supremium", etc.) | Con Mystical Agriculture |
+| Maquinas | Reprocesadores de semillas por nivel | Con Mystical Agriculture |
+| Mesas | Hornos por nivel | Con Mystical Agriculture |
+| Ejemplo | `umc:example_item` | Solo si no hay ninguna compatibilidad instalada, y siempre en desarrollo |
+
+Cada compatibilidad añade sus subpestañas solo si su mod está instalado, y ninguna es obligatoria.
 
 ---
 
@@ -1777,7 +1791,7 @@ ServerEvents.recipes(event => {
 
 ## 5. Cultivos de Mystical Agriculture
 
-Si **Mystical Agriculture** está instalado, UMC añade **64 cultivos** extra de forma nativa (sin KubeJS). Cada cultivo solo se registra cuando están cargados los mods que necesita (columna "Mods requeridos").
+Si **Mystical Agriculture** está instalado, UMC añade **85 cultivos** extra de forma nativa (sin KubeJS). Cada cultivo solo se registra cuando están cargados los mods que necesita (columna "Mods requeridos").
 
 ### Cómo funcionan los ids
 
@@ -1792,7 +1806,7 @@ Ejemplo: el cultivo `thaumaturge_thaumium` da `mysticalagriculture:thaumaturge_t
 
 Cada cultivo se puede apagar por separado con `compat.mysticalagriculture.crops.<id> = false`, y todo el sistema con `compat.mysticalagriculture.enabled = false`.
 
-### Los 64 cultivos
+### Los 85 cultivos
 
 - **Nivel:** el nivel de tier. De 1 a 5 son de Mystical Agriculture; el 6 es de Mystical Agradditions (por eso exige ese mod).
 - **Material:** ingrediente con el que se crea la semilla. Con `#` es una etiqueta.
@@ -1818,7 +1832,7 @@ Cada cultivo se puede apagar por separado con `compat.mysticalagriculture.crops.
 | `darkstone` | Piedra oscura | 3 | forbidden_arcanus:darkstone | forbidden_arcanus | 4x forbidden_arcanus:darkstone |
 | `deorum_ingot` | Deorum | 4 | forbidden_arcanus:deorum_block | forbidden_arcanus | 3x forbidden_arcanus:deorum_ingot |
 | `eclipse_alloy` | Aleación de eclipse | 6 (Agradditions) | justdirethings:eclipsealloy_block | justdirethings, mysticalagradditions | 2x justdirethings:eclipsealloy_ingot |
-| `elevatium_ingot` | Elevatium | 4 | kubejs:ingot_of_elevation | kubejs | 3x kubejs:ingot_of_elevation |
+| `elevatium_ingot` | Elevatium | 4 | ultimatearmoury:ascendium_ingot | ultimatearmoury | 3x ultimatearmoury:ascendium_ingot |
 | `ender_ingot` | Lingote de ender | 5 | extendedcrafting:ender_ingot_block | extendedcrafting | 2x extendedcrafting:ender_ingot |
 | `entro` | Entro | 5 | allthecompressed:entro_block_1x | allthecompressed | 2x allthecompressed:entro_block_1x |
 | `ferricore` | FerriCore | 6 (Agradditions) | justdirethings:ferricore_block | justdirethings, mysticalagradditions | 2x justdirethings:ferricore_ingot |
@@ -1826,7 +1840,7 @@ Cada cultivo se puede apagar por separado con `compat.mysticalagriculture.crops.
 | `imperium_essence` | Imperium | 4 | mysticalagriculture:imperium_essence | (ninguno) | 3x mysticalagriculture:imperium_essence |
 | `insanium_essence` | Insanium | 6 (Agradditions) | mysticalagriculture:supremium_essence | mysticalagradditions | 2x mysticalagriculture:supremium_essence |
 | `kivi` | Kivi | 2 | xycraft_world:kivi | xycraft_world | 6x xycraft_world:kivi |
-| `nadienite_ingot` | Nadienita | 5 | ultimatearmoury:nadienite_block | ultimatearmoury | 2x ultimatearmoury:nadienite_ingot |
+| `nadienite_ingot` | Nadienite | 5 | ultimatearmoury:nadienite_block | ultimatearmoury | 2x ultimatearmoury:nadienite_ingot |
 | `naquadah` | Naquadah | 6 (Agradditions) | mekanism_extras:block_naquadah | mekanism_extras, mysticalagradditions | 2x mekanism_extras:ingot_naquadah |
 | `pink_slime` | Slime rosa | 4 | industrialforegoing:pink_slime_ingot | industrialforegoing | 3x industrialforegoing:pink_slime_ingot |
 | `predicciondematrix` | Matriz de predicción | 3 | hostilenetworks:prediction_matrix | hostilenetworks | 4x hostilenetworks:prediction_matrix |
@@ -1843,14 +1857,14 @@ Cada cultivo se puede apagar por separado con `compat.mysticalagriculture.crops.
 | `thaumaturge_alumentum` | Alumentum | 4 | thaumaturge:alumentum | thaumaturge | 3x thaumaturge:alumentum |
 | `thaumaturge_amber` | Ámbar | 3 | thaumaturge:amber | thaumaturge | 4x thaumaturge:amber |
 | `thaumaturge_brass` | Latón taumatúrgico | 2 | thaumaturge:ingot_brass | thaumaturge | 6x thaumaturge:ingot_brass |
-| `thaumaturge_crystal_aer` | Cristal de Aer | 3 | thaumaturge:crystal_aer | thaumaturge | 4x thaumaturge:crystal_aer |
-| `thaumaturge_crystal_aqua` | Cristal de Aqua | 3 | thaumaturge:crystal_aqua | thaumaturge | 4x thaumaturge:crystal_aqua |
-| `thaumaturge_crystal_ignis` | Cristal de Ignis | 3 | thaumaturge:crystal_ignis | thaumaturge | 4x thaumaturge:crystal_ignis |
-| `thaumaturge_crystal_ordo` | Cristal de Ordo | 3 | thaumaturge:crystal_ordo | thaumaturge | 4x thaumaturge:crystal_ordo |
-| `thaumaturge_crystal_perditio` | Cristal de Perditio | 4 | thaumaturge:crystal_perditio | thaumaturge | 3x thaumaturge:crystal_perditio |
-| `thaumaturge_crystal_terra` | Cristal de Terra | 3 | thaumaturge:crystal_terra | thaumaturge | 4x thaumaturge:crystal_terra |
-| `thaumaturge_crystal_vitium` | Cristal de Vitium | 4 | thaumaturge:crystal_vitium | thaumaturge | 3x thaumaturge:crystal_vitium |
-| `thaumaturge_quicksilver` | Azogue | 2 | thaumaturge:quicksilver | thaumaturge | 6x thaumaturge:quicksilver |
+| `thaumaturge_crystal_aer` | Cristal de Aer | 3 | thaumaturge:crystal_aer | thaumaturge | 4x thaumaturge:essentia_crystal (cristal de vis de aer) |
+| `thaumaturge_crystal_aqua` | Cristal de Aqua | 3 | thaumaturge:crystal_aqua | thaumaturge | 4x thaumaturge:essentia_crystal (cristal de vis de aqua) |
+| `thaumaturge_crystal_ignis` | Cristal de Ignis | 3 | thaumaturge:crystal_ignis | thaumaturge | 4x thaumaturge:essentia_crystal (cristal de vis de ignis) |
+| `thaumaturge_crystal_ordo` | Cristal de Ordo | 3 | thaumaturge:crystal_ordo | thaumaturge | 4x thaumaturge:essentia_crystal (cristal de vis de ordo) |
+| `thaumaturge_crystal_perditio` | Cristal de Perditio | 4 | thaumaturge:crystal_perditio | thaumaturge | 4x thaumaturge:essentia_crystal (cristal de vis de perditio) |
+| `thaumaturge_crystal_terra` | Cristal de Terra | 3 | thaumaturge:crystal_terra | thaumaturge | 4x thaumaturge:essentia_crystal (cristal de vis de terra) |
+| `thaumaturge_crystal_vitium` | Cristal de Vitium | 4 | thaumaturge:crystal_vitium | thaumaturge | 4x thaumaturge:essentia_crystal (cristal de vis de vitium) |
+| `thaumaturge_quicksilver` | Mercurio | 2 | thaumaturge:quicksilver | thaumaturge | 6x thaumaturge:quicksilver |
 | `thaumaturge_salis_mundus` | Salis Mundus | 2 | thaumaturge:salis_mundus | thaumaturge | 6x thaumaturge:salis_mundus |
 | `thaumaturge_thaumium` | Taumio | 3 | thaumaturge:ingot_thaumium | thaumaturge | 4x thaumaturge:ingot_thaumium |
 | `thaumaturge_void_metal` | Metal del vacío | 4 | thaumaturge:ingot_void | thaumaturge | 3x thaumaturge:ingot_void |
@@ -1858,6 +1872,27 @@ Cada cultivo se puede apagar por separado con `compat.mysticalagriculture.crops.
 | `unobtainium` | Unobtainium | 6 (Agradditions) | #c:storage_blocks/unobtainium | allthemodium, mysticalagradditions | 2x allthemodium:unobtainium_ingot |
 | `vibranium` | Vibranio | 6 (Agradditions) | #c:storage_blocks/vibranium | allthemodium, mysticalagradditions | 2x allthemodium:vibranium_ingot |
 | `xychorium_gem` | Gema de xychorium | 3 | #c:gems/xychorium | xycraft_world | (sin receta) |
+| `quantum_infused_dust` | Polvo infundido cuántico | 4 | advanced_ae:quantum_infused_dust | advanced_ae | 3x advanced_ae:quantum_infused_dust |
+| `entro_ingot` | Lingote de entro | 4 | extendedae:entro_ingot | extendedae | 3x extendedae:entro_ingot |
+| `unstable_ingot` | Lingote inestable | 4 | excessive_utilities:unstable_ingot | excessive_utilities | 3x excessive_utilities:unstable_ingot |
+| `quantum_alloy` | Aleación cuántica | 5 | advanced_ae:quantum_alloy | advanced_ae | 2x advanced_ae:quantum_alloy |
+| `glass` | Vidrio | 3 | minecraft:glass | (ninguno) | 4x minecraft:glass |
+| `enchanted_ingot` | Lingote encantado | 6 (Agradditions) | excessive_utilities:block_of_enchanted_metal | excessive_utilities, mysticalagradditions | 2x excessive_utilities:enchanted_ingot |
+| `demon_ingot` | Lingote demoníaco | 6 (Agradditions) | excessive_utilities:block_of_demon_metal | excessive_utilities, mysticalagradditions | 2x excessive_utilities:demon_ingot |
+| `evil_infused_iron_ingot` | Hierro infundido con maldad | 6 (Agradditions) | excessive_utilities:block_of_evil_infused_iron | excessive_utilities, mysticalagradditions | 2x excessive_utilities:evil_infused_iron_ingot |
+| `bedrockium_ingot` | Lingote de bedrockium | 10 (Extended Tier) | excessive_utilities:bedrockium_ingot | excessive_utilities, mysticalextendedtier | 1x excessive_utilities:bedrockium_ingot |
+| `amberite_ingot` | Amberita | 2 | ultimatearmoury:amberite_ingot | ultimatearmoury | 6x ultimatearmoury:amberite_ingot |
+| `lustrous_dust` | Polvo lustroso | 2 | ultimatearmoury:lustrous_dust | ultimatearmoury | 6x ultimatearmoury:lustrous_dust |
+| `tenebrite_ingot` | Tenebrita | 3 | ultimatearmoury:tenebrite_ingot | ultimatearmoury | 4x ultimatearmoury:tenebrite_ingot |
+| `gorium_ingot` | Gorio | 3 | ultimatearmoury:gorium_ingot | ultimatearmoury | 4x ultimatearmoury:gorium_ingot |
+| `luminite_ingot` | Luminita | 3 | ultimatearmoury:luminite_ingot | ultimatearmoury | 4x ultimatearmoury:luminite_ingot |
+| `viridite_gem` | Viridita | 3 | ultimatearmoury:viridite_gem | ultimatearmoury | 4x ultimatearmoury:viridite_gem |
+| `osmirite_ingot` | Osmirita | 4 | ultimatearmoury:osmirite_ingot | ultimatearmoury | 3x ultimatearmoury:osmirite_ingot |
+| `umbrite_ingot` | Umbrita | 4 | ultimatearmoury:umbrite_ingot | ultimatearmoury | 3x ultimatearmoury:umbrite_ingot |
+| `ionite_ingot` | Ionita | 4 | ultimatearmoury:ionite_ingot | ultimatearmoury | 3x ultimatearmoury:ionite_ingot |
+| `pyrestone_crystal` | Cristal de pirestona | 4 | ultimatearmoury:pyrestone_crystal | ultimatearmoury | 3x ultimatearmoury:pyrestone_crystal |
+| `aurelite_crystal` | Cristal de aurelita | 4 | ultimatearmoury:aurelite_crystal | ultimatearmoury | 3x ultimatearmoury:aurelite_crystal |
+| `infernium_ingot` | Infernium | 5 | ultimatearmoury:infernium_ingot | ultimatearmoury | 2x ultimatearmoury:infernium_ingot |
 | `soul_dust` | Polvo de alma | 2 | mysticalagriculture:soul_dust | (ninguno) | 6x mysticalagriculture:soul_dust |
 | `soulstone_cobble` | Adoquín de piedra de alma | 2 | mysticalagriculture:soulstone_cobble | (ninguno) | 6x mysticalagriculture:soulstone_cobble |
 | `ornium_essence` | Ornium | 7 (Extended Tier) | mysticalagradditions:insanium_essence | mysticalagradditions, mysticalextendedtier | 1x mysticalagradditions:insanium_essence |
@@ -1902,7 +1937,7 @@ EEE
 | 5 | 2 |
 | 6 | 2 |
 
-- Se generan por datagen en `data/umc/recipe/mystical/essence/<id>.json`: hay **59 recetas**. Los cultivos `black_quartz`, `xychorium_gem`, `crimson_iron`, `azure_silver` y `unexplored_wood` no tienen receta de esencia porque su material es una etiqueta (no hay un único objeto de resultado).
+- Se generan por datagen en `data/umc/recipe/mystical/essence/<id>.json`: hay **80 recetas**. Los cultivos `black_quartz`, `xychorium_gem`, `crimson_iron`, `azure_silver` y `unexplored_wood` no tienen receta de esencia porque su material es una etiqueta (no hay un único objeto de resultado).
 - Se activan con `compat.mysticalagriculture.recipes.essence_crafting`.
 - Llevan condiciones `neoforge:mod_loaded` (una por cada mod que exige el cultivo, aparte de Mystical Agriculture) y la condición propia `umc:mystical_crop`.
 
@@ -2003,7 +2038,7 @@ Los valores son los de Mystical Agriculture 1.18, ampliados del nivel 6 al 10. L
 
 ### Pestaña creativa
 
-Todo esto está en la pestaña **Ultimate Mod Compats: Mystical Agriculture**, agrupado por tipo (cristales, altares, pedestales, recipientes, reprocesadores, hornos, semillas y esencias) y ordenado por nivel dentro de cada grupo.
+Todo esto está en la pestaña de UMC (ver la sección 2), repartido en las subpestañas **Semillas, Altares, Pedestales, Esencias, Cristales, Máquinas y Mesas** y ordenado por nivel dentro de cada una. Los recipientes están con los pedestales, los reprocesadores en Máquinas y los hornos en Mesas. Todos se llaman con el nombre de la esencia de su nivel, por ejemplo "Altar de infusión de supremium", "Horno de supremium" o "Cristal de supremium".
 
 ### Configuración
 
@@ -2019,7 +2054,7 @@ Todo esto está en la pestaña **Ultimate Mod Compats: Mystical Agriculture**, a
 
 ### Tabla de semillas por nivel
 
-Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Extended Tier y las 64 de UMC (la tabla se genera desde el registro de cultivos).
+Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Extended Tier y las 85 de UMC (la tabla se genera desde el registro de cultivos).
 
 #### Nivel 1 (12)
 
@@ -2038,11 +2073,12 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `water_seeds` | mysticalagriculture |
 | `wood_seeds` | mysticalagriculture |
 
-#### Nivel 2 (38)
+#### Nivel 2 (40)
 
 | Semilla | Mod |
 | --- | --- |
 | `aluminum_seeds` | mysticalagriculture |
+| `amberite_ingot_seeds` | umc |
 | `amethyst_seeds` | mysticalagriculture |
 | `apatite_seeds` | mysticalagriculture |
 | `armadillo_seeds` | mysticalagriculture |
@@ -2057,6 +2093,7 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `honey_seeds` | mysticalagriculture |
 | `kivi_seeds` | umc |
 | `limestone_seeds` | mysticalagriculture |
+| `lustrous_dust_seeds` | umc |
 | `marble_seeds` | mysticalagriculture |
 | `menril_seeds` | mysticalagriculture |
 | `mystical_flower_seeds` | mysticalagriculture |
@@ -2081,7 +2118,7 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `turtle_seeds` | mysticalagriculture |
 | `unexplored_wood_seeds` | umc |
 
-#### Nivel 3 (53)
+#### Nivel 3 (58)
 
 | Semilla | Mod |
 | --- | --- |
@@ -2096,17 +2133,20 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `bronze_seeds` | mysticalagriculture |
 | `certus_quartz_seeds` | mysticalagriculture |
 | `conductive_alloy_seeds` | mysticalagriculture |
-| `copper_seeds` | mysticalagriculture |
 | `copper_alloy_seeds` | mysticalagriculture |
+| `copper_seeds` | mysticalagriculture |
 | `creeper_seeds` | mysticalagriculture |
 | `crimson_iron_seeds` | umc |
 | `dark_gem_seeds` | umc |
 | `darkstone_seeds` | umc |
+| `glass_seeds` | umc |
 | `glowstone_seeds` | mysticalagriculture |
+| `gorium_ingot_seeds` | umc |
 | `graphite_seeds` | mysticalagriculture |
 | `iron_seeds` | mysticalagriculture |
 | `ironwood_seeds` | mysticalagriculture |
 | `lead_seeds` | mysticalagriculture |
+| `luminite_ingot_seeds` | umc |
 | `manasteel_seeds` | mysticalagriculture |
 | `nether_quartz_seeds` | mysticalagriculture |
 | `obsidian_seeds` | mysticalagriculture |
@@ -2116,8 +2156,8 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `prismarine_seeds` | mysticalagriculture |
 | `quartz_enriched_iron_seeds` | mysticalagriculture |
 | `rabbit_seeds` | mysticalagriculture |
-| `redstone_seeds` | mysticalagriculture |
 | `redstone_alloy_seeds` | mysticalagriculture |
+| `redstone_seeds` | mysticalagriculture |
 | `sculk_seeds` | mysticalagriculture |
 | `silver_seeds` | mysticalagriculture |
 | `skeleton_seeds` | mysticalagriculture |
@@ -2126,6 +2166,7 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `spider_seeds` | mysticalagriculture |
 | `spirit_gem_seeds` | umc |
 | `steeleaf_seeds` | mysticalagriculture |
+| `tenebrite_ingot_seeds` | umc |
 | `tertium_essence_seeds` | umc |
 | `thaumaturge_amber_seeds` | umc |
 | `thaumaturge_crystal_aer_seeds` | umc |
@@ -2135,14 +2176,16 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `thaumaturge_crystal_terra_seeds` | umc |
 | `thaumaturge_thaumium_seeds` | umc |
 | `tin_seeds` | mysticalagriculture |
+| `viridite_gem_seeds` | umc |
 | `xychorium_gem_seeds` | umc |
 | `zinc_seeds` | mysticalagriculture |
 | `zombie_seeds` | mysticalagriculture |
 
-#### Nivel 4 (49)
+#### Nivel 4 (57)
 
 | Semilla | Mod |
 | --- | --- |
+| `aurelite_crystal_seeds` | umc |
 | `blaze_seeds` | mysticalagriculture |
 | `blazing_crystal_seeds` | mysticalagriculture |
 | `breeze_seeds` | mysticalagriculture |
@@ -2158,6 +2201,7 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `enderman_seeds` | mysticalagriculture |
 | `energetic_alloy_seeds` | mysticalagriculture |
 | `energized_steel_seeds` | mysticalagriculture |
+| `entro_ingot_seeds` | umc |
 | `experience_seeds` | mysticalagriculture |
 | `fiery_ingot_seeds` | mysticalagriculture |
 | `fluix_seeds` | mysticalagriculture |
@@ -2168,15 +2212,19 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `hop_graphite_seeds` | mysticalagriculture |
 | `imperium_essence_seeds` | umc |
 | `invar_seeds` | mysticalagriculture |
+| `ionite_ingot_seeds` | umc |
 | `knightmetal_seeds` | mysticalagriculture |
 | `lapis_lazuli_seeds` | mysticalagriculture |
 | `lumium_seeds` | mysticalagriculture |
 | `nickel_seeds` | mysticalagriculture |
+| `osmirite_ingot_seeds` | umc |
 | `osmium_seeds` | mysticalagriculture |
 | `peridot_seeds` | mysticalagriculture |
 | `pink_slime_seeds` | umc |
 | `prometheum_seeds` | umc |
 | `pulsating_alloy_seeds` | mysticalagriculture |
+| `pyrestone_crystal_seeds` | umc |
+| `quantum_infused_dust_seeds` | umc |
 | `refined_glowstone_seeds` | mysticalagriculture |
 | `refined_obsidian_seeds` | mysticalagriculture |
 | `rose_gold_seeds` | mysticalagriculture |
@@ -2191,9 +2239,11 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `thaumaturge_crystal_perditio_seeds` | umc |
 | `thaumaturge_crystal_vitium_seeds` | umc |
 | `thaumaturge_void_metal_seeds` | umc |
+| `umbrite_ingot_seeds` | umc |
+| `unstable_ingot_seeds` | umc |
 | `uranium_seeds` | mysticalagriculture |
 
-#### Nivel 5 (32)
+#### Nivel 5 (34)
 
 | Semilla | Mod |
 | --- | --- |
@@ -2211,6 +2261,7 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `entro_seeds` | umc |
 | `flux_infused_gem_seeds` | mysticalagriculture |
 | `hepatizon_seeds` | mysticalagriculture |
+| `infernium_ingot_seeds` | umc |
 | `iridium_seeds` | mysticalagriculture |
 | `manyullyn_seeds` | mysticalagriculture |
 | `nadienite_ingot_seeds` | umc |
@@ -2218,6 +2269,7 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `niotic_crystal_seeds` | mysticalagriculture |
 | `platinum_seeds` | mysticalagriculture |
 | `prosperity_shard_seeds` | umc |
+| `quantum_alloy_seeds` | umc |
 | `queens_slime_seeds` | mysticalagriculture |
 | `rock_crystal_seeds` | mysticalagriculture |
 | `sky_steel_ingot_seeds` | umc |
@@ -2230,7 +2282,7 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `wither_skeleton_seeds` | mysticalagriculture |
 | `yellorium_seeds` | mysticalagriculture |
 
-#### Nivel 6 (18)
+#### Nivel 6 (21)
 
 | Semilla | Mod |
 | --- | --- |
@@ -2241,8 +2293,11 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `chaos_shard_seeds` | umc |
 | `chromium_seeds` | umc |
 | `cuarzorosa_seeds` | umc |
+| `demon_ingot_seeds` | umc |
 | `dragon_egg_seeds` | mysticalagradditions |
 | `eclipse_alloy_seeds` | umc |
+| `enchanted_ingot_seeds` | umc |
+| `evil_infused_iron_ingot_seeds` | umc |
 | `ferricore_seeds` | umc |
 | `gaia_spirit_seeds` | mysticalagradditions |
 | `insanium_essence_seeds` | umc |
@@ -2279,10 +2334,11 @@ Incluye las semillas de Mystical Agriculture, Mystical Agradditions, Mystical Ex
 | `plaslitherite_seeds` | mysticalextendedtier |
 | `tornium_essence_seeds` | umc |
 
-#### Nivel 10 (5)
+#### Nivel 10 (6)
 
 | Semilla | Mod |
 | --- | --- |
+| `bedrockium_ingot_seeds` | umc |
 | `elyndrite_seeds` | mysticalextendedtier |
 | `infinity_seeds` | mysticalextendedtier |
 | `manronium_steel_seeds` | mysticalextendedtier |
@@ -2311,17 +2367,9 @@ Los aumentos de Mystical Agriculture ("Aumento de mejora de salud IV", etc.) y e
 
 Cada módulo de compatibilidad solo se registra si el mod correspondiente está instalado **y** su interruptor está activo (`compat.kubejs.enabled` y `compat.kubejs.modules.<mod>`). Si falta el mod, objetos como `EnchantedEvents`, `ThaumaturgeEvents`, `GeneratorGalore` o `event.recipes.ae2` no existen. También salen errores del tipo `Serializer for type X is not found` cuando una receta apunta a un mod que no está instalado.
 
-### El cultivo `elevatium_ingot` no encuentra su objeto
+### El cultivo `elevatium_ingot` no aparece
 
-Ese cultivo usa `kubejs:ingot_of_elevation`, un ítem **del modpack** (de KubeJS), no del mod. El cultivo se registra cuando KubeJS está cargado, pero necesitas definir el objeto tú mismo en `startup_scripts`, por ejemplo:
-
-```js
-StartupEvents.registry('item', event => {
-    event.create('ingot_of_elevation')
-})
-```
-
-Si no lo quieres, apaga el cultivo con `compat.mysticalagriculture.crops.elevatium_ingot = false`.
+Ese cultivo usa `ultimatearmoury:ascendium_ingot`, un ítem del mod **Ultimate Armoury**. El cultivo solo se registra si Ultimate Armoury está instalado. Si no lo quieres, apaga el cultivo con `compat.mysticalagriculture.crops.elevatium_ingot = false`.
 
 ### Thaumaturge avisa de `arcane_key_*` al cargar
 

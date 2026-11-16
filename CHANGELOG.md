@@ -1,5 +1,47 @@
 # Changelog
 
+## 1.0.2 - 2026-11-15
+
+- 12 new Mystical Agriculture crops for the Ultimate Armoury materials that had no seeds yet: amberite, lustrous dust, tenebrite, gorium, luminite, viridite, osmirite, umbrite, ionite, pyrestone crystal, aurelite crystal and infernium They only load when Ultimate Armoury is installed.
+- 9 more crops for materials of Advanced AE, Extended AE, Excessive Utilities and vanilla glass: quantum infused dust, quantum alloy, entro ingot, unstable ingot, enchanted ingot, demon ingot, evil infused iron, bedrockium ingot and glass (85 crops in total). The tier 6 ones are made from blocks, bedrockium is tier 10 and glass tier 3.
+- The essence of the Thaumaturge crystal crops now gives the vis crystal (essentia crystal) of its aspect instead of the raw crystal.
+- Every tinted crop has its own seed, essence and flower textures, colored like the material it makes.
+- The Elevatium crop now uses Ultimate Armoury's ascendium ingot (`ultimatearmoury:ascendium_ingot`) instead of a KubeJS item.
+- A single creative tab built with Fractal, with the sub tabs Seeds, Altars, Pedestals, Witchcraft, Essences, Crystals, Machines and Tables, and only the name of the mod at the top. The Example sub tab only shows with no compatibility installed, and always in development.
+- Every compatibility loads only when its mod is installed, and none is required.
+- Dependencies: official Maven where the mod has one (Mystical Agriculture and its addons, Applied Energistics 2, GuideME, Create, Kotlin for Forge, Fractal) and CurseMaven at the end for the rest, including Thaumaturge. `neoforge.mods.toml` now uses `[${mod_version},)` for every dependency.
+- Compatibilities for the Ultimate Armoury materials (mushashite, joanfoite, nadienite) and the Allthemodium ones (allthemodium, vibranium, unobtainium, piglich), each one with its own creative sub tab and its own switch in `umc.toml` (`compat.items.<name>.enabled`):
+  - EnderIO: grinding balls, capacitors and energy, item and fluid conduits, with two recipes for the conduits.
+  - Industrial Foregoing: range, speed, efficiency and processing addons.
+  - Thaumaturge: wand caps and rods.
+  - Ars Nouveau: source jars.
+  - Solar Flux Reborn: solar panels, mirrors and coatings.
+  - Functional Storage: seven storage upgrades from x64 to x30000 that add up with each other instead of multiplying, and normal drawers of the woods of vanilla and of other mods with the planks on the front and the log on the rest.
+- Crops: the entro crystal is only made from the ring of entro essence, the essence of the entro ingot makes dust and ingots, nadienite uses its 1x block, the AllTheCompressed blocks are no longer used, the fat entro seed and the Mercurio, quicksilver and salis mundus colors are fixed.
+- A key (J by default, in Controls) shows and hides the box of the spirit infusions in the corner of the screen.
+- New optional dependencies: Allthemodium, AllTheCompressed and XyCraft, Solar Flux Reborn and HammerLib.
+
+## 1.0.2 (Español)
+
+- 12 cultivos nuevos de Mystical Agriculture para los materiales de Ultimate Armoury que aún no tenían semillas: amberita, polvo lustroso, tenebrita, gorio, luminita, viridita, osmirita, umbrita, ionita, cristal de pirestona, cristal de aurelita e infernium Solo se cargan si Ultimate Armoury está instalado.
+- 9 cultivos más para materiales de Advanced AE, Extended AE, Excessive Utilities y el vidrio vanilla: polvo infundido cuántico, aleación cuántica, lingote de entro, lingote inestable, lingote encantado, lingote demoníaco, hierro infundido con maldad, lingote de bedrockium y vidrio (85 cultivos en total). Los de nivel 6 se hacen con bloques, el bedrockium es de nivel 10 y el vidrio de nivel 3.
+- La esencia de los cultivos de cristales de Thaumaturge ahora da el cristal de vis de su aspecto en vez del cristal bruto.
+- Todos los cultivos teñidos tienen sus propias texturas de semilla, esencia y flor, con el color del material que fabrican.
+- El cultivo Elevatium ahora usa el lingote de ascendium de Ultimate Armoury (`ultimatearmoury:ascendium_ingot`) en vez de un ítem de KubeJS.
+- Una sola pestaña creativa hecha con Fractal, con las subpestañas Semillas, Altares, Pedestales, Brujeria, Esencias, Cristales, Maquinas y Mesas, y solo el nombre del mod arriba. La subpestaña Ejemplo solo sale sin ninguna compatibilidad instalada, y siempre en desarrollo.
+- Cada compatibilidad se carga solo si su mod está instalado, y ninguna es obligatoria.
+- Dependencias: Maven oficial cuando el mod lo tiene (Mystical Agriculture y sus addons, Applied Energistics 2, GuideME, Create, Kotlin for Forge, Fractal) y CurseMaven al final para el resto, incluido Thaumaturge. `neoforge.mods.toml` usa `[${mod_version},)` en todas las dependencias.
+- Compatibilidades para los materiales de Ultimate Armoury (mushashite, joanfoite, nadienite) y los de Allthemodium (allthemodium, vibranium, unobtainium, piglich), cada una con su subpestaña creativa y su interruptor en `umc.toml` (`compat.items.<nombre>.enabled`):
+  - EnderIO: bolas de molienda, capacitores y conductos de energía, ítems y fluidos, con dos recetas para los conductos.
+  - Industrial Foregoing: mejoras de rango, velocidad, eficiencia y procesamiento.
+  - Thaumaturge: puntas y varas de varita.
+  - Ars Nouveau: jarras de fuente.
+  - Solar Flux Reborn: paneles solares, espejos y revestimientos.
+  - Functional Storage: siete mejoras de almacenamiento de x64 a x30000 que se suman entre sí en vez de multiplicarse, y cajones normales de las maderas de vanilla y de otros mods con los tablones al frente y el tronco en el resto.
+- Cultivos: el cristal de entro solo se hace con el anillo de esencia de entro, la esencia del lingote de entro da polvo y lingotes, la nadienite usa su bloque 1x, ya no se usan los bloques de AllTheCompressed, y se arreglan la semilla gorda de entro y los colores de Mercurio, quicksilver y salis mundus.
+- Una tecla (J por defecto, en Controles) muestra y oculta el cuadro de las infusiones espirituales en la esquina de la pantalla.
+- Dependencias opcionales nuevas: Allthemodium, AllTheCompressed y XyCraft, Solar Flux Reborn y HammerLib.
+
 ## 1.0.1 - 2026-11-02
 
 - Mystical Agriculture tier system: infusion and awakening altars, pedestals, essence vessels, seed reprocessors and furnaces from level 1 to 10, upgraded in the altar of the previous level.
