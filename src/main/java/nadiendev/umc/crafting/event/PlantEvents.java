@@ -12,10 +12,8 @@ import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.level.BlockDropsEvent;
 
-@EventBusSubscriber(modid = UltimateModCompats.MODID)
 public final class PlantEvents {
 
     private PlantEvents() {

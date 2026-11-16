@@ -70,3 +70,6 @@ continuar.md
 .github/modernize/
 CURSEFORGE_DESCRIPTION.md
 tools/*
+run-minimal/
+run-isolated/
+recordatorio.md

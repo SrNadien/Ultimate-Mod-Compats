@@ -20,6 +20,9 @@
 - Crops: the entro crystal is only made from the ring of entro essence, the essence of the entro ingot makes dust and ingots, nadienite uses its 1x block, the AllTheCompressed blocks are no longer used, the fat entro seed and the Mercurio, quicksilver and salis mundus colors are fixed.
 - A key (J by default, in Controls) shows and hides the box of the spirit infusions in the corner of the screen.
 - New optional dependencies: Allthemodium, AllTheCompressed and XyCraft, Solar Flux Reborn and HammerLib.
+- Enchanted and GeckoLib are optional: with none of the optional mods the game opens with only NeoForge and Fractal, and the creative tab only has the Example sub tab. The creatures, the spirit world and the crafting (the witchcraft) only load when Enchanted is installed, and the data of the spirit world and the creatures is turned off without it, so a world can be created and opened.
+- The tags of the game (logs, planks, leaves, flowers...) no longer fail to load when a mod this one adds to them is not installed: its entries are optional.
+- The game no longer fails to start without Mystical Agriculture.
 
 ## 1.0.2 (Español)
 
@@ -41,6 +44,9 @@
 - Cultivos: el cristal de entro solo se hace con el anillo de esencia de entro, la esencia del lingote de entro da polvo y lingotes, la nadienite usa su bloque 1x, ya no se usan los bloques de AllTheCompressed, y se arreglan la semilla gorda de entro y los colores de Mercurio, quicksilver y salis mundus.
 - Una tecla (J por defecto, en Controles) muestra y oculta el cuadro de las infusiones espirituales en la esquina de la pantalla.
 - Dependencias opcionales nuevas: Allthemodium, AllTheCompressed y XyCraft, Solar Flux Reborn y HammerLib.
+- Enchanted y GeckoLib son opcionales: sin ninguna de las opcionales el juego abre con solo NeoForge y Fractal, y la pestaña creativa solo tiene la subpestaña Ejemplo. Las criaturas, el mundo espiritual y los crafteos (la brujería) solo se cargan si Enchanted está instalado, y los datos del mundo espiritual y de las criaturas se desactivan sin él, así se puede crear y abrir un mundo.
+- Las etiquetas del juego (troncos, tablones, hojas, flores...) ya no fallan al cargar cuando no está instalado un mod que este les agrega: sus entradas son opcionales.
+- El juego ya no falla al iniciar sin Mystical Agriculture.
 
 ## 1.0.1 - 2026-11-02
 

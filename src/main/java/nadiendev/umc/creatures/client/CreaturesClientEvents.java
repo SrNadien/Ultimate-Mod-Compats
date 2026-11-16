@@ -14,13 +14,11 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.RenderPlayerEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
 import software.bernie.geckolib.renderer.GeoReplacedEntityRenderer;
 
-@EventBusSubscriber(modid = UltimateModCompats.MODID, value = Dist.CLIENT)
 public final class CreaturesClientEvents {
 
     private CreaturesClientEvents() {

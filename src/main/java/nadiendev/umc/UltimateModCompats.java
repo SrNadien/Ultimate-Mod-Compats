@@ -9,11 +9,10 @@ import nadiendev.umc.functionalstorage.FunctionalStorageRegistry;
 import nadiendev.umc.core.registry.UmcConditions;
 import nadiendev.umc.core.registry.UmcItems;
 import nadiendev.umc.core.registry.UmcTabs;
-import nadiendev.umc.crafting.registry.CraftingRegistry;
-import nadiendev.umc.creatures.registry.CreaturesRegistry;
+import nadiendev.umc.core.witchcraft.WitchcraftDisabledData;
+import nadiendev.umc.core.witchcraft.WitchcraftModule;
 import nadiendev.umc.mysticalagriculture.tier.TierAltarRegistry;
 import nadiendev.umc.solarflux.SolarFluxRegistry;
-import nadiendev.umc.spirit.registry.SpiritRegistry;
 import nadiendev.umc.thaumaturge.ThaumaturgeRegistry;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -29,9 +28,11 @@ public class UltimateModCompats {
         UmcItems.register(modBus);
         UmcConditions.register(modBus);
         UmcTabs.register(modBus);
-        CreaturesRegistry.register(modBus);
-        SpiritRegistry.register(modBus);
-        CraftingRegistry.register(modBus);
+        if (WitchcraftModule.enabled()) {
+            WitchcraftModule.register(modBus);
+        } else {
+            WitchcraftDisabledData.register(modBus);
+        }
         TierAltarRegistry.register(modBus);
         if (CompatSwitches.enabled(CompatSwitches.ENDERIO)) {
             EnderIoRegistry.register(modBus);

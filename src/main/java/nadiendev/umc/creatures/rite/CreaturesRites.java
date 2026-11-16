@@ -6,10 +6,8 @@ import nadiendev.umc.creatures.rite.factory.InflictCurseFactory;
 import nadiendev.umc.creatures.rite.factory.SummonMinionsFactory;
 import net.favouriteless.enchanted.api.circle_magic.RiteFactoryRegistry;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 
-@EventBusSubscriber(modid = UltimateModCompats.MODID)
 public final class CreaturesRites {
 
     private CreaturesRites() {

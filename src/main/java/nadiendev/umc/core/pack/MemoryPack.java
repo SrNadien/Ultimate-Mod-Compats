@@ -1,4 +1,4 @@
-package nadiendev.umc.functionalstorage.wood;
+package nadiendev.umc.core.pack;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -13,13 +13,13 @@ import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.resources.IoSupplier;
 import net.minecraft.resources.ResourceLocation;
 
-/** A pack that lives in memory: the files of the drawers of the woods, made when the game starts. */
-final class WoodDrawerPack extends AbstractPackResources {
+/** A pack that lives in memory: files made when the game starts, for one kind of pack (assets or data). */
+public final class MemoryPack extends AbstractPackResources {
 
     private final PackType type;
     private final Map<String, byte[]> files;
 
-    WoodDrawerPack(PackLocationInfo location, PackType type, Map<String, byte[]> files) {
+    public MemoryPack(PackLocationInfo location, PackType type, Map<String, byte[]> files) {
         super(location);
         this.type = type;
         this.files = files;

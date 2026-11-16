@@ -5,12 +5,10 @@ import nadiendev.umc.creatures.config.CreaturesConfig;
 import nadiendev.umc.creatures.form.CreatureForms;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
-@EventBusSubscriber(modid = UltimateModCompats.MODID)
 public final class CreaturesNetwork {
 
     private static final String VERSION = "1";

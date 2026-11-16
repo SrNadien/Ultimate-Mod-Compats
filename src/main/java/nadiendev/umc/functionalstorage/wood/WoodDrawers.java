@@ -4,17 +4,11 @@ import com.buuz135.functionalstorage.FunctionalStorage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.PackLocationInfo;
-import net.minecraft.server.packs.PackResources;
 import net.minecraft.server.packs.PackType;
-import net.minecraft.server.packs.repository.Pack;
-import net.minecraft.server.packs.repository.PackSource;
-import net.minecraft.server.packs.PackSelectionConfig;
 import net.minecraft.world.item.Item;
+import nadiendev.umc.core.pack.MemoryPacks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 import org.slf4j.Logger;
@@ -52,25 +46,7 @@ public final class WoodDrawers {
             return;
         }
         Map<String, byte[]> files = WoodDrawerContent.build(woods, type);
-        String id = "umc_wood_drawers_" + (type == PackType.CLIENT_RESOURCES ? "assets" : "data");
-        PackLocationInfo info = new PackLocationInfo(id, Component.literal("Ultimate Mod Compats: wood drawers"), PackSource.BUILT_IN, Optional.empty());
-        Pack.ResourcesSupplier supplier = new Pack.ResourcesSupplier() {
-            @Override
-            public PackResources openPrimary(PackLocationInfo location) {
-                return new WoodDrawerPack(location, type, files);
-            }
-
-            @Override
-            public PackResources openFull(PackLocationInfo location, Pack.Metadata metadata) {
-                return new WoodDrawerPack(location, type, files);
-            }
-        };
-        Pack pack = Pack.readMetaAndCreate(info, supplier, type, new PackSelectionConfig(true, Pack.Position.TOP, false));
-        if (pack == null) {
-            LOGGER.error("Could not make the pack of the wood drawers ({})", id);
-            return;
-        }
-        event.addRepositorySource(consumer -> consumer.accept(pack));
+        MemoryPacks.add(event, "umc_wood_drawers_" + (type == PackType.CLIENT_RESOURCES ? "assets" : "data"), "Ultimate Mod Compats: wood drawers", type, files);
     }
 
     /** The drawer items of the woods for the creative tab: the woods of vanilla first and then the ones of the other mods, each in its three sizes. */

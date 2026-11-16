@@ -1,10 +1,16 @@
 package nadiendev.umc.mysticalagriculture.tier;
 
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public final class TierAltarFactories {
 
     private TierAltarFactories() {
+    }
+
+    /** Made here and not in the registry, so that the registry does not load the Mystical Agriculture classes when the mod is not installed. */
+    public static Item crystal(int tier) {
+        return new TierCrystalItem(tier);
     }
 
     public static Block infusion(int tier) {

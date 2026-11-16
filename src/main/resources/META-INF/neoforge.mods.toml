@@ -29,14 +29,14 @@ ${mod_description}
 
 [[dependencies.${mod_id}]]
     modId="geckolib"
-    type="required"
+    type="optional"
     versionRange="[${geckolib_version},)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="enchanted"
-    type="required"
+    type="optional"
     versionRange="[${enchanted_version},)"
     ordering="AFTER"
     side="BOTH"

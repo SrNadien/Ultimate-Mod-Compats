@@ -23,10 +23,8 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent;
 
-@EventBusSubscriber(modid = UltimateModCompats.MODID)
 public final class DreamEvents {
 
     private DreamEvents() {

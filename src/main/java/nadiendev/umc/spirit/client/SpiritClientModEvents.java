@@ -7,13 +7,11 @@ import nadiendev.umc.spirit.registry.SpiritEntities;
 import nadiendev.umc.spirit.registry.SpiritWorld;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
 import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 
-@EventBusSubscriber(modid = UltimateModCompats.MODID, value = Dist.CLIENT)
 public final class SpiritClientModEvents {
 
     private SpiritClientModEvents() {

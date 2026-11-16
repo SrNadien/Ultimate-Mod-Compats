@@ -54,7 +54,7 @@ public final class TierAltarRegistry {
             add(REPROCESSORS, REPROCESSOR_PREFIX, tier, TierAltarFactories::reprocessor);
             add(FURNACES, FURNACE_PREFIX, tier, TierAltarFactories::furnace);
             int level = tier;
-            CRYSTALS.add(ITEMS.register(CRYSTAL_PREFIX + tier, () -> new TierCrystalItem(level)));
+            CRYSTALS.add(ITEMS.register(CRYSTAL_PREFIX + tier, () -> TierAltarFactories.crystal(level)));
         }
         BLOCKS.register(modBus);
         ITEMS.register(modBus);

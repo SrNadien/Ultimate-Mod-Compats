@@ -7,6 +7,7 @@ import nadiendev.umc.UltimateModCompats;
 import nadiendev.umc.arsnouveau.ArsNouveauFractalTabs;
 import nadiendev.umc.arsnouveau.ArsNouveauRegistry;
 import nadiendev.umc.core.config.CompatSwitches;
+import nadiendev.umc.core.witchcraft.WitchcraftModule;
 import nadiendev.umc.enderio.EnderIoFractalTabs;
 import nadiendev.umc.foregoing.ForegoingFractalTabs;
 import nadiendev.umc.foregoing.ForegoingRegistry;
@@ -73,7 +74,9 @@ public final class UmcFractalTabs {
             add(MysticalFractalTabs.build(parent, TierTabOrder.Section.ALTARS));
             add(MysticalFractalTabs.build(parent, TierTabOrder.Section.PEDESTALS));
         }
-        SUBTABS.add(witchcraftSubTab(parent));
+        if (WitchcraftModule.enabled()) {
+            SUBTABS.add(witchcraftSubTab(parent));
+        }
         if (mystical) {
             add(MysticalFractalTabs.build(parent, TierTabOrder.Section.ESSENCES));
             add(MysticalFractalTabs.build(parent, TierTabOrder.Section.CRYSTALS));
@@ -98,7 +101,7 @@ public final class UmcFractalTabs {
         if (CompatSwitches.enabled(CompatSwitches.FUNCTIONAL_STORAGE)) {
             SUBTABS.add(FunctionalStorageFractalTabs.build(parent));
         }
-        if (SUBTABS.size() == 1 || !FMLEnvironment.production) {
+        if (SUBTABS.isEmpty() || !FMLEnvironment.production) {
             SUBTABS.add(exampleSubTab(parent));
         }
         return parent;

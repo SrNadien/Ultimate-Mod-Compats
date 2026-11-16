@@ -30,8 +30,18 @@ runs {
 
     client {
         systemProperty 'umc.kubejs.registerAll', 'true'
-        programArgument '--quickPlaySingleplayer'
-        programArgument 'New World'
+        if (project.hasProperty('minimalRuntime')) {
+            // the test with none of the optional mods has a folder of its own, so it never opens the world of the development game
+            workingDirectory project.file('run-minimal')
+            programArgument '--quickPlaySingleplayer'
+            programArgument 'New World'
+        } else if (project.hasProperty('isolatedRun')) {
+            // the same with every mod, to check that it loads without opening the world of the development game
+            workingDirectory project.file('run-isolated')
+        } else {
+            programArgument '--quickPlaySingleplayer'
+            programArgument 'New World'
+        }
     }
 
     server {
@@ -174,78 +184,92 @@ repositories {
 }
 
 dependencies {
+    // -PminimalRuntime starts the game with only the mods this one needs, to check that it loads with none of the optional ones
+    def minimalRuntime = project.hasProperty('minimalRuntime')
+    def optionalRuntime = { Object notation, Closure config = null ->
+        if (!minimalRuntime) {
+            if (config != null) {
+                runtimeOnly(notation, config)
+            } else {
+                runtimeOnly(notation)
+            }
+        }
+    }
     implementation "net.neoforged:neoforge:${neo_version}"
 
     // Maven oficial
-    implementation("net.favouriteless.enchanted:enchanted-neoforge-${minecraft_version}:${enchanted_version}") {
+    compileOnly("net.favouriteless.enchanted:enchanted-neoforge-${minecraft_version}:${enchanted_version}") {
+        exclude group: "software.bernie.geckolib"
+    }
+    optionalRuntime("net.favouriteless.enchanted:enchanted-neoforge-${minecraft_version}:${enchanted_version}") {
         exclude group: "software.bernie.geckolib"
     }
     implementation("de.dafuqs:Fractal:${fractal_maven_version}") { transitive = false }
     compileOnly "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
 
     compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
-    runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+    optionalRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
 
     compileOnly "dev.latvian.mods:kubejs-neoforge:${kubejs_version}"
     compileOnly "dev.latvian.mods:rhino:${rhino_version}"
-    runtimeOnly "dev.latvian.mods:kubejs-neoforge:${kubejs_version}"
-    runtimeOnly "dev.latvian.mods:rhino:${rhino_version}"
-    runtimeOnly("dev.architectury:architectury-neoforge:${architectury_version}") { transitive = false }
+    optionalRuntime "dev.latvian.mods:kubejs-neoforge:${kubejs_version}"
+    optionalRuntime "dev.latvian.mods:rhino:${rhino_version}"
+    optionalRuntime("dev.architectury:architectury-neoforge:${architectury_version}") { transitive = false }
 
-    runtimeOnly("software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_runtime_version}") { transitive = false }
-    runtimeOnly("com.hrznstudio:titanium:${titanium_version}") { transitive = false }
-    runtimeOnly("top.theillusivec4.curios:curios-neoforge:${curios_version}") { transitive = false }
-    runtimeOnly "thedarkcolour:kotlinforforge-neoforge:${kotlinforforge_version}"
+    optionalRuntime("software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_runtime_version}") { transitive = false }
+    optionalRuntime("com.hrznstudio:titanium:${titanium_version}") { transitive = false }
+    optionalRuntime("top.theillusivec4.curios:curios-neoforge:${curios_version}") { transitive = false }
+    optionalRuntime "thedarkcolour:kotlinforforge-neoforge:${kotlinforforge_version}"
 
     compileOnly("com.blakebr0.mysticalagriculture:MysticalAgriculture:1.21.1-${mysticalagriculture_version}") { transitive = false }
     compileOnly("com.blakebr0.cucumber:Cucumber:1.21.1-${cucumber_version}") { transitive = false }
-    runtimeOnly("com.blakebr0.mysticalagriculture:MysticalAgriculture:1.21.1-${mysticalagriculture_version}") { transitive = false }
-    runtimeOnly("com.blakebr0.cucumber:Cucumber:1.21.1-${cucumber_version}") { transitive = false }
-    runtimeOnly("com.blakebr0.mysticalagradditions:MysticalAgradditions:1.21.1-${mysticalagradditions_version}") { transitive = false }
+    optionalRuntime("com.blakebr0.mysticalagriculture:MysticalAgriculture:1.21.1-${mysticalagriculture_version}") { transitive = false }
+    optionalRuntime("com.blakebr0.cucumber:Cucumber:1.21.1-${cucumber_version}") { transitive = false }
+    optionalRuntime("com.blakebr0.mysticalagradditions:MysticalAgradditions:1.21.1-${mysticalagradditions_version}") { transitive = false }
 
-    runtimeOnly("org.appliedenergistics:appliedenergistics2:${ae2_version}") { transitive = false }
-    runtimeOnly("org.appliedenergistics:guideme:${guideme_version}") { transitive = false }
+    optionalRuntime("org.appliedenergistics:appliedenergistics2:${ae2_version}") { transitive = false }
+    optionalRuntime("org.appliedenergistics:guideme:${guideme_version}") { transitive = false }
 
-    runtimeOnly("com.simibubi.create:create-${minecraft_version}:${create_maven_version}") { transitive = false }
-    runtimeOnly("com.tterrag.registrate:Registrate:${registrate_version}") { transitive = false }
-    runtimeOnly("net.createmod.ponder:ponder-neoforge:${ponder_version}") { transitive = false }
-    runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}") { transitive = false }
-    runtimeOnly("dev.engine-room.vanillin:vanillin-neoforge-${minecraft_version}:${vanillin_version}") { transitive = false }
+    optionalRuntime("com.simibubi.create:create-${minecraft_version}:${create_maven_version}") { transitive = false }
+    optionalRuntime("com.tterrag.registrate:Registrate:${registrate_version}") { transitive = false }
+    optionalRuntime("net.createmod.ponder:ponder-neoforge:${ponder_version}") { transitive = false }
+    optionalRuntime("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}") { transitive = false }
+    optionalRuntime("dev.engine-room.vanillin:vanillin-neoforge-${minecraft_version}:${vanillin_version}") { transitive = false }
 
     compileOnly("com.enderio:enderio:${enderio_version}") { transitive = false }
     compileOnly("com.enderio:endercore:${endercore_version}") { transitive = false }
     compileOnly("com.hrznstudio:titanium:${titanium_version}") { transitive = false }
     compileOnly("mekanism:Mekanism:${mekanism_version}") { transitive = false }
-    runtimeOnly("mekanism:Mekanism:${mekanism_version}") { transitive = false }
+    optionalRuntime("mekanism:Mekanism:${mekanism_version}") { transitive = false }
     compileOnly("com.buuz135:industrialforegoing:${industrialforegoing_version}") { transitive = false }
     compileOnly("com.hollingsworth.ars_nouveau:ars_nouveau-${minecraft_version}:${ars_nouveau_maven_version}") { transitive = false }
     compileOnly("org.zeith.solarflux:SolarFluxReborn-1.21.1:${solarflux_version}") { transitive = false }
     compileOnly("org.zeith.hammerlib:HammerLib-1.21:${hammerlib_version}") { transitive = false }
-    runtimeOnly("org.zeith.solarflux:SolarFluxReborn-1.21.1:${solarflux_version}") { transitive = false }
-    runtimeOnly("org.zeith.hammerlib:HammerLib-1.21:${hammerlib_version}") { transitive = false }
-    runtimeOnly("com.enderio:enderio:${enderio_version}") { transitive = false }
-    runtimeOnly("com.buuz135:industrialforegoing:${industrialforegoing_version}") { transitive = false }
-    runtimeOnly("com.hollingsworth.ars_nouveau:ars_nouveau-${minecraft_version}:${ars_nouveau_maven_version}") { transitive = false }
-    runtimeOnly("vazkii.patchouli:Patchouli:${patchouli_version}") { transitive = false }
+    optionalRuntime("org.zeith.solarflux:SolarFluxReborn-1.21.1:${solarflux_version}") { transitive = false }
+    optionalRuntime("org.zeith.hammerlib:HammerLib-1.21:${hammerlib_version}") { transitive = false }
+    optionalRuntime("com.enderio:enderio:${enderio_version}") { transitive = false }
+    optionalRuntime("com.buuz135:industrialforegoing:${industrialforegoing_version}") { transitive = false }
+    optionalRuntime("com.hollingsworth.ars_nouveau:ars_nouveau-${minecraft_version}:${ars_nouveau_maven_version}") { transitive = false }
+    optionalRuntime("vazkii.patchouli:Patchouli:${patchouli_version}") { transitive = false }
 
     // CurseMaven: mods sin Maven oficial, siempre al final
-    runtimeOnly "curse.maven:allthemodium-${allthemodium_id}:${allthemodium_file_id}"
-    runtimeOnly "curse.maven:allthecompressed-${allthecompressed_id}:${allthecompressed_file_id}"
-    runtimeOnly "curse.maven:xycraft-${xycraft_core_id}:${xycraft_core_file_id}"
-    runtimeOnly "curse.maven:xycraft-world-${xycraft_world_id}:${xycraft_world_file_id}"
-    runtimeOnly "curse.maven:advancedae-${advancedae_id}:${advancedae_file_id}"
-    runtimeOnly "curse.maven:extendedae-${extendedae_id}:${extendedae_file_id}"
-    runtimeOnly "curse.maven:glodium-${glodium_id}:${glodium_file_id}"
-    runtimeOnly "curse.maven:aaron-${aaron_id}:${aaron_file_id}"
-    runtimeOnly "curse.maven:excessive-utilities-${excessive_utilities_id}:${excessive_utilities_file_id}"
-    runtimeOnly "curse.maven:functional-storage-${functionalstorage_id}:${functionalstorage_file_id}"
-    runtimeOnly "curse.maven:generator-galore-${generatorgalore_id}:${generatorgalore_file_id}"
-    runtimeOnly "curse.maven:lithostitched-${lithostitched_id}:${lithostitched_file_id}"
-    runtimeOnly "curse.maven:mystical-extended-tier-${mysticalextendedtier_id}:${mysticalextendedtier_file_id}"
+    optionalRuntime "curse.maven:allthemodium-${allthemodium_id}:${allthemodium_file_id}"
+    optionalRuntime "curse.maven:allthecompressed-${allthecompressed_id}:${allthecompressed_file_id}"
+    optionalRuntime "curse.maven:xycraft-${xycraft_core_id}:${xycraft_core_file_id}"
+    optionalRuntime "curse.maven:xycraft-world-${xycraft_world_id}:${xycraft_world_file_id}"
+    optionalRuntime "curse.maven:advancedae-${advancedae_id}:${advancedae_file_id}"
+    optionalRuntime "curse.maven:extendedae-${extendedae_id}:${extendedae_file_id}"
+    optionalRuntime "curse.maven:glodium-${glodium_id}:${glodium_file_id}"
+    optionalRuntime "curse.maven:aaron-${aaron_id}:${aaron_file_id}"
+    optionalRuntime "curse.maven:excessive-utilities-${excessive_utilities_id}:${excessive_utilities_file_id}"
+    optionalRuntime "curse.maven:functional-storage-${functionalstorage_id}:${functionalstorage_file_id}"
+    optionalRuntime "curse.maven:generator-galore-${generatorgalore_id}:${generatorgalore_file_id}"
+    optionalRuntime "curse.maven:lithostitched-${lithostitched_id}:${lithostitched_file_id}"
+    optionalRuntime "curse.maven:mystical-extended-tier-${mysticalextendedtier_id}:${mysticalextendedtier_file_id}"
     compileOnly "curse.maven:functional-storage-${functionalstorage_id}:${functionalstorage_file_id}"
     compileOnly "curse.maven:thaumaturge-${thaumaturge_id}:${thaumaturge_file_id}"
-    runtimeOnly "curse.maven:thaumaturge-${thaumaturge_id}:${thaumaturge_file_id}"
-    runtimeOnly "curse.maven:ultimate-armoury-tools-and-weapons-${ultimatearmoury_id}:${ultimatearmoury_file_id}"
+    optionalRuntime "curse.maven:thaumaturge-${thaumaturge_id}:${thaumaturge_file_id}"
+    optionalRuntime "curse.maven:ultimate-armoury-tools-and-weapons-${ultimatearmoury_id}:${ultimatearmoury_file_id}"
 }
 
 tasks.withType(ProcessResources).configureEach {
@@ -291,6 +315,37 @@ tasks.withType(ProcessResources).configureEach {
 
     filesMatching(['META-INF/neoforge.mods.toml', 'pack.mcmeta']) {
         expand replaceProperties + [project: project]
+    }
+
+    // The tags of the game and of the common namespace get blocks and items of this mod and of the other ones, and the tags of
+    // this mod get its own. A tag is not loaded at all when one of its entries does not exist, which would break the tags of
+    // the game (logs, planks, leaves...) for whoever does not have those mods, so those entries are made optional.
+    doLast {
+        def slurper = new groovy.json.JsonSlurper()
+        fileTree(dir: destinationDir, include: 'data/**/tags/**/*.json').each { File file ->
+            def json = slurper.parse(file)
+            if (!(json instanceof Map) || !(json.values instanceof List)) {
+                return
+            }
+            def path = file.path.replace('\\', '/')
+            boolean shared = path.contains('/data/minecraft/tags/') || path.contains('/data/c/tags/')
+            boolean changed = false
+            json.values = json.values.collect { value ->
+                if (value instanceof CharSequence) {
+                    String id = value.toString()
+                    String bare = id.startsWith('#') ? id.substring(1) : id
+                    String namespace = bare.contains(':') ? bare.substring(0, bare.indexOf(':')) : 'minecraft'
+                    if (namespace == 'umc' || (shared && namespace != 'minecraft')) {
+                        changed = true
+                        return [id: id, required: false]
+                    }
+                }
+                return value
+            }
+            if (changed) {
+                file.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(json))
+            }
+        }
     }
 }
 
